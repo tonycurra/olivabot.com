@@ -1,0 +1,10 @@
+/* Styles */
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+a {
+  color: #70b4f7;
+  text-decoration: underline; 
+}
