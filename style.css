@@ -20,6 +20,19 @@ html[data-theme="light"] {
   --link: #0b5bd4;
 }
 
+/* Respect user's system preference before JS runs */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --text: #000000;
+    --muted: #222222;
+    --border: rgba(0, 0, 0, 0.12);
+    --border-strong: rgba(0, 0, 0, 0.24);
+    --button-bg: rgba(0, 0, 0, 0.04);
+    --link: #0b5bd4;
+  }
+}
+
 body {
   background-color: var(--bg);
   color: var(--text);
@@ -84,6 +97,63 @@ main {
 
 section {
   margin-top: 32px;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  align-items: start;
+}
+.gallery figure {
+  margin: 0;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  cursor: zoom-in;
+}
+.gallery figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.8);
+  z-index: 2000;
+}
+.lightbox.is-open {
+  display: flex;
+}
+.lightbox img {
+  max-width: 92vw;
+  max-height: 92vh;
+  border-radius: 6px;
+}
+.lightbox-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: transparent;
+  border: 1px solid var(--border-strong);
+  color: var(--text);
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
 }
 
 .navbar {
@@ -174,20 +244,24 @@ section {
 .theme-icon {
   width: 18px;
   height: 18px;
-  display: block;
+  display: none; /* default hidden; shown by prefs or data-theme */
 }
 
-.theme-icon-moon {
-  display: none;
+/* Show according to system preference until JS applies data-theme */
+@media (prefers-color-scheme: light) {
+  .theme-icon-sun { display: block; }
+  .theme-icon-moon { display: none; }
+}
+@media (prefers-color-scheme: dark) {
+  .theme-icon-moon { display: block; }
+  .theme-icon-sun { display: none; }
 }
 
-html[data-theme="light"] .theme-icon-sun {
-  display: none;
-}
-
-html[data-theme="light"] .theme-icon-moon {
-  display: block;
-}
+/* data-theme overrides prefs */
+html[data-theme="light"] .theme-icon-sun { display: block; }
+html[data-theme="light"] .theme-icon-moon { display: none; }
+html:not([data-theme="light"]) .theme-icon-moon { display: block; }
+html:not([data-theme="light"]) .theme-icon-sun { display: none; }
 
 .navbar a {
   color: var(--text);

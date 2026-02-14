@@ -32,6 +32,20 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Olive harvesting robot prototype",
+    "description": "Mk1 prototype — a bio-inspired olive-harvesting robot modeled after the gibbon. Field tested in August 2025 in olive groves in southern Italy.",
+    "image": [
+      "https://olivabot.com/assets/gibbon-bot-mk1/gibbon-bot-mk1-in-action-1.jpg",
+      "https://olivabot.com/assets/gibbon-bot-mk1/gibbon-bot-mk1-in-action-2.jpg",
+      "https://olivabot.com/assets/gibbon-bot-mk1/gibbon-bot-mk1-in-action-3.jpg"
+    ],
+    "releaseDate": "2025-08"
+  }
+  </script>
 </head>
 
 <body>
@@ -54,14 +68,17 @@
           <a href="#about">About</a>
           <a href="#services">Services</a>
           <a href="#collaborations">Collaborations</a>
+          <a href="#research">Research</a>
           <a href="#contact">Contact</a>
-          <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to light theme">
+          <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Toggle theme">
             <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
               <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"></circle>
               <path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
             </svg>
             <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M20 14.5A8 8 0 0 1 9.5 4a6.5 6.5 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path>
+              <!-- contrast / half-circle icon as alternative to moon -->
+              <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"></circle>
+              <path d="M12 3a9 9 0 0 0 0 18" fill="currentColor" stroke="currentColor" stroke-width="0"></path>
             </svg>
           </button>
         </nav>
@@ -85,6 +102,39 @@
         Olivabot will be commercially available approximately in 2028. For info and early testing, get in touch:
         <a href="mailto:hello@olivabot.com">hello@olivabot.com</a>
       </p>
+    </section>
+
+    <section id="gibbon-mk1" class="prototype">
+      <h2>Olive harvesting robot prototype</h2>
+      <p>
+        We are developing a robotic architecture inspired by the gibbon — a small, highly agile arboreal primate. The design focuses on nimble, branch-safe movement and gentle harvesting to work in traditional olive groves without damaging trees or fruit.
+        The prototype shown in the images (Gibbon Bot Mk1) was field-tested in August 2025 in olive groves in southern Italy to validate hanging, gripping and basic arboreal locomotion.
+      </p>
+      <h3>Next steps: Mk2 development</h3>
+      <p>
+        The Mk2 prototype will incorporate two harvesting mechanisms inspired by common manual methods: a comb/raster and a stick "virga." These tools are designed to mimic traditional techniques, ensuring the best quality of the harvested fruit while maintaining the safety of the trees.
+      </p>
+      <p>
+        Development continues toward the next prototype. We plan to test an updated version in Autumn 2026 alongside the next harvest. We publish progress and welcome contact from farmers, partners and potential investors interested in field trials or collaboration.
+      </p>
+      <p>
+        <a href="mailto:contact@olivabot.com" class="cta-button">Contact us for field trials</a>
+      </p>
+
+      <div class="gallery" aria-label="Gibbon Bot Mk1 gallery">
+        <figure>
+          <img src="assets/gibbon-bot-mk1/gibbon-bot-mk1-in-action-1.jpg" loading="lazy" alt="Gibbon Bot Mk1 hanging on an olive branch (1)" data-full="assets/gibbon-bot-mk1/gibbon-bot-mk1-in-action-1.jpg">
+          <figcaption>Gibbon Bot Mk1 — hanging test (Aug 2025).</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/gibbon-bot-mk1/gibbon-bot-mk1-in-action-2.jpg" loading="lazy" alt="Gibbon Bot Mk1 hanging on an olive branch (2)" data-full="assets/gibbon-bot-mk1/gibbon-bot-mk1-in-action-2.jpg">
+          <figcaption>Testing arboreal grip and mobility.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/gibbon-bot-mk1/gibbon-bot-mk1-in-action-3.jpg" loading="lazy" alt="Gibbon Bot Mk1 hanging on an olive branch (3)" data-full="assets/gibbon-bot-mk1/gibbon-bot-mk1-in-action-3.jpg">
+          <figcaption>Field trials in southern Italy, Aug 2025.</figcaption>
+        </figure>
+      </div>
     </section>
 
     <section id="services">
@@ -117,6 +167,16 @@
           universities. More info: <a href="https://www.demonstratorlab.amsterdam">demonstratorlab.nl</a>
         </li>
       </ul>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <p>
+        Olivabot collaborates with Dutch universities and public research bodies to advance R&amp;D in field robotics and sensing. We share technology with partners, contribute to academic research projects, and work with public programs to test prototypes in real-world conditions.
+      </p>
+      <p>
+        Current research partnerships include sensor integration, autonomy in unstructured groves, and joint field trials. If you're a researcher, potential partner, or funder and want to collaborate, get in touch.
+      </p>
     </section>
 
     <section id="contact">
@@ -159,6 +219,11 @@
     </div>
     <p class="footer-copy">&copy; 2026 Olivabot</p>
   </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <img src="" alt="" class="lightbox-image">
+  </div>
 
   <script>
     const toggle = document.querySelector('.nav-toggle');
@@ -203,6 +268,30 @@
         });
       });
     }
+
+    // Lightbox for gallery
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.querySelector('.lightbox-image');
+    const lightboxClose = document.querySelector('.lightbox-close');
+    document.querySelectorAll('.gallery img').forEach(img => {
+      img.addEventListener('click', () => {
+        const src = img.getAttribute('data-full') || img.src;
+        lightboxImg.src = src;
+        lightboxImg.alt = img.alt || '';
+        lightbox.classList.add('is-open');
+        lightbox.setAttribute('aria-hidden', 'false');
+      });
+    });
+    const closeLightbox = () => {
+      lightbox.classList.remove('is-open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      lightboxImg.src = '';
+    };
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
   </script>
 </body>
 </html>
