@@ -1,0 +1,35 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://olivabot.com/sitemap.xml
+
+# Google Bot specific crawling
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bing Bot specific crawling
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# OpenAI Bot for AI training
+User-agent: GPTBot
+Allow: /
+
+# Anthropic Bot
+User-agent: Claude-Web
+Allow: /
+
+# Avoid crawling unnecessary paths
+Disallow: /*.pdf$
+Disallow: /cdn-cgi/
+
+# Block aggressive bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
