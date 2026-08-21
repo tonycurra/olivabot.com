@@ -10,16 +10,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Use multiple checks to handle different path formats
     const pathSegments = currentPath.split('/').filter(s => s);
     const isInEnDir = currentPath.includes('/en/') || pathSegments.includes('en');
-    // Check if path contains /legal/ as a directory segment
-    const isInLegalDir = currentPath.includes('/legal/') || pathSegments.includes('legal');
+    // Check if path contains a nested /en/ subdirectory (e.g. legal/, projects/)
+    const isInNestedDir = pathSegments.includes('legal') || pathSegments.includes('projects');
     
     // For file:// protocol with /en/ in path, use relative paths
-    // If in /en/legal/, go up one to /en/; if in /en/ (not legal), stay in /en/
-    const pageBase = isFileProtocol && isInEnDir ? (isInLegalDir ? '../' : '') : (isInEnDir ? '/en/' : '/');
+    // If in /en/legal/ or /en/projects/, go up one to /en/; if in /en/ root, stay in /en/
+    const pageBase = isFileProtocol && isInEnDir ? (isInNestedDir ? '../' : '') : (isInEnDir ? '/en/' : '/');
     
     // Assets are always at /assets/ for web server
-    // For file:// protocol: if in /en/legal/, use ../../; if in /en/, use ../
-    const assetBase = isFileProtocol && isInEnDir ? (isInLegalDir ? '../../' : '../') : '/';
+    // For file:// protocol: if in nested subdir, use ../../; if in /en/, use ../
+    const assetBase = isFileProtocol && isInEnDir ? (isInNestedDir ? '../../' : '../') : '/';
 
     navbarContainer.innerHTML = `
         <nav>
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </a>
             <ul class="nav-links" id="nav-links">
                 <li><a href="${pageBase}index.html">Home</a></li>
-                <li><a href="${pageBase}gibbonbot.html">Gibbon Bot</a></li>
+                <li><a href="${pageBase}projects.html">Projects</a></li>
                 <li><a href="${pageBase}services.html">Services</a></li>
                 <li><a href="${pageBase}about.html">About</a></li>
                 <li><a href="${pageBase}contact.html">Contact</a></li>

@@ -10,24 +10,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // Use multiple checks to handle different path formats
     const pathSegments = currentPath.split('/').filter(s => s);
     const isInEnDir = currentPath.includes('/en/') || pathSegments.includes('en');
-    // Check if path contains /legal/ as a directory segment
-    const isInLegalDir = currentPath.includes('/legal/') || pathSegments.includes('legal');
+    // Check if path contains a nested /en/ subdirectory (e.g. legal/, projects/)
+    const isInNestedDir = pathSegments.includes('legal') || pathSegments.includes('projects');
     
     // For file:// protocol with /en/ in path, use relative paths
-    // If in /en/legal/, need to go up to /en/; if in /en/ (not legal), stay in /en/
-    // For web server, use absolute paths with /en/ prefix
-    const pageBase = isFileProtocol && isInEnDir ? (isInLegalDir ? '../' : '') : (isInEnDir ? '/en/' : '/');
+    // If in nested subdir, go up to /en/; if in /en/ root, stay in /en/
+    const pageBase = isFileProtocol && isInEnDir ? (isInNestedDir ? '../' : '') : (isInEnDir ? '/en/' : '/');
     
     // For legal pages, use absolute /en/legal/ for web server
-    // For file:// protocol, calculate relative path to /en/legal/
-    // If in /en/legal/, go up to /en/ then into legal/
-    // If in /en/ (but not /legal/), just use legal/
-    const legalBase = isFileProtocol ? (isInLegalDir ? '../' : '') : (isInEnDir ? '/en/' : '/');
+    const legalBase = isFileProtocol ? (isInNestedDir ? '../' : '') : (isInEnDir ? '/en/' : '/');
     
     // Assets are always at /assets/ for web server
-    // For file:// protocol in /en/, use ../assets/
-    // For file:// protocol in /en/legal/, use ../../assets/
-    const assetBase = isFileProtocol && isInEnDir ? (isInLegalDir ? '../../' : '../') : '/';
+    const assetBase = isFileProtocol && isInEnDir ? (isInNestedDir ? '../../' : '../') : '/';
 
     footerContainer.innerHTML = `
         <div class="footer-inner">
@@ -38,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </a>
                 <nav class="footer-nav" aria-label="Footer navigation">
                     <a href="${pageBase}index.html">Home</a>
-                    <a href="${pageBase}gibbonbot.html">Gibbon Bot</a>
+                    <a href="${pageBase}projects.html">Projects</a>
                     <a href="${pageBase}services.html">Services</a>
                     <a href="${pageBase}about.html">About</a>
                     <a href="${pageBase}contact.html">Contact</a>

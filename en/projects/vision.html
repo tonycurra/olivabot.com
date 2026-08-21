@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Olivabot Vision | Computer Vision for Gibbon Bot</title>
+    <meta name="description" content="Olivabot Vision adds on-board computer vision and edge AI to Gibbon Bot for fruit monitoring and harvesting.">
+    <meta property="og:title" content="Olivabot Vision | Computer Vision for Gibbon Bot">
+    <meta property="og:description" content="On-board computer vision and edge AI for fruit monitoring and harvesting on Gibbon Bot.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://olivabot.com/en/projects/vision.html">
+    <meta property="og:image" content="https://olivabot.com/assets/images/gibbot-bot-mk1/gibbot-bot-mk1-in-action-1.jpg">
+    <link rel="canonical" href="https://olivabot.com/en/projects/vision.html" />
+    <link rel="icon" href="../../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <style>
+        .funding-banner {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            background: var(--footer-bg);
+        }
+        .funding-banner img {
+            height: 56px;
+            width: auto;
+            flex-shrink: 0;
+        }
+        .funding-banner a:first-child {
+            background: #ffffff;
+            padding: 0.5rem 0.75rem;
+            border-radius: 4px;
+        }
+        .funding-banner p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: var(--muted);
+            flex: 1;
+            min-width: 200px;
+        }
+        .partners {
+            margin: 2rem 0;
+            font-size: 0.95rem;
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+<header id="navbar"></header>
+    <main>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <a href="../projects.html">Projects</a>
+            <span>Olivabot Vision</span>
+        </nav>
+        <h1>Olivabot Vision</h1>
+        <p class="intro">Olivabot Vision is an <strong>MIT feasibility project</strong> (MIT-haalbaarheidsprojecten Noord-Holland 2026). With support from the <a href="https://www.noord-holland.nl/" rel="noopener noreferrer" target="_blank">Province of Noord-Holland</a>, we researched whether computer vision can be added to <a href="gibbon-bot.html">Gibbon Bot</a> for more precise fruit monitoring and harvesting.</p>
+        <p>The study ran from 8 April 2026 to 31 July 2026.</p>
+
+        <div class="funding-banner">
+            <a href="https://www.noord-holland.nl/" rel="noopener noreferrer" target="_blank">
+                <img src="../../assets/images/noord-holland-logo.svg" alt="Provincie Noord-Holland" width="220" height="43">
+            </a>
+            <p>This project is made possible with the support of the <a href="https://www.noord-holland.nl/" rel="noopener noreferrer" target="_blank">Province of Noord-Holland</a>.</p>
+        </div>
+
+        <h2>What we studied</h2>
+        <p>The feasibility work focused on giving <a href="gibbon-bot.html">Gibbon Bot</a> the ability to see, without compromising its tree-climbing design. We looked at camera integration, AI fruit recognition, robot control, on-board computing, communication in orchards, and outdoor robustness.</p>
+
+        <h2>Findings</h2>
+        <ul class="features">
+            <li><strong>Camera on the robot</strong> – A compact edge-AI camera module can be integrated into the existing architecture without upsetting the weight balance needed for climbing.</li>
+            <li><strong>Fruit recognition</strong> – Computer vision models (including CNNs and occlusion-aware segmentation) can detect fruit under changing light, shadows, reflections, and when more than half the fruit is hidden by leaves. Lightweight detectors suitable for an on-board camera were selected. Reaching high accuracy across crops still needs more training data and pipeline work.</li>
+            <li><strong>Vision and motion</strong> – Latency and real-time data between the vision pipeline and the robot’s control loops were analysed in simulation, including reinforcement learning in virtual environments. Linking camera output to actuators is feasible; safe field use still needs a further R&amp;D phase.</li>
+            <li><strong>On-board AI (edge)</strong> – Image analysis can run locally on the robot, without a cloud connection. Lightweight network architectures were benchmarked on low-power embedded hardware. Computing is best split: the camera for recognition, local microcontrollers for each arm segment, and a central unit to coordinate vision and motion, within thermal and energy budgets.</li>
+            <li><strong>Communication in orchards</strong> – Offline operation is preferred for safety and cybersecurity. Low-bandwidth long-range radio is too slow for this data. Local Wi-Fi with on-robot storage and later sync to a more powerful computer is the practical setup. The robot stays lighter and can work independently.</li>
+            <li><strong>Outdoor robustness</strong> – The camera housing needs an IP65-level seal against dust and rain, using a robust transparent cover, while staying light enough and leaving room for heat management so the camera does not overheat.</li>
+        </ul>
+
+        <h2>Grower interest</h2>
+        <p>From interviews with growers, interest splits. Some want analytics: fruit ripeness for harvest timing, and early signs of pests or disease. Others are more interested in the harvest itself. It depends on the farm.</p>
+
+        <h2>Partners</h2>
+        <p class="partners">Thanks to <a href="https://www.kcgroup.nl/" rel="noopener noreferrer" target="_blank">KC-Group</a> for supporting our subsidy application and helping make this project possible, and to the <a href="https://www.noord-holland.nl/" rel="noopener noreferrer" target="_blank">Province of Noord-Holland</a> for co-financing it.</p>
+
+        <div class="cta-section">
+            <a href="mailto:info@olivabot.com" class="cta-button">Get in Touch</a>
+        </div>
+    </main>
+<footer id="footer"></footer>
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/footer.js"></script>
+</body>
+</html>

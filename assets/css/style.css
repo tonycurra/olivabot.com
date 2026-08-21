@@ -152,6 +152,22 @@ main {
     text-decoration: underline;
 }
 
+main p a,
+main li a,
+main .intro a,
+main .image-caption a,
+main .partners a {
+    color: var(--link);
+}
+
+main p a:hover,
+main li a:hover,
+main .intro a:hover,
+main .image-caption a:hover,
+main .partners a:hover {
+    text-decoration: underline;
+}
+
 /* ─────────────────────────────────────────
    Buttons
 ───────────────────────────────────────── */
