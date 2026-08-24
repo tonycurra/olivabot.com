@@ -6,21 +6,21 @@
     <!-- Main Pages -->
     <url>
         <loc>https://olivabot.com/en/index.html</loc>
-        <lastmod>2026-06-05</lastmod>
+        <lastmod>2026-08-21</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     
     <url>
         <loc>https://olivabot.com/en/about.html</loc>
-        <lastmod>2026-06-05</lastmod>
+        <lastmod>2026-08-21</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://olivabot.com/en/services.html</loc>
-        <lastmod>2026-06-05</lastmod>
+        <lastmod>2026-08-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -47,10 +47,31 @@
     </url>
     
     <url>
-        <loc>https://olivabot.com/en/projects/vision.html</loc>
+        <loc>https://olivabot.com/en/projects/mycosense.html</loc>
+        <lastmod>2026-08-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://olivabot.com/en/dlab.html</loc>
+        <lastmod>2026-08-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://olivabot.com/en/projects/madglove-sense.html</loc>
+        <lastmod>2026-08-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://olivabot.com/en/projects/arboreal-robots.html</loc>
         <lastmod>2026-08-21</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
     
     <!-- Legal Pages -->

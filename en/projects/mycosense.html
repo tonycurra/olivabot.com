@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mycosense | Sensors for Mycofiltration and Mycelium Growth</title>
+    <meta name="description" content="Mycosense: water, soil, and camera sensors built with Mycofarming for mycofiltration — from MycoLab blocks to outdoor LoRaWAN probes. Started at DLAB in 2024.">
+    <meta property="og:title" content="Mycosense | Sensors for Mycofiltration and Mycelium Growth">
+    <meta property="og:description" content="Custom water, soil, and infrared camera systems for mycelium growth and water filtration, built with Mycofarming.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://olivabot.com/en/projects/mycosense.html">
+    <meta property="og:image" content="https://olivabot.com/assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/raspberry-pi-camera-enclosure-closed-1.webp">
+    <link rel="canonical" href="https://olivabot.com/en/projects/mycosense.html" />
+    <link rel="icon" href="../../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Mycosense",
+      "description": "Sensors, cameras, and cloud monitoring for mycofiltration and mycelium growth, built with Mycofarming.",
+      "author": {
+        "@type": "Organization",
+        "name": "Olivabot",
+        "url": "https://olivabot.com/"
+      }
+    }
+    </script>
+</head>
+<body>
+<header id="navbar"></header>
+    <main>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <a href="../projects.html">Projects</a>
+            <span>Mycosense</span>
+        </nav>
+        <h1>Mycosense</h1>
+        <p class="intro">It all started when Juan Cruz Tubio, founder and CEO of <a href="https://www.mycofarming.nl/" rel="noopener noreferrer" target="_blank">Mycofarming</a>, arriving in <a href="../dlab.html">DLAB</a>, saw me in Olivabot’s office and asked if I wanted to make water sensors. Of course I said yes enthusiastically. I always like to use tech skills for good in the world. So we started collaborating.</p>
+
+        <nav class="page-index" aria-label="On this page">
+            <h2>On this page</h2>
+            <ol>
+                <li><a href="#how-it-started">How it started</a></li>
+                <li><a href="#sensors">Sensors and infrastructure</a></li>
+                <li><a href="#cameras">Cameras and MycoLab</a></li>
+                <li><a href="#myco-towers">Myco towers</a></li>
+                <li><a href="#outdoor">Outdoor LoRaWAN sensors</a></li>
+                <li><a href="#why">Why we kept going</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ol>
+        </nav>
+
+        <h2 id="how-it-started">How it started</h2>
+        <p>This was September 2024, shortly after we incorporated Olivabot BV in July 2024. We were working from <a href="../dlab.html">DLAB</a> — the <a href="https://www.demonstratorlab.nl/" rel="noopener noreferrer" target="_blank">Demonstrator Lab</a> at VU Amsterdam, the early-stage incubator where Olivabot began.</p>
+        <p>An opportunity for funding arose when <a href="https://www.kcgroup.nl/" rel="noopener noreferrer" target="_blank">KC Group</a>, financial advisors in Amsterdam, told us we had an opportunity for funding from the <a href="https://www.noord-holland.nl/" rel="noopener noreferrer" target="_blank">Province of Noord-Holland</a>, via the MIT collaborative hardware subsidy. So we applied.</p>
+        <p>Before hearing the answer for funding, we started building water sensors, soil sensors, testing hardware and software infrastructure with microcontrollers, battery-powered waterproof sensor systems, research, development, telecommunication infrastructure — Bluetooth, Wi-Fi, LoRaWAN — and secure cloud databases and web applications with dashboards for monitoring.</p>
+
+        <div class="funding-banner">
+            <a href="https://www.noord-holland.nl/" rel="noopener noreferrer" target="_blank">
+                <img src="../../assets/images/noord-holland-logo.svg" alt="Provincie Noord-Holland" width="220" height="43">
+            </a>
+            <p>This project is made possible with the support of the <a href="https://www.noord-holland.nl/" rel="noopener noreferrer" target="_blank">Province of Noord-Holland</a>.</p>
+        </div>
+
+        <h2 id="sensors">Sensors and infrastructure</h2>
+        <p>Time passes by and we test many, many sensors, systems. The project evolves. While Mycofarming was building MycoLab blocks — isolated blocks to grow mycelium and test water filtration from pollutants, for applications in Netherlands canals, for agriculture and industry, to absorb pollutants before they get in the water streams — Olivabot was building the sensor systems.</p>
+        <p>We ended up using Raspberry Pi microcontrollers, connected via secure Wi-Fi and communicating with BLE for swarm intelligence, and streamlining to two sensors for the microcontroller: one for water — total dissolved solids, directly related to electric conductivity of the water — and an atmospheric sensor for CO<sub>2</sub>, temperature, and humidity.</p>
+
+        <div class="story-pair">
+            <figure class="story-figure">
+                <img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/mycolab-tds-sensor-and-controller.webp" alt="Mycosense TDS water sensor connected to a microcontroller" width="1920" height="1446" loading="lazy">
+                <figcaption>TDS meter on the bench — total dissolved solids, tied to conductivity.</figcaption>
+            </figure>
+            <figure class="story-figure">
+                <img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/mycolab-water-sensor-in-chamber.webp" alt="Mycosense water sensor probe in a MycoLab chamber" width="1446" height="1920" loading="lazy">
+                <figcaption>Water probe in a MycoLab chamber.</figcaption>
+            </figure>
+        </div>
+
+        <figure class="story-figure story-figure--wide">
+            <img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/mycolab-chamber-sensor-array.webp" alt="Mycosense MycoLab chamber with vision and sense modules" width="1446" height="1920" loading="lazy">
+            <figcaption>MycoLab chamber: vision modules, sense boards, and cabling in one isolated block.</figcaption>
+        </figure>
+
+        <figure class="story-figure story-figure--wide">
+            <video controls playsinline preload="metadata" poster="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/mycolab-chamber-interior.webp" width="720" height="1280">
+                <source src="../../assets/images/mycosense/lab-setup/myco-tower-water-filtration-mycelium/myco-tower-chamber-sensor-test.mp4" type="video/mp4">
+            </video>
+            <figcaption>Sensor test inside a MycoLab chamber.</figcaption>
+        </figure>
+
+        <h2 id="cameras">Cameras and MycoLab</h2>
+        <p>Together with this it was fundamental to have high-resolution cameras for collecting photos in high quality of the mycelium growth and water colors. High-resolution cameras require high power, so we made custom casing, 3D-printed with cooling, for Raspberry Pi Zero 2 W and a Raspberry Pi Camera Module 3 with no IR filter — meaning we could collect images in the infrared spectrum, to see what the human eye can’t.</p>
+        <p>You see the complexity of these systems, that we simplified a lot for easy deployment and data collection for Mycofarming. And it’s not over yet.</p>
+
+        <div class="story-pair">
+            <figure class="story-figure">
+                <img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/raspberry-pi-camera-enclosure-closed-1.webp" alt="Mycosense Raspberry Pi camera enclosure with cooling fan" width="1920" height="1446">
+                <figcaption>Custom enclosure with cooling fan and Raspberry Pi camera cable.</figcaption>
+            </figure>
+            <figure class="story-figure">
+                <img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/raspberry-pi-zero-camera-enclosure-open.webp" alt="Mycosense Raspberry Pi Zero and camera module in open 3D-printed enclosure" width="1920" height="1446" loading="lazy">
+                <figcaption>Raspberry Pi Zero 2 W and camera, open on the bench.</figcaption>
+            </figure>
+        </div>
+
+        <div class="story-pair">
+            <figure class="story-figure">
+                <img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/raspberry-pi-zero-camera-enclosure-cad-1.webp" alt="CAD model of Mycosense Raspberry Pi Zero 2 W and Camera Module 3 enclosure" width="1920" height="1446" loading="lazy">
+                <figcaption>CAD of the Pi Zero 2 W + Camera Module 3 case.</figcaption>
+            </figure>
+            <figure class="story-figure">
+                <img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/mycolab-vision-and-sense-modules.webp" alt="Mycosense MycoLab vision and sense modules with Raspberry Pi camera cables" width="1920" height="1446" loading="lazy">
+                <figcaption>MycoLab Vision and Sense modules, ready to deploy.</figcaption>
+            </figure>
+        </div>
+
+        <h2 id="myco-towers">Myco towers</h2>
+        <p>For smooth testing of water filters we designed and 3D-printed an improvement of Mycofarming MycoTowers — specialized containers for water filtration, connected with automated water pumps for continuous water cleaning. This miniaturized system is meant to test the working principles of mycofiltration, that is being applied at scale in bigger plants for industrial water cleaning.</p>
+
+        <div class="story-pair">
+            <figure class="story-figure">
+                <img src="../../assets/images/mycosense/lab-setup/myco-tower-water-filtration-mycelium/myco-tower-printed-parts.webp" alt="Mycosense myco tower 3D-printed cylinders, pumps, and tubing" width="1920" height="1446" loading="lazy">
+                <figcaption>3D-printed tower parts, pumps, and tubing.</figcaption>
+            </figure>
+            <figure class="story-figure">
+                <img src="../../assets/images/mycosense/lab-setup/myco-tower-water-filtration-mycelium/myco-tower-stand-and-pump.webp" alt="Mycosense myco tower on stand with recirculating pump" width="1446" height="1920" loading="lazy">
+                <figcaption>A tower on its stand, pump and recirculation line fitted.</figcaption>
+            </figure>
+        </div>
+
+        <figure class="story-figure story-figure--wide">
+            <img src="../../assets/images/mycosense/lab-setup/myco-tower-water-filtration-mycelium/myco-tower-recirculation-running-1.webp" alt="Mycosense myco tower recirculating water through mycelium substrate" width="1446" height="1920" loading="lazy">
+            <figcaption>Running: water recirculating through mycelium substrate.</figcaption>
+        </figure>
+
+        <figure class="story-figure story-figure--wide">
+            <video controls playsinline preload="metadata" poster="../../assets/images/mycosense/lab-setup/myco-tower-water-filtration-mycelium/myco-tower-recirculation-running-2.webp" width="720" height="1280">
+                <source src="../../assets/images/mycosense/lab-setup/myco-tower-water-filtration-mycelium/myco-tower-recirculation.mp4" type="video/mp4">
+            </video>
+            <figcaption>Myco tower recirculation, in the chamber.</figcaption>
+        </figure>
+
+        <h2 id="outdoor">Outdoor LoRaWAN sensors</h2>
+        <p>Other sensors that we tried are outdoor sensors, ending up with LoRaWAN-powered devices for soil moisture, electric conductivity, and temperature. These sensors have been applied to passive mushroom blocks placed in water streams for passive pollutant absorption, and always-on data collection — as the LoRaWAN communication protocol covers 100% of Dutch territory.</p>
+
+        <div class="story-pair">
+            <figure class="story-figure">
+                <img src="../../assets/images/mycosense/outdoor-sensor/outdoor-sensor-enclosure-in-grow-bags.webp" alt="Mycosense outdoor sensor enclosure connected to a grow bag" width="1446" height="1920" loading="lazy">
+                <figcaption>Outdoor enclosure, cable into a grow bag.</figcaption>
+            </figure>
+            <figure class="story-figure">
+                <img src="../../assets/images/mycosense/outdoor-sensor/soil-moisture-probe.webp" alt="Mycosense soil moisture probe connected to outdoor enclosure" width="1446" height="1920" loading="lazy">
+                <figcaption>Soil moisture / conductivity probe.</figcaption>
+            </figure>
+        </div>
+
+        <h2 id="why">Why we kept going</h2>
+        <p>Overall: a lot of work, little funding. Let me tell you — the Province of Noord-Holland helped a lot co-funding this project, but the other co-funding was in kind on our side, meaning only part of our work (about 30%) was paid.</p>
+        <p>We believe in sustainable technologies. That’s why for two years we made the effort of developing this technology for a better planet, cleaner water, and reaching the <a href="https://sdgs.un.org/goals" rel="noopener noreferrer" target="_blank">UN Sustainable Development Goals</a>. This is our mission that drives our efforts and makes us stubborn to keep working aside from profit.</p>
+        <p>Thanks to Juan and <a href="https://www.mycofarming.nl/" rel="noopener noreferrer" target="_blank">Mycofarming</a>, to <a href="https://www.kcgroup.nl/" rel="noopener noreferrer" target="_blank">KC Group</a> for the subsidy path, to the <a href="https://www.noord-holland.nl/" rel="noopener noreferrer" target="_blank">Province of Noord-Holland</a>, and to <a href="../dlab.html">DLAB</a> for the room where this started.</p>
+
+        <div class="cta-section">
+            <a href="mailto:info@olivabot.com" class="cta-button">Get in Touch</a>
+        </div>
+
+        <h2 id="gallery">Gallery</h2>
+        <p>MycoLab sensors and cameras, myco towers, outdoor probes.</p>
+        <div class="gallery">
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/raspberry-pi-camera-enclosure-closed-1.webp" alt="Mycosense Raspberry Pi camera enclosure with cooling fan" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/raspberry-pi-camera-enclosure-closed-2.webp" alt="Mycosense Raspberry Pi camera enclosure, camera lens view" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/raspberry-pi-zero-camera-enclosure-open.webp" alt="Open Raspberry Pi Zero camera enclosure" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/raspberry-pi-zero-camera-enclosure-interior.webp" alt="Raspberry Pi Zero 2 W and camera inside enclosure" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/raspberry-pi-zero-camera-enclosure-cad-1.webp" alt="CAD model of the camera enclosure" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/raspberry-pi-zero-camera-enclosure-cad-2.webp" alt="CAD assembly of the camera enclosure" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/mycolab-vision-sensor-module.webp" alt="MycoLab Vision sensor module" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/mycolab-chamber-sensor-array.webp" alt="MycoLab chamber sensor array" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/mycolab-chamber-interior.webp" alt="Interior of a MycoLab growth chamber" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/mycolab-water-sensor-in-chamber.webp" alt="Water sensor in a MycoLab chamber" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/mycolab-water-sensor-close.webp" alt="Water sensor probe close-up" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/mycolab-vision-2-and-sense-2.webp" alt="MycoLab Vision 2 and Sense 2 modules" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/mycolab-vision-and-sense-modules.webp" alt="MycoLab vision and sense modules" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/mycolab-sense-and-vision-bench.webp" alt="MycoLab Sense and Vision on the lab bench" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/mycolab-tds-sensor-and-controller.webp" alt="TDS water sensor and controller" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/mycosense-sensors-setup-raspberry-pi/mycolab-power-hub-and-controllers.webp" alt="MycoLab power hub and microcontroller boards" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/myco-tower-water-filtration-mycelium/myco-tower-parts-and-slicer.webp" alt="Myco tower parts and slicer setup" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/myco-tower-water-filtration-mycelium/myco-tower-printed-parts.webp" alt="Myco tower 3D-printed parts" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/myco-tower-water-filtration-mycelium/myco-tower-pump-assembly.webp" alt="Myco tower pump assembly" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/myco-tower-water-filtration-mycelium/myco-tower-assemblies-on-desk.webp" alt="Myco tower assemblies on the desk" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/myco-tower-water-filtration-mycelium/myco-tower-stand-and-pump.webp" alt="Myco tower on stand with pump" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/myco-tower-water-filtration-mycelium/myco-tower-substrate-irrigation-1.webp" alt="Myco tower irrigating substrate" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/myco-tower-water-filtration-mycelium/myco-tower-substrate-irrigation-2.webp" alt="Close-up of myco tower dripping onto substrate" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/myco-tower-water-filtration-mycelium/myco-tower-submerged-pump.webp" alt="Myco tower pump submerged in water" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/myco-tower-water-filtration-mycelium/myco-tower-recirculation-running-1.webp" alt="Myco tower recirculation running" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/lab-setup/myco-tower-water-filtration-mycelium/myco-tower-recirculation-running-2.webp" alt="Myco tower recirculation close-up" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/outdoor-sensor/outdoor-sensor-enclosure-in-grow-bags.webp" alt="Outdoor sensor enclosure in grow bags" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/outdoor-sensor/soil-probe-in-grow-bag.webp" alt="Soil probe in a grow bag" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/mycosense/outdoor-sensor/soil-moisture-probe.webp" alt="Soil moisture probe" loading="lazy"></div>
+        </div>
+        <p class="gallery-caption">Mycosense with Mycofarming, 2024–2026. MycoLab, myco towers, outdoor LoRaWAN.</p>
+    </main>
+<footer id="footer"></footer>
+    <script src="../../assets/js/navbar.js"></script>
+    <script src="../../assets/js/footer.js"></script>
+</body>
+</html>
