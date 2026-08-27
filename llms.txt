@@ -1,0 +1,20 @@
+# Olivabot
+
+> Olivabot B.V. (Amsterdam, Netherlands) builds arboreal robots for agriculture and helps growers choose the right farm robot.
+
+Olivabot is a Dutch company. We build robots that work in tree canopies (Gibbon Bot, field-tested in olive groves) and we advise farms and agritech teams on which agricultural robots can actually help now.
+
+## Choose the right farm robot
+
+- [Agriculture robotics consulting](https://olivabot.com/en/services/agriculture-robotics.html): 45-minute call + written report, €500 excl. VAT. Independent advice for growers, farm managers, cooperatives, and agritech teams in the EU. Not a vendor pitch.
+
+## Other public pages
+
+- [Home](https://olivabot.com/en/index.html)
+- [Services](https://olivabot.com/en/services.html)
+- [Web app first version (EU server)](https://olivabot.com/en/services/web-app-mvp.html)
+- [Gibbon Bot](https://olivabot.com/en/projects/gibbon-bot.html)
+- [About / legal entity](https://olivabot.com/en/about.html)
+- [Contact](https://olivabot.com/en/contact.html): info@olivabot.com / services@olivabot.com
+
+Optional file for tools that read `/llms.txt`. Google Search does not use it for ranking. Prefer the HTML pages above.

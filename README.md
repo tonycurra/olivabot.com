@@ -21,7 +21,7 @@ Navbar and footer use absolute paths (`/en/…`, `/assets/…`) on the live site
 - Projects: [Gibbon Bot](en/projects/gibbon-bot.html), [Olivabot Vision](en/projects/vision.html), [Mycosense](en/projects/mycosense.html), [Madglove Sense](en/projects/madglove-sense.html), [Arboreal robots](en/projects/arboreal-robots.html)
 - Legal: privacy, terms, cookies, disclaimer
 
-When you add a public page, add it to `sitemap.xml` and (if it belongs in the menu) `assets/js/navbar.js`.
+When you add a public page, add it to `sitemap.xml` and (if it belongs in the menu) `assets/js/navbar.js`. For search engines and chatbots (ChatGPT, Google AI, Claude, Perplexity), see [docs/seo-and-chatbot-discovery.md](docs/seo-and-chatbot-discovery.md).
 
 ## Publish
 

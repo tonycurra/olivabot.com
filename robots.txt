@@ -1,13 +1,12 @@
+# Allow all crawlers, including search and answer bots (Googlebot, Bingbot,
+# GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, PerplexityBot, Applebot).
+# Do not add Disallow rules for those user-agents if we want to be cited in
+# ChatGPT, Claude, Perplexity, or Google AI. Google ignores Crawl-delay.
+
 User-agent: *
 Allow: /
-
-# Sitemap location
-Sitemap: https://olivabot.com/sitemap.xml
-
-# Crawl-delay to prevent server overload
-Crawl-delay: 2
-
-# Disallow crawling of sensitive directories
 Disallow: /private/
 Disallow: /admin/
 Disallow: /.git/
+
+Sitemap: https://olivabot.com/sitemap.xml
