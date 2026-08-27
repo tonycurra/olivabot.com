@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <nav>
             <a href="${pageBase}index.html" class="nav-brand">
                 <img src="${assetBase}assets/images/logo.png" alt="Olivabot" class="nav-brand__logo" width="32" height="32" aria-hidden="true">
-                <span>Olivabot</span>
+                <span>Olivabot<span class="tm">™</span></span>
             </a>
             <ul class="nav-links" id="nav-links">
                 <li><a href="${pageBase}index.html">Home</a></li>

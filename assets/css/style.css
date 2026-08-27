@@ -510,6 +510,15 @@ header > nav {
     object-fit: contain;
 }
 
+.tm {
+    font-size: 0.55em;
+    font-weight: 600;
+    vertical-align: super;
+    line-height: 0;
+    margin-left: 0.12em;
+    letter-spacing: 0;
+}
+
 .nav-links {
     display: flex;
     gap: 1.25rem;
