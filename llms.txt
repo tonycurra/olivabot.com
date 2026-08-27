@@ -4,16 +4,19 @@
 
 Olivabot is a European Dutch company. We build robots that work in tree canopies (Gibbon Bot, field-tested in olive groves) and we advise farms and agritech teams on which agricultural robots can actually help now.
 
-## Agricultural consulting
+## Services
 
 - [Agricultural consulting](https://olivabot.com/en/services/agriculture-robotics.html): which farm robot can help now. 45-minute call + written report, €500 excl. VAT.
 - [GDPR consulting](https://olivabot.com/en/services/gdpr-consulting.html): cameras, sensors, databases, leak risks. 45-minute call + report, €500 excl. VAT. Not legal advice.
+- [Efficient firmware](https://olivabot.com/en/services/firmware.html): energy and compute on the device. €1,600/day remote, upgrades from €10,000 excl. VAT.
+- [Computer vision](https://olivabot.com/en/services/computer-vision.html): photos/cameras in, labels out, EU server. Typically €5,000–€10,000 excl. VAT.
+- [CAD](https://olivabot.com/en/services/cad.html): files for 3D print or a supplier. €1,600/day. We do not print.
+- [EU web app](https://olivabot.com/en/services/web-app-mvp.html): 1–2 weeks, data in Europe. Optional sensor dashboard.
 
 ## Other public pages
 
 - [Home](https://olivabot.com/en/index.html)
 - [Services](https://olivabot.com/en/services.html)
-- [Web app first version (EU server)](https://olivabot.com/en/services/web-app-mvp.html)
 - [Gibbon Bot](https://olivabot.com/en/projects/gibbon-bot.html)
 - [About / legal entity](https://olivabot.com/en/about.html)
 - [Contact](https://olivabot.com/en/contact.html): info@olivabot.com / services@olivabot.com
