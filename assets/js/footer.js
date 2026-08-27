@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="footer-top">
                 <a href="${pageBase}index.html" class="footer-brand">
                     <img src="${assetBase}assets/images/logo.png" alt="Olivabot" class="footer-brand__logo" width="40" height="40" aria-hidden="true">
-                    <span>Olivabot<span class="tm">™</span></span>
+                    <span>Olivabot<span class="tm">®</span></span>
                 </a>
                 <nav class="footer-nav" aria-label="Footer navigation">
                     <a href="${pageBase}index.html">Home</a>
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="footer-bottom">
                 <div class="footer-meta">
                     <a href="mailto:info@olivabot.com" class="footer-email">info@olivabot.com</a>
-                    <span>&copy; 2026 Olivabot<span class="tm">™</span>. All rights reserved.</span>
+                    <span>&copy; 2026 Olivabot<span class="tm">®</span>. All rights reserved.</span>
                 </div>
                 <div class="footer-right">
                     <div class="footer-legal">
