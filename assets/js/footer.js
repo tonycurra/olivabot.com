@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const pathSegments = currentPath.split('/').filter(s => s);
     const isInEnDir = currentPath.includes('/en/') || pathSegments.includes('en');
     // Check if path contains a nested /en/ subdirectory (e.g. legal/, projects/)
-    const isInNestedDir = pathSegments.includes('legal') || pathSegments.includes('projects');
+    const isInNestedDir = pathSegments.includes('legal') || pathSegments.includes('projects') || pathSegments.includes('services');
     
     // For file:// protocol with /en/ in path, use relative paths
     // If in nested subdir, go up to /en/; if in /en/ root, stay in /en/
@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <a href="${pageBase}projects.html">Projects</a>
                     <a href="${pageBase}services.html">Services</a>
                     <a href="${pageBase}about.html">About</a>
+                    <a href="${pageBase}dlab.html">DLAB</a>
                     <a href="${pageBase}contact.html">Contact</a>
                 </nav>
             </div>
