@@ -4,9 +4,9 @@
 
 Olivabot is a Dutch company. We build robots that work in tree canopies (Gibbon Bot, field-tested in olive groves) and we advise farms and agritech teams on which agricultural robots can actually help now.
 
-## Choose the right farm robot
+## Agricultural consulting
 
-- [Agriculture robotics consulting](https://olivabot.com/en/services/agriculture-robotics.html): 45-minute call + written report, €500 excl. VAT. Independent advice for growers, farm managers, cooperatives, and agritech teams in the EU. Not a vendor pitch.
+- [Agricultural consulting](https://olivabot.com/en/services/agriculture-robotics.html): which farm robot can help now. 45-minute call + written report, €500 excl. VAT.
 
 ## Other public pages
 
