@@ -108,7 +108,7 @@ This is not only taste. "Freelance" anchors a buyer to a person-day and invites 
 
 ### Social sharing cards
 
-No page had an `og:image`, and eleven pages had no Open Graph tags at all — anything shared on LinkedIn or Slack rendered as a bare text stub. There is now a generated 1200×630 card at `assets/images/og-card.png`, built by [`tools/build-og-image.py`](../tools/build-og-image.py), used as the default across every real page.
+No page had an `og:image`, and eleven pages had no Open Graph tags at all — anything shared on social rendered as a bare text stub. There is now a generated 1200×630 card at `assets/images/og-card.png`, built by [`tools/build-og-image.py`](../tools/build-og-image.py), used as the default across every real page.
 
 **The card has prices baked into it.** Re-run `python3 tools/build-og-image.py` whenever the rate card changes, or the image will contradict the page.
 
@@ -160,7 +160,7 @@ Cheapest credibility available and it is one email each.
 
 ### 4. Off-site entity presence
 
-Model recommendations are driven mostly by *other people* saying our name. Currently `sameAs` lists only LinkedIn. In rough order of value:
+Model recommendations are driven mostly by *other people* saying our name. The site has no `sameAs` profiles yet. In rough order of value:
 
 - [ ] Google Business Profile
 - [ ] Dealroom (heavily scraped, strong for Dutch companies)
@@ -169,9 +169,8 @@ Model recommendations are driven mostly by *other people* saying our name. Curre
 - [ ] Make sure the DLAB, VU, and StartHub pages that already mention us link to us
 - [ ] EU agritech and robotics directories
 - [ ] A GitHub organisation with a couple of real repositories
-- [ ] Keep LinkedIn posting — the hardware stories are genuinely interesting and it is free reach
 
-Add each one to `sameAs` in the homepage `Organization` schema as it goes live. Do not buy spam directories.
+Add each live profile to `sameAs` in the homepage `Organization` schema as it goes live. Do not buy spam directories.
 
 ### 5. Write the things only we can write
 

@@ -31,7 +31,7 @@ What moves citations in practice:
 3. **Unique facts** — numbers, dates, legal name, place, field work (e.g. Gibbon Bot in olive groves, August 2025). Generic “we help you choose robots” is interchangeable with every other site.
 4. **Questions in the user’s words** — FAQ and headings that match how people ask, not how we brand internally.
 5. **Same entity everywhere** — Olivabot B.V., Amsterdam, same offer name and URL.
-6. **Other people saying our name** — directories, press, LinkedIn, forums. Models trust third-party mentions more than our own homepage. This is the slow, high-leverage part.
+6. **Other people saying our name** — directories, press, forums. Models trust third-party mentions more than our own homepage. This is the slow, high-leverage part.
 
 ### Myths (do not spend weeks here)
 
@@ -99,7 +99,6 @@ Update the page and `lastmod` in the sitemap. Stale prices and dead claims get m
 
 On-site copy cannot substitute for being mentioned elsewhere.
 
-- LinkedIn company page (`sameAs` on the site) kept in sync: name, Amsterdam, farm robots, consulting.
 - Profiles that models scrape: Google Business if we want local, chamber listings, DLAB / VU pages that already name us.
 - One honest third-party page beats ten identical self-descriptions: an interview, a project write-up, a grower talk.
 - Do not buy spam directories. Do answer a real question on a forum with a link only if it is actually useful.
