@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Efficient firmware | Energy and compute | Olivabot</title>
-    <meta name="description" content="Firmware consulting for battery life and compute: sleep, radios, on-device AI. Remote. €1,600/day excl. VAT, or hourly/project. Firmware upgrades from €10,000. Amsterdam.">
+    <meta name="description" content="Firmware consulting for battery life and compute: sleep, radios, on-device AI. Remote consulting or a firmware upgrade. Olivabot, Amsterdam.">
     <link rel="canonical" href="https://olivabot.com/en/services/firmware.html" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta property="og:title" content="Efficient firmware | Olivabot" />
-    <meta property="og:description" content="Save energy and compute on the device. Remote firmware consulting €1,600/day. Upgrades from €10,000. Amsterdam." />
+    <meta property="og:description" content="Save energy and compute on the device. Remote firmware consulting or an upgrade. Amsterdam." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://olivabot.com/en/services/firmware.html" />
     <meta property="og:site_name" content="Olivabot" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Efficient firmware | Olivabot" />
-    <meta name="twitter:description" content="Firmware that lasts on battery. €1,600/day remote, upgrades from €10,000." />
+    <meta name="twitter:description" content="Firmware that lasts on battery. Remote consulting or an upgrade. Amsterdam." />
     <link rel="icon" href="../../assets/images/favicon.ico" />
     <link rel="stylesheet" href="../../assets/css/style.css?v=202608271" />
     <link rel="sitemap" type="application/xml" title="Sitemap" href="../../../sitemap.xml" />
@@ -24,7 +24,7 @@
         "@type": "Service",
         "name": "Efficient firmware consulting",
         "serviceType": "Embedded firmware consulting",
-        "description": "Remote firmware consulting to cut energy and compute on microcontrollers, sensors, radios, and on-device AI. €1,600 per day excluding VAT, or hourly or project pricing by scope. Firmware upgrades from €10,000 excluding VAT.",
+        "description": "Remote firmware consulting to cut energy and compute on microcontrollers, sensors, radios, and on-device AI. Firmware upgrades on products you already ship. Quote after a short email.",
         "url": "https://olivabot.com/en/services/firmware.html",
         "provider": {
             "@type": "Organization",
@@ -39,26 +39,11 @@
             }
         },
         "areaServed": ["NL", "EU"],
-        "offers": [
-            {
-                "@type": "Offer",
-                "name": "Firmware consulting (remote, day rate)",
-                "priceCurrency": "EUR",
-                "price": "1600",
-                "unitCode": "DAY",
-                "valueAddedTaxIncluded": false,
-                "availability": "https://schema.org/InStock"
-            },
-            {
-                "@type": "Offer",
-                "name": "Firmware upgrade",
-                "priceCurrency": "EUR",
-                "price": "10000",
-                "valueAddedTaxIncluded": false,
-                "availability": "https://schema.org/InStock",
-                "description": "Starting from €10,000 excluding VAT, depending on scope."
-            }
-        ]
+        "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "description": "Quote after a short email. Remote consulting or a firmware upgrade on a product you already ship."
+        }
     }
     </script>
     <script type="application/ld+json">
@@ -68,10 +53,10 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "How much does firmware consulting cost?",
+                "name": "How do you quote firmware work?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "€1,600 per day excluding VAT, remote. Hourly or a fixed project price if that fits the scope better. Firmware upgrades start from €10,000 excluding VAT."
+                    "text": "Email the chip and the problem. We quote that job: a few remote days, hourly, or a fixed project if the scope is clear. Firmware upgrades (existing product: longer battery, less compute, cleaner radios) are quoted the same way."
                 }
             },
             {
@@ -98,9 +83,9 @@
         .faq-item { margin-bottom: 0.5rem; padding: 0.4rem 0; border-bottom: 1px solid var(--border); }
         .faq-question { font-weight: 600; margin-bottom: 0.2rem; }
         .faq-answer { color: var(--muted); font-size: 0.95rem; }
-        .price-note { border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; margin: 1.5rem 0; }
-        .price-note h2 { margin-top: 0; }
-        .price-note p:last-child { margin-bottom: 0; }
+        .quote-note { border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; margin: 1.5rem 0; }
+        .quote-note h2 { margin-top: 0; }
+        .quote-note p:last-child { margin-bottom: 0; }
         .related { color: var(--muted); font-size: 0.95rem; }
     </style>
 </head>
@@ -123,25 +108,24 @@
             <li>Robot <em>control software</em> if you already have the arms — not a field-built machine.</li>
         </ul>
 
-        <div class="price-note">
-            <h2>Price</h2>
-            <p><strong>€1,600 per day</strong> excl. VAT, remote. Hourly or a fixed project price if the scope is clearer that way.</p>
-            <p><strong>Firmware upgrade</strong> from <strong>€10,000</strong> excl. VAT (existing product: longer battery, less compute, cleaner radios). Quote after a short email.</p>
+        <div class="quote-note">
+            <h2>Quote</h2>
+            <p>Remote consulting, or a firmware upgrade on a product you already ship (longer battery, less compute, cleaner radios). Email the chip and what dies first. We quote that job.</p>
         </div>
 
         <p><a href="mailto:services@olivabot.com?subject=Firmware" class="cta-button">Email the chip and the problem</a></p>
         <p>A few lines to <a href="mailto:services@olivabot.com">services@olivabot.com</a>: MCU, battery, what dies first (power, heat, lag).</p>
-        <p class="related">Also: <a href="computer-vision.html">computer vision</a> (server-side) · <a href="web-app-mvp.html">sensor dashboard</a> · <a href="cad.html">CAD</a></p>
+        <p class="related">Also: <a href="efficient-software.html">efficient software / local LLMs</a> · <a href="computer-vision.html">computer vision</a> · <a href="web-app-mvp.html">sensor dashboard</a> · <a href="cad.html">CAD</a></p>
 
         <div class="faq-section">
             <h2>Short answers</h2>
             <div class="faq-item">
                 <div class="faq-question">Day, hour, or project?</div>
-                <div class="faq-answer">Day rate is €1,600 excl. VAT. We switch to hourly or a fixed project when that matches the work.</div>
+                <div class="faq-answer">Whatever matches the work. We quote after a short email about the chip and the problem.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">What is “firmware upgrade”?</div>
-                <div class="faq-answer">You already have a device. We change the firmware so it lasts longer or thinks less. From €10,000 excl. VAT.</div>
+                <div class="faq-answer">You already have a device. We change the firmware so it lasts longer or thinks less. Quote after a short email.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">Do you build the hardware?</div>

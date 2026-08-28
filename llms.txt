@@ -6,11 +6,12 @@ Olivabot is a European Dutch company. We build robots that work in tree canopies
 
 ## Services
 
-- [Agricultural consulting](https://olivabot.com/en/services/agriculture-robotics.html): which farm robot can help now. 45-minute call + written report, €500 excl. VAT.
-- [GDPR consulting](https://olivabot.com/en/services/gdpr-consulting.html): cameras, sensors, databases, leak risks. 45-minute call + report, €500 excl. VAT. Not legal advice.
-- [Efficient firmware](https://olivabot.com/en/services/firmware.html): energy and compute on the device. €1,600/day remote, upgrades from €10,000 excl. VAT.
-- [Computer vision](https://olivabot.com/en/services/computer-vision.html): photos/cameras in, labels out, EU server. Typically €5,000–€10,000 excl. VAT.
-- [CAD](https://olivabot.com/en/services/cad.html): files for 3D print or a supplier. €1,600/day. We do not print.
+- [Agricultural consulting](https://olivabot.com/en/services/agriculture-robotics.html): which farm robot can help now. 45-minute call + written report.
+- [GDPR consulting](https://olivabot.com/en/services/gdpr-consulting.html): cameras, sensors, databases, leak risks. 45-minute call + report. Not legal advice.
+- [Efficient firmware](https://olivabot.com/en/services/firmware.html): energy and compute on the device. Remote consulting or a firmware upgrade.
+- [Efficient software](https://olivabot.com/en/services/efficient-software.html): C++, Rust, local LLM agents on EU servers. Fintech and robotics, Amsterdam.
+- [Computer vision](https://olivabot.com/en/services/computer-vision.html): photos/cameras in, labels out, EU server.
+- [CAD](https://olivabot.com/en/services/cad.html): files for 3D print or a supplier. We do not print.
 - [EU web app](https://olivabot.com/en/services/web-app-mvp.html): 1–2 weeks, data in Europe. Optional sensor dashboard.
 
 ## Other public pages
