@@ -790,6 +790,38 @@ footer {
     color: var(--fg);
 }
 
+.footer-services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 1.25rem;
+    font-size: 0.85rem;
+}
+
+.footer-services a {
+    color: var(--muted);
+    text-decoration: none;
+}
+
+.footer-services a:hover {
+    color: var(--accent);
+}
+
+.footer-entity {
+    margin: 0;
+    max-width: 65ch;
+    color: var(--muted);
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+.footer-entity a {
+    color: var(--muted);
+}
+
+.footer-entity a:hover {
+    color: var(--accent);
+}
+
 .footer-bottom {
     display: flex;
     align-items: flex-end;

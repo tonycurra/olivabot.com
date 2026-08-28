@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Agricultural robotics consulting, €500 | Olivabot</title>
-    <meta name="description" content="Agricultural consulting: which farm robot can help your crop now. 45-minute call + written report, €500 excl. VAT. Olivabot, Amsterdam.">
-    <link rel="canonical" href="https://olivabot.com/en/services/agriculture-robotics.html" />
+    <title>EU hosting and maintenance from €150/month | Olivabot</title>
+    <meta name="description" content="We run your app on a dedicated EU server: HTTPS, backups, monitoring, and security updates from €150/month excl. VAT. Amsterdam.">
+    <link rel="canonical" href="https://olivabot.com/en/services/hosting.html" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta property="og:title" content="Agricultural consulting | Olivabot" />
-    <meta property="og:description" content="Which farm robot can help now. 45-minute call + written report, €500 excl. VAT. Amsterdam." />
+    <meta property="og:title" content="EU hosting and maintenance from €150/month | Olivabot" />
+    <meta property="og:description" content="Dedicated EU server, backups, monitoring, security updates. From €150/month excl. VAT. Amsterdam." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://olivabot.com/en/services/agriculture-robotics.html" />
+    <meta property="og:url" content="https://olivabot.com/en/services/hosting.html" />
     <meta property="og:site_name" content="Olivabot" />
-    <meta property="og:image" content="https://olivabot.com/assets/images/gibbon-bot/gibbot-bot-mk1/gibbot-bot-mk1-in-action-1.webp" />
+    <meta property="og:image" content="https://olivabot.com/assets/images/og-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Olivabot, Amsterdam — firmware, fintech, and software engineering for hire" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Agricultural consulting | Olivabot" />
-    <meta name="twitter:description" content="Which farm robot can help now. 45-minute call + report. €500 excl. VAT. Amsterdam." />
+    <meta name="twitter:title" content="EU hosting and maintenance | Olivabot" />
+    <meta name="twitter:description" content="We keep your app online in Europe. From €150/month excl. VAT." />
     <meta name="twitter:image" content="https://olivabot.com/assets/images/og-card.png" />
     <link rel="icon" href="../../assets/images/favicon.ico" />
     <link rel="stylesheet" href="../../assets/css/style.css?v=202608281" />
@@ -24,11 +27,11 @@
     {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Agricultural consulting",
-        "alternateName": "Choose the right farm robot",
-        "serviceType": "Agricultural robotics consulting",
-        "description": "Olivabot B.V. in Amsterdam helps growers choose the right farm robot. 45-minute call and a written report. €500 excluding VAT.",
-        "url": "https://olivabot.com/en/services/agriculture-robotics.html",
+        "name": "EU hosting and maintenance",
+        "alternateName": "Managed hosting on a dedicated European server",
+        "serviceType": "Managed application hosting and maintenance",
+        "description": "Olivabot B.V. in Amsterdam runs your web application, dashboard, or vision service on a dedicated server in the European Union: HTTPS, backups, monitoring, and security updates. From €150 per month excluding VAT. Data stays in Europe and we can sign a processing agreement.",
+        "url": "https://olivabot.com/en/services/hosting.html",
         "provider": {
             "@type": "Organization",
             "name": "Olivabot B.V.",
@@ -45,10 +48,16 @@
         "offers": {
             "@type": "Offer",
             "availability": "https://schema.org/InStock",
-            "price": "500",
             "priceCurrency": "EUR",
             "valueAddedTaxIncluded": false,
-            "description": "45-minute video call and a written report within five working days. €500 excluding VAT, paid before the call."
+            "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "priceCurrency": "EUR",
+                "minPrice": "150",
+                "unitCode": "MON",
+                "billingIncrement": 1
+            },
+            "description": "From €150 per month excluding VAT. Monthly, cancel with one month's notice. New feature work is quoted separately as a fixed fee, never by the day."
         }
     }
     </script>
@@ -59,26 +68,42 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "What do I get?",
+                "name": "What does €150 per month cover?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "A 45-minute video call and a written report: which farm robots can help your crop and job now, and which cannot. €500 excluding VAT, paid before the call, report within five working days. One crop or site, one main job."
+                    "text": "A dedicated server in the European Union, HTTPS certificates, nightly backups with a tested restore, uptime monitoring, operating system and dependency security updates, and email support on working days. It does not cover new features or 24/7 phone support."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Is this a sales call for Gibbon Bot?",
+                "name": "Where is the server?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "No. Independent advice. If a tractor, a drone, or waiting is better, that is what the report says."
+                    "text": "In the European Union. Your users' data stays there and is not sent to US AI vendors unless you ask for that. Olivabot B.V. can sign a data processing agreement because we hold the data on your behalf."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Where are you?",
+                "name": "Am I locked in?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Olivabot B.V., Amsterdam. The call is remote. We work in the EU."
+                    "text": "No. You own the application. Hosting is monthly and you can cancel with one month's notice. We will move it to a server in your own name and hand over the keys."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can you host something you did not build?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sometimes. We need to read the code and the deployment first — that is the €500 assessment. If it cannot be run safely we will say so rather than take the monthly fee."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does hosting in the EU make me GDPR compliant?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Keeping data in Europe is a technical choice that helps. You still own compliance and a lawyer covers policies. For a technical risk pass see Olivabot's GDPR consulting."
                 }
             }
         ]
@@ -93,6 +118,12 @@
         .quote-note h2 { margin-top: 0; }
         .quote-note p:last-child { margin-bottom: 0; }
         .related { color: var(--muted); font-size: 0.95rem; }
+        .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin: 1rem 0 1.5rem; }
+        @media (max-width: 640px) { .compare { grid-template-columns: 1fr; } }
+        .compare-box { border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.25rem; }
+        .compare-box h3 { margin-bottom: 0.4rem; }
+        .compare-box ul { list-style: disc; padding-left: 1.2rem; }
+        .compare-box li { color: var(--muted); margin-bottom: 0.3rem; }
     </style>
     <!-- partial:breadcrumb-schema:start (generated by tools/build-partials.py) -->
     <script type="application/ld+json">
@@ -102,7 +133,7 @@
         "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://olivabot.com/en/index.html"},
             {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://olivabot.com/en/services.html"},
-            {"@type": "ListItem", "position": 3, "name": "Agricultural consulting", "item": "https://olivabot.com/en/services/agriculture-robotics.html"}
+            {"@type": "ListItem", "position": 3, "name": "EU hosting &amp; maintenance", "item": "https://olivabot.com/en/services/hosting.html"}
         ]
     }
     </script>
@@ -155,41 +186,76 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="../index.html">Home</a>
             <a href="../services.html">Services</a>
-            <span>Agricultural consulting</span>
+            <span>EU hosting &amp; maintenance</span>
         </nav>
 
-        <h1>Agricultural consulting: which farm robot can actually help</h1>
-        <p class="intro">You describe the crop, the land, and the job. We say what robots (or none) can do it <strong>now</strong>. A 45-minute call and a written report for <strong>€500 excluding VAT</strong>. Olivabot B.V., Amsterdam, working across the EU.</p>
+        <h1>We keep it online, in Europe, from €150 a month</h1>
+        <p class="intro">Building the thing is the easy half. Somebody has to renew the certificate, apply the security patch, notice the disk is full, and be able to restore last night's database. <strong>Olivabot B.V.</strong> (Amsterdam) does that on a dedicated server in the <strong>European Union</strong>, from <strong>€150 per month excluding VAT</strong>.</p>
 
+        <h2>What you get every month</h2>
         <ul class="features">
-            <li>Harvest, prune, spray, weed, monitor — matched to groves, orchards, and farms, not a demo field.</li>
-            <li>Years on robots, hardware, AI, and batteries, including <a href="../projects/gibbon-bot.html">Gibbon Bot</a> in olive groves. Not a sales call for our machine.</li>
-            <li>One crop or site, one job. Email crop, size, and what hurts; we quote, then book the call.</li>
+            <li><strong>A dedicated EU server</strong> — not a shared box, not a US region. Your users' data stays in Europe.</li>
+            <li><strong>Backups that have been restored</strong> — nightly, encrypted, and tested. A backup nobody has restored is a rumour.</li>
+            <li><strong>Security updates</strong> — operating system and dependencies patched, HTTPS certificates renewed before they expire.</li>
+            <li><strong>Uptime monitoring</strong> — we find out it is down before your customer emails you.</li>
+            <li><strong>Email support on working days</strong> — a person who already knows how your system is built.</li>
+            <li><strong>A processing agreement</strong> — we can sign one, because we are holding your data on your behalf.</li>
         </ul>
+
+        <h2>What it is not</h2>
+        <p>It is not new features. When you want the product to do something it did not do before, that is <strong>a separate fixed fee</strong>, quoted before we touch it. It is not a 24/7 phone line with an on-call rota, and we will not pretend otherwise. It is not GDPR compliance — see <a href="software.html#gdpr">GDPR consulting</a> for what a technical review can and cannot do.</p>
+
+        <h2>Run it yourself, or let us?</h2>
+        <div class="compare">
+            <div class="compare-box">
+                <h3>Run it yourself</h3>
+                <ul>
+                    <li>You have someone who enjoys servers</li>
+                    <li>You want the credentials in your name only</li>
+                    <li>Downtime for a day is survivable</li>
+                </ul>
+            </div>
+            <div class="compare-box">
+                <h3>Let us run it</h3>
+                <ul>
+                    <li>Nobody on the team wants the pager</li>
+                    <li>Real customers depend on it staying up</li>
+                    <li>Data has to stay in the EU and be explainable</li>
+                </ul>
+            </div>
+        </div>
 
         <div class="quote-note">
             <h2>Price</h2>
-            <p><strong>€500</strong> excluding VAT. Paid before the call. Written report within five working days. One crop or site, one main job.</p>
-            <p>If the answer turns into a build — sensors, vision, a dashboard — we quote that separately. The report is useful on its own and you owe us nothing after it.</p>
+            <p><strong>From €150 per month</strong> excluding VAT for a small app on one server. More if it needs a GPU, heavy storage, or several machines — we tell you the number before you commit.</p>
+            <p>Monthly, cancel with one month's notice. <strong>You own the application.</strong> If you leave, we move it to a server in your name and hand over the keys rather than holding it hostage.</p>
         </div>
 
-        <p><a href="mailto:services@olivabot.com?subject=Agricultural%20consulting" class="cta-button">Email the farm and the job</a></p>
-        <p>Write to <a href="mailto:services@olivabot.com">services@olivabot.com</a>. A few lines are enough.</p>
-        <p class="related">Also: <a href="software.html">computer vision for groves</a> · <a href="firmware.html">firmware</a></p>
+        <p><a href="mailto:services@olivabot.com?subject=EU%20hosting%20and%20maintenance" class="cta-button">Ask us to run it</a></p>
+        <p>A few lines to <a href="mailto:services@olivabot.com">services@olivabot.com</a>: what the app does, roughly how many users, whether it needs a GPU, and who runs it today.</p>
+        <p class="related">Usually paired with: <a href="software.html">EU web app</a> · <a href="software.html">computer vision</a> · <a href="fintech.html">local LLM agents</a> · <a href="software.html#gdpr">GDPR</a></p>
 
         <div class="faq-section">
             <h2>Short answers</h2>
             <div class="faq-item">
-                <div class="faq-question">What do I get?</div>
-                <div class="faq-answer">45-minute call + written report, €500 excl. VAT. What can help now, what cannot, and why.</div>
+                <div class="faq-question">What does €150/month cover?</div>
+                <div class="faq-answer">EU server, HTTPS, tested nightly backups, monitoring, security updates, email support on working days. Not new features.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">Is this a sales call for Gibbon Bot?</div>
-                <div class="faq-answer">No. If a tractor, a drone, or waiting is better, that is what we write.</div>
+                <div class="faq-question">Where is the server?</div>
+                <div class="faq-answer">In the EU. Nothing goes to US AI vendors unless you ask. We can sign a processing agreement.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">Where are you?</div>
-                <div class="faq-answer">Amsterdam. The call is remote. EU.</div>
+                <div class="faq-question">Am I locked in?</div>
+                <div class="faq-answer">No. You own the app. Monthly, one month's notice, and we hand over the keys.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Will you host something you did not build?</div>
+                <div class="faq-answer">Sometimes. Reading the code and the deployment first is the €500 assessment. If it is not safe to run, we say so.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">GDPR-proof?</div>
+                <div class="faq-answer">No. Data can stay in Europe; you still own compliance. See <a href="software.html#gdpr">GDPR consulting</a>.</div>
             </div>
         </div>
     </main>
