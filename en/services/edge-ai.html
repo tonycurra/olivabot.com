@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Firmware and embedded consulting, Amsterdam | Olivabot</title>
-    <meta name="description" content="Embedded engineering consultancy in Amsterdam: C/C++, ARM, RTOS, BLE, LoRaWAN, battery life. Email for a quote. No day rates.">
-    <link rel="canonical" href="https://olivabot.com/en/services/firmware.html" />
+    <title>Edge AI: local inference without the cloud | Olivabot</title>
+    <meta name="description" content="On-device AI that runs without a cloud connection: image recognition, local reasoning for robots, battery-powered models that read sensors and act. Amsterdam. Email for a quote.">
+    <link rel="canonical" href="https://olivabot.com/en/services/edge-ai.html" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta property="og:title" content="Firmware and embedded consulting, Amsterdam | Olivabot" />
-    <meta property="og:description" content="C/C++, ARM, RTOS, BLE, LoRaWAN, battery life, on-device ML. Email for a quote. No day rates. Amsterdam." />
+    <meta property="og:title" content="Edge AI, local inference | Olivabot" />
+    <meta property="og:description" content="Image recognition, local reasoning for robots, battery-powered AI that acts on sensor data. No cloud required. Amsterdam." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://olivabot.com/en/services/firmware.html" />
+    <meta property="og:url" content="https://olivabot.com/en/services/edge-ai.html" />
     <meta property="og:site_name" content="Olivabot" />
     <meta property="og:image" content="https://olivabot.com/assets/images/og-card.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Olivabot, Amsterdam — firmware, fintech, and software engineering for hire" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Firmware and embedded consulting | Olivabot" />
-    <meta name="twitter:description" content="C/C++, ARM, RTOS, BLE, LoRaWAN, battery life. Email for a quote. No day rates. Amsterdam." />
+    <meta name="twitter:title" content="Edge AI, local inference | Olivabot" />
+    <meta name="twitter:description" content="On-device image recognition and sensor AI without a cloud connection. Email for a quote." />
     <meta name="twitter:image" content="https://olivabot.com/assets/images/og-card.png" />
     <link rel="icon" href="../../assets/images/favicon.ico" />
     <link rel="stylesheet" href="../../assets/css/style.css?v=202608281" />
@@ -27,11 +27,11 @@
     {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Firmware and embedded software engineering consultancy",
-        "alternateName": "Embedded C/C++ consultant, Amsterdam",
-        "serviceType": "Embedded firmware development and consulting",
-        "description": "Olivabot B.V. in Amsterdam is hired for embedded firmware work: C and C++ on ARM microcontrollers, RTOS, BLE, LoRaWAN and Wi-Fi, battery life, on-device machine learning, and the CAD for the enclosure. Work is remote and autonomous, in milestones: email first, then an outline, then steps you can check and continue if you like. Hardest risks first. No day rate. Email for a quote.",
-        "url": "https://olivabot.com/en/services/firmware.html",
+        "name": "Edge AI and on-device inference",
+        "alternateName": "Local inference without cloud, Amsterdam",
+        "serviceType": "On-device machine learning and edge AI engineering",
+        "description": "Olivabot B.V. in Amsterdam builds AI that runs on the device, without a cloud connection: image recognition, local reasoning for robots, and battery-powered models that read sensors and act. Work is remote and autonomous, in milestones: email first, then an outline, then steps you can check and continue if you like. Hardest risks first. No day rate. Email for a quote.",
+        "url": "https://olivabot.com/en/services/edge-ai.html",
         "provider": {
             "@type": "Organization",
             "name": "Olivabot B.V.",
@@ -48,21 +48,15 @@
         "offers": [
             {
                 "@type": "Offer",
-                "name": "Assessment — written diagnosis and a plan",
+                "name": "Feasibility — whether it will fit",
                 "availability": "https://schema.org/InStock",
-                "description": "Email, or a call if you ask, plus a written report: what is wrong with the firmware, what to do, and what it will take. Email for a quote."
+                "description": "Whether a model can actually run on your chip, battery, and sensors, and what it would take. Email for a quote."
             },
             {
                 "@type": "Offer",
-                "name": "Firmware in milestones",
+                "name": "Edge AI in milestones",
                 "availability": "https://schema.org/InStock",
-                "description": "Working firmware delivered in milestones. Email, then an outline, then steps you can check, pay, and continue — or stop. Hardest risks first. Email for a quote."
-            },
-            {
-                "@type": "Offer",
-                "name": "Further milestones",
-                "availability": "https://schema.org/InStock",
-                "description": "More steps after the outline, each quoted in writing. You check the work, pay, and continue if you like. Never billed by the day or hour. Email for a quote."
+                "description": "Working on-device inference: image recognition, local robot reasoning, or a sensor-to-action loop. Email, then an outline, then steps you can check, pay, and continue — or stop. Hardest risks first. Email for a quote."
             }
         ]
     }
@@ -74,10 +68,18 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "What does embedded firmware consulting cost?",
+                "name": "Does the model need the internet?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Fees vary with the job. Email services@olivabot.com with the chip, the stack, and what is going wrong. Email first; a call on request. Then a project outline, then work in milestones — remote and autonomous, hardest risks first. Each step is quoted in writing. You check the work, pay, and continue if you like — or stop. No day rate."
+                    "text": "No. That is the point. Inference runs on the device. A radio can still exist for logs or updates, but recognition and the next action do not wait on a cloud API."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is this the same as computer vision on a server?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Photos on an EU server are a different service. Edge AI is the model that has to fit on a microcontroller, a camera module, or a small board next to the sensors — including when the radio is off."
                 }
             },
             {
@@ -85,31 +87,15 @@
                 "name": "Will you take a small job?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, if it is well defined. A driver that will not talk to a sensor, a device that dies in three days instead of a month, a BLE connection that drops — start with a written assessment. If the fix turns out to be small, we quote a small fee for it rather than opening a project."
+                    "text": "Yes, if it is well defined. A classifier on a handful of sensor channels, or a yes/no image check on a known camera, can be a first milestone. If it will not fit on the battery or the chip, we say so up front."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Which chips and stacks do you work with?",
+                "name": "Do you sell cameras or robots?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "C and C++ on ARM Cortex-M, ESP32 and nRF families, FreeRTOS and bare metal, I2C, SPI, UART and CAN, BLE, Wi-Fi and LoRaWAN, JTAG and SWD debugging, and small machine-learning models running on the microcontroller itself."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Do you build or assemble the hardware?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "No. Olivabot delivers code and CAD files. We do not run a 3D printer, assemble devices, or operate a production line. You flash the board."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How fast can you start?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Usually within a week for a small job. Email the chip and what is going wrong; we reply within two working days with a quote."
+                    "text": "No. Code, models, and CAD files. You own the hardware. Gibbon Bot is our own experimental prototype and does not work yet; it is not for sale yet."
                 }
             }
         ]
@@ -124,10 +110,6 @@
         .quote-note h2 { margin-top: 0; }
         .quote-note p:last-child { margin-bottom: 0; }
         .related { color: var(--muted); font-size: 0.95rem; }
-        .rates { width: 100%; border-collapse: collapse; margin: 1rem 0; }
-        .rates th, .rates td { text-align: left; padding: 0.6rem 0.75rem 0.6rem 0; border-bottom: 1px solid var(--border); vertical-align: top; }
-        .rates th { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
-        .rates td:last-child { font-weight: 700; white-space: nowrap; }
         .stack-list { color: var(--muted); font-size: 0.95rem; }
     </style>
     <!-- partial:breadcrumb-schema:start (generated by tools/build-partials.py) -->
@@ -138,7 +120,7 @@
         "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://olivabot.com/en/index.html"},
             {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://olivabot.com/en/services.html"},
-            {"@type": "ListItem", "position": 3, "name": "Firmware &amp; embedded", "item": "https://olivabot.com/en/services/firmware.html"}
+            {"@type": "ListItem", "position": 3, "name": "Edge AI", "item": "https://olivabot.com/en/services/edge-ai.html"}
         ]
     }
     </script>
@@ -191,64 +173,60 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="../index.html">Home</a>
             <a href="../services.html">Services</a>
-            <span>Firmware &amp; embedded</span>
+            <span>Edge AI</span>
         </nav>
 
-        <h1>Firmware and embedded engineering consultancy, Amsterdam</h1>
-        <p class="intro">Your device dies in three days instead of a month. The BLE link drops. A sensor driver does not work and nobody left on the team wrote it. <strong>Olivabot B.V.</strong> (Amsterdam) is hired to fix exactly that. <strong>Remote, autonomous, email first.</strong> Outline, then milestones you can check, pay, and continue — or stop. Hardest risks first. No day rate, no timesheet. Email <a href="mailto:services@olivabot.com">services@olivabot.com</a>. Across the EU, invoiced from a Dutch BV.</p>
+        <h1>Edge AI: the model runs here, not in a cloud</h1>
+        <p class="intro">A camera that has to label a frame with no network. A robot that has to decide the next move when the radio is down. A battery-powered node that reads sensors and acts — sleep, wake, alarm, move — without sending the raw data anywhere. <strong>Olivabot B.V.</strong> (Amsterdam) builds that. <strong>Remote, autonomous, email first.</strong> Outline, then milestones you can check, pay, and continue — or stop. Hardest risks first. Email <a href="mailto:services@olivabot.com">services@olivabot.com</a>.</p>
 
         <h2>How we charge</h2>
-        <p><strong>No day rate, no hourly rate, no timesheet.</strong> Email, then a project outline, then we work in milestones — remotely and autonomously. Each step is quoted in writing before it starts. We say up front what we think it will take, and where it might go wrong, and start with the hardest problems. You check the work, pay, and decide whether to continue. A call if you ask.</p>
+        <p><strong>No day rate, no hourly rate, no timesheet.</strong> Email, then a project outline, then we work in milestones — remotely and autonomously. We say up front what we think it will take, and where it might go wrong, and start with the hardest problems. Each step is quoted in writing. You check the work, pay, and decide whether to continue. A call if you ask.</p>
 
-        <h2>What we actually do</h2>
+        <h2>What this actually is</h2>
         <ul class="features">
-            <li><strong>Battery life.</strong> Sleep states, duty cycling, when to wake the radio, what to stop doing on the chip. The most common reason people call.</li>
-            <li><strong>Radios.</strong> BLE, Wi-Fi, and LoRaWAN in software — pairing that fails, ranges that disappoint, always-on outdoor nodes that have to survive a Dutch winter.</li>
-            <li><strong>Drivers and integration.</strong> I2C, SPI, UART, CAN. Getting a new sensor to talk, or an old one to stop lying.</li>
-            <li><strong>On-device machine learning.</strong> Small models on the microcontroller — see <a href="edge-ai.html">edge AI</a> when inference is the job, not a side effect of the firmware.</li>
-            <li><strong>Debugging somebody else's firmware.</strong> JTAG and SWD, an oscilloscope, and patience. We are comfortable inheriting an undocumented codebase.</li>
-            <li><strong>Code review and a second opinion.</strong> A read of the design before you commit to it — the assessment exists for exactly this.</li>
+            <li><strong>Image recognition on the device.</strong> A compact camera or an existing sensor. Labels, a confidence score, and an explicit “unclear” — not a round trip to a US API.</li>
+            <li><strong>Local reasoning for robots.</strong> The loop that must keep running when the link drops: what the sensors say, what that means, what to do next. Coordination with motion is <a href="firmware.html">firmware</a>; this page is the on-board decision.</li>
+            <li><strong>Battery-powered AI on sensors.</strong> Classify soil, motion, light, gas, or whatever the probe already measures, then act: log a rare event, wake the radio, stay asleep. The model is part of the power budget, not an afterthought.</li>
         </ul>
-        <p class="stack-list">Stack: C, C++, ARM Cortex-M, ESP32, nRF, FreeRTOS and bare metal, Zephyr where it fits, Git, and whatever your build system already is.</p>
+        <p class="stack-list">Tiny models on microcontrollers (Cortex-M, ESP32, nRF), slightly larger ones on a camera module or a small NPU next to the board. C, C++, and whatever runtime the chip already has. Quantised. Measured on the hardware you will ship, not on a laptop.</p>
 
-        <h2 id="cad">CAD, when the code needs somewhere to live</h2>
-        <p>Firmware work usually runs into a physical problem: the board needs a case, the sensor needs a mount, the thing needs to survive outdoors. We design parts, mounts, and enclosures as <strong>files you own</strong> — print them yourself or send them to a manufacturer. Email for a quote; a simple enclosure is typically one day.</p>
-        <p>We will also sit in design-for-manufacturing calls with your supplier if your team is not technical. What we do <strong>not</strong> do is run the printer or assemble the devices.</p>
+        <h2>What it is not</h2>
+        <p>It is not a ChatGPT wrapper and not a model that phones home for every frame. Photos that can live on a <a href="software.html">dedicated EU server</a> are a different job — useful when you have a network and do not need an answer in milliseconds on a battery. We will say which of the two you actually have.</p>
+        <p>We do not sell cameras, NPUs, or robots. We deliver code and, if needed, <a href="firmware.html#cad">CAD</a>. You flash the board. <a href="../projects/gibbon-bot.html">Gibbon Bot</a> is our own experimental prototype and <strong>does not work yet</strong>; it is not a product and not for sale yet.</p>
+
+        <h2>Honest about the model</h2>
+        <p>A model is only as good as the labelled data you have, and only as small as the chip and the battery allow. If it will not fit, or if there is not enough data to make something useful, we say that up front — not after you have paid for a training run. We ship confidence and “unclear” rather than inventing precision.</p>
 
         <h2>Where this has been proven</h2>
-        <p>We put a battery, a microcontroller, and a sensor onto a <a href="../projects/madglove-sense.html">finger ring for Madglove</a> without disturbing the mechanics of a medical device. We built always-on <a href="../projects/mycosense.html">LoRaWAN soil probes for Mycofarming</a> that sit outdoors in water streams. And we write firmware and battery budgets for <a href="../projects/gibbon-bot.html">Gibbon Bot</a>, our own experimental arboreal prototype — still in the lab, not a working farm robot.</p>
+        <p>On-device movement classification on a <a href="../projects/madglove-sense.html">finger-ring sensor for Madglove</a> — battery, microcontroller, and a model small enough to sit on a finger. A feasibility study on <a href="../projects/vision.html">on-board canopy vision</a> without a cloud connection (the robot it was meant for does not climb yet). The same battery-and-chip discipline as the <a href="../projects/mycosense.html">outdoor LoRaWAN probes for Mycofarming</a>.</p>
 
         <div class="quote-note">
             <h2>How to start</h2>
-            <p>Email the chip, the stack, and what is going wrong. Two or three sentences is enough — <em>"nRF52, runs on a CR2032, supposed to last six months, lasts nine days"</em> is a perfect brief.</p>
-            <p>You get a reply within <strong>two working days</strong>. We work remote and autonomously toward the agreed milestone, hardest risks first. A call or a video call if you ask. If it is not worth hiring anyone for, we will tell you that instead.</p>
+            <p>Email the device, the sensors or camera, and what it should recognise or do. Two or three sentences is enough — <em>“ESP32-S3, a cheap camera, has to say fruit / leaf / unclear, no cloud, CR123A”</em> is a perfect brief.</p>
+            <p>Reply within <strong>two working days</strong>. We work remote and autonomously, hardest risks first. A call or a video call if you ask. If it will not run on that battery, we will tell you that instead.</p>
         </div>
 
-        <p><a href="mailto:services@olivabot.com?subject=Firmware" class="cta-button">Email the chip and the problem</a></p>
+        <p><a href="mailto:services@olivabot.com?subject=Edge%20AI" class="cta-button">Email the device and the job</a></p>
         <p>To <a href="mailto:services@olivabot.com">services@olivabot.com</a>. Under NDA if you prefer — just ask first.</p>
-        <p class="related">Also: <a href="edge-ai.html">edge AI</a> · <a href="software.html">software for devices and data</a> · <a href="fintech.html">fintech engineering</a> · <a href="hosting.html">EU hosting</a> · <a href="../work.html">client work</a></p>
+        <p class="related">Also: <a href="firmware.html">firmware &amp; embedded</a> · <a href="software.html">software for devices and data</a> · <a href="hosting.html">EU hosting</a> · <a href="../work.html">client work</a></p>
 
         <div class="faq-section">
             <h2>Short answers</h2>
             <div class="faq-item">
-                <div class="faq-question">What does embedded firmware consulting cost?</div>
-                <div class="faq-answer">Email <a href="mailto:services@olivabot.com">services@olivabot.com</a> with the chip and the problem. Outline, then milestones, remote and autonomous. Hardest risks first. Each step quoted in writing. No day rate.</div>
+                <div class="faq-question">Does it need the internet?</div>
+                <div class="faq-answer">No. Inference runs on the device. Radio is optional, for logs or updates, not for the decision.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">Will you take a small job?</div>
-                <div class="faq-answer">Yes, if it is well defined. Start with a written assessment; if the fix is small we quote a small fee for it.</div>
+                <div class="faq-question">Same as vision on a server?</div>
+                <div class="faq-answer">No. Server vision is <a href="software.html">software</a>. This page is the model that has to fit next to the sensors, including when the radio is off.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">Which chips?</div>
-                <div class="faq-answer">ARM Cortex-M, ESP32, nRF. C and C++, FreeRTOS or bare metal. BLE, Wi-Fi, LoRaWAN.</div>
+                <div class="faq-question">How do you charge?</div>
+                <div class="faq-answer">Email <a href="mailto:services@olivabot.com">services@olivabot.com</a>. Outline, then milestones, remote and autonomous. Hardest risks first. Each step quoted in writing. No day rate.</div>
             </div>
             <div class="faq-item">
-                <div class="faq-question">Do you build the hardware?</div>
-                <div class="faq-answer">No. Code and CAD files. You flash the board. We do not run printers or assemble devices.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">How fast can you start?</div>
-                <div class="faq-answer">Usually within a week for a small job. Reply within two working days either way.</div>
+                <div class="faq-question">Do you sell the hardware?</div>
+                <div class="faq-answer">No. Code, models, CAD files. You flash the board. We do not sell cameras or robots.</div>
             </div>
         </div>
     </main>

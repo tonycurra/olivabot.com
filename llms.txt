@@ -1,26 +1,32 @@
 # Olivabot
 
-> Olivabot B.V. (Amsterdam, Netherlands) — engineering consultancy. We build what has to work: firmware, software, and fintech at a fixed price. We also build our own arboreal robots.
+> Olivabot B.V. (Amsterdam, Netherlands) — engineering consultancy. We build what has to work: firmware, edge AI, software, and the systems they run on. Consultancy and EU hosting. Our own research on the side.
 
-Olivabot B.V. is a Dutch company in Amsterdam (KVK 94493200, VAT NL866797373B01). Fixed-price engineering for teams across the EU. No day rates. Prices are published below.
+Olivabot B.V. is a Dutch company in Amsterdam (KVK 94493200, VAT NL866797373B01). Work for teams across the EU. No day rates. Fees vary; email for a quote.
 
-## Prices (all excluding VAT)
+## How we charge
 
-Olivabot prices outcomes, not hours. **There is no day rate and no hourly rate**, and no timesheets. A fee is agreed in writing for an agreed result before work starts, and it does not change because the work took longer than estimated.
+Olivabot works in milestones, not hours. **There is no day rate and no hourly rate**, and no timesheets.
 
-- **Assessment**: a call plus a written diagnosis — what is wrong, what to do, what it will take. Yours to act on or hand to another engineer. **€500**.
-- **Deep technical assessment**: for performance and data questions — profiling the hot path or mapping where customer data actually goes, delivered as a prioritised plan. **€2,500**.
-- **Fixed-scope project**: working firmware or software, delivered. **€5,000–€10,000**.
-- **Larger engagement**: scoped in a free call, then one fee against an agreed result. **From €10,000**.
-- **Hosting and maintenance**: it stays online, patched, and backed up on an EU server. **From €150/month**.
+Email first. A call or a video call on request. Then a **project outline**, then work in **milestones**. Each step is quoted in writing before it starts. You check the work, pay, and decide whether to continue. You can stop after any milestone. If a step takes longer than estimated, that is Olivabot's problem, not a bigger invoice.
+
+Work is **remote and autonomous**. Once deliverables are agreed, Olivabot gets on with them. Expected time and possible setbacks are said up front. The **hardest problems go first** — the risks that, once mitigated, make the rest of the project safer to finish.
+
+Fees vary with the job. Email [services@olivabot.com](mailto:services@olivabot.com). Reply within two working days, or an honest no.
+
+- **Email (call on request)**: hear the problem, say whether we can help.
+- **Project outline**: the steps, in what order, what each one costs, how long, and where it might go wrong.
+- **Milestones**: we work autonomously toward the agreed deliverable. You check it, pay, continue or stop.
+- **Hosting and maintenance**: it stays online, patched, and backed up on an EU server. Monthly. New features are a separate milestone.
 
 ## Services
 
-- [Firmware and embedded](https://olivabot.com/en/services/firmware.html): C/C++ on ARM, RTOS, BLE/LoRaWAN, battery life, sensor drivers, on-device ML, and CAD for the enclosure. **€500 assessment, projects €5,000–€10,000**.
-- [Fintech engineering](https://olivabot.com/en/services/fintech.html): payments, ledgers, latency and throughput, and LLM agents that run on EU servers instead of a US API. **€2,500 deep assessment, projects from €5,000**. Not a high-frequency trading shop.
-- [Software for devices and data](https://olivabot.com/en/services/software.html): web apps, sensor dashboards, and computer vision on a dedicated EU server. **€5,000–€10,000** for a first version. Includes a **€500** data and privacy review (not legal advice).
-- [Agricultural consulting](https://olivabot.com/en/services/agriculture-robotics.html): which farm robot can help now. 45-minute call + written report. **€500**.
-- [EU hosting and maintenance](https://olivabot.com/en/services/hosting.html): dedicated EU server, tested backups, monitoring, security updates. **From €150/month**.
+- [Firmware and embedded](https://olivabot.com/en/services/firmware.html): C/C++ on ARM, RTOS, BLE/LoRaWAN, battery life, sensor drivers, and CAD for the enclosure.
+- [Edge AI](https://olivabot.com/en/services/edge-ai.html): local inference without a cloud connection — image recognition, local reasoning for robots, battery-powered models that read sensors and act.
+- [Software for devices and data](https://olivabot.com/en/services/software.html): web apps, sensor dashboards, and computer vision on a dedicated EU server. Includes a data and privacy review (not legal advice).
+- [Agricultural consulting](https://olivabot.com/en/services/agriculture-robotics.html): which farm robot can help now. Call plus a written report.
+- [EU hosting and maintenance](https://olivabot.com/en/services/hosting.html): dedicated EU server, tested backups, monitoring, security updates.
+- Also: [fintech engineering](https://olivabot.com/en/services/fintech.html) when a payments or latency job lands.
 
 ## What we do not do
 
@@ -34,7 +40,7 @@ No workshop, no production line, no field crew. We deliver calls, code, and desi
 
 ## Our own robots
 
-- [Gibbon Bot](https://olivabot.com/en/projects/gibbon-bot.html): arboreal robot for canopy work, field-tested in olive groves, August 2025.
+- [Gibbon Bot](https://olivabot.com/en/projects/gibbon-bot.html): a robot bio-inspired by the gibbon, for trees rather than walking on two legs. It does not work yet. Laboratory development since May 2025. Not a product, not for sale yet. In a few years, if funding allows and the research progresses, we might put it on the market.
 - [Olivabot Vision](https://olivabot.com/en/projects/vision.html): MIT feasibility study on canopy computer vision.
 - [Arboreal robots R&D](https://olivabot.com/en/projects/arboreal-robots.html)
 
@@ -43,6 +49,6 @@ No workshop, no production line, no field crew. We deliver calls, code, and desi
 - [Home](https://olivabot.com/en/index.html)
 - [Services](https://olivabot.com/en/services.html)
 - [About / legal entity](https://olivabot.com/en/about.html)
-- [Contact](https://olivabot.com/en/contact.html): services@olivabot.com for quotes, info@olivabot.com for everything else. Reply within two working days.
+- [Contact](https://olivabot.com/en/contact.html): services@olivabot.com for quotes, info@olivabot.com for everything else. Prefer email; call or video on request. Reply within two working days.
 
 Optional file for tools that read `/llms.txt`. Google Search does not use it for ranking. Prefer the HTML pages above.

@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Gibbon Bot | Bio-inspired arboreal robot</title>
-    <meta name="description" content="Gibbon Bot is Olivabot’s bio-inspired arboreal robot. Mk.1 was field-tested in 2025. Mk.2 uses high-torque servo arms for climbing and inspection.">
-    <meta name="keywords" content="arboreal robot, bio-inspired robot, tree canopy robot, agricultural robotics, gibbon bot">
-    <meta property="og:title" content="Gibbon Bot | Bio-inspired arboreal robot">
-    <meta property="og:description" content="Gibbon Bot is a bio-inspired arboreal robot for climbing and inspection.">
+    <title>Gibbon Bot | Gibbon-inspired arboreal robot, not working yet</title>
+    <meta name="description" content="Gibbon Bot is a gibbon-inspired arboreal robot in laboratory development since May 2025. It does not work yet. Not a product, not for sale yet. Olivabot, Amsterdam.">
+    <meta name="keywords" content="arboreal robot, bio-inspired robot, gibbon bot, experimental development, WBSO, tree canopy">
+    <meta property="og:title" content="Gibbon Bot | Gibbon-inspired arboreal robot, not working yet">
+    <meta property="og:description" content="Bio-inspired by the gibbon, designed for trees not bipedal walking. Laboratory R&amp;D since May 2025. It does not work yet.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://olivabot.com/en/projects/gibbon-bot.html">
     <meta property="og:image" content="https://olivabot.com/assets/images/gibbon-bot/gibbot-bot-mk1/gibbot-bot-mk1-in-action-1.webp">
     <link rel="canonical" href="https://olivabot.com/en/projects/gibbon-bot.html" />
     <link rel="icon" href="../../assets/images/favicon.ico" />
     <link rel="stylesheet" href="../../assets/css/style.css?v=202608281" />
+    <style>
+        .status { border: 1px solid var(--border); border-radius: var(--radius); padding: 1.15rem 1.25rem; margin: 1.5rem 0 2rem; background: var(--footer-bg); }
+        .status p { margin: 0; color: var(--fg); max-width: none; }
+        .status strong { color: var(--fg); }
+        .goal-list { margin: 0.5rem 0 1.25rem; }
+        .goal-list li { padding: 0.35rem 0 0.35rem 1.35rem; position: relative; color: var(--muted); }
+        .goal-list li::before { content: "–"; position: absolute; left: 0; color: var(--muted); }
+    </style>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "TechArticle",
       "headline": "Gibbon Bot",
-      "description": "Bio-inspired arboreal robot for climbing and inspection.",
+      "description": "Gibbon-inspired arboreal robot in laboratory development. Does not work yet. Not a product, not for sale yet.",
       "author": {
         "@type": "Organization",
         "name": "Olivabot",
@@ -95,47 +103,65 @@
             <span>Gibbon Bot</span>
         </nav>
         <h1>Gibbon Bot</h1>
-        <p class="intro">Bio-inspired arboreal robot. Mk.1 was the proof of concept. Mk.2 is four high-torque arms for climbing and inspection.</p>
+        <p class="intro">A robot bio-inspired by the gibbon — the smallest of the apes. Gibbons are arboreal. Humanoid robots are bipedal. That is a different motion architecture, designed for trees.</p>
+
+        <div class="status">
+            <p><strong>It does not work yet.</strong> We have been developing it since May 2025. Current work is in the lab. It is not a product and not for sale yet — and not a farm robot you can deploy. In a few years, if funding allows and the research progresses, we might put it on the market.</p>
+        </div>
 
         <aside class="page-index" aria-label="On this page">
             <p class="page-index__title">On this page</p>
             <ol>
-                <li><a href="#intro">Intro</a></li>
+                <li><a href="#why-a-gibbon">Why a gibbon</a></li>
+                <li><a href="#intended-jobs">The goal</a></li>
                 <li><a href="#gibbon-bot-mk1">Gibbon Bot mk.1</a></li>
                 <li><a href="#gibbon-bot-mk2">Gibbon Bot mk.2</a></li>
-                <li><a href="#what-next">What next</a></li>
+                <li><a href="#funding">How it is funded</a></li>
                 <li><a href="#gallery">Gallery</a></li>
             </ol>
         </aside>
 
-        <h2 id="intro">Intro</h2>
-        <p>The work is in the canopy — climbing, inspection, later harvest — not heavy machines on the ground. That is the idea behind our <a href="arboreal-robots.html">arboreal robots</a>.</p>
-        <p>Gibbon Bot mk.1 is the proof of concept. Mk.2 is the architecture we believe in: four robotic arms, two as arms and two as legs, for arboreal locomotion and operations.</p>
+        <h2 id="why-a-gibbon">Why a gibbon, not a humanoid</h2>
+        <p>Most of the robots in the news now walk on two legs, on the ground, at human scale. An ape that lives in the canopy does not move like that. Gibbon Bot is built around that difference: four limbs that grip and swing through branches, so the soil underneath is not compacted by a heavy machine.</p>
+        <p>That is the idea behind our <a href="arboreal-robots.html">arboreal robots</a> research. Agriculture, agroforestry, orchards, and forests are full of work that happens up in the tree. A bipedal humanoid is the wrong architecture for that.</p>
+
+        <h2 id="intended-jobs">The goal — if we can make it work</h2>
+        <p>None of this is a current capability. If the machine ever works, the jobs we want it to do in groves, orchards, agroforestry, and forests are:</p>
+        <ul class="goal-list">
+            <li>tree maintenance</li>
+            <li>fruit picking</li>
+            <li>pruning</li>
+            <li>inspection</li>
+            <li>installing and maintaining hail nets</li>
+            <li>unobtrusive monitoring and canopy surveillance</li>
+            <li>biodiversity monitoring — animals, viruses, bacteria, nutrients</li>
+        </ul>
+        <p>A technology that can change how those jobs are done in agriculture and agroforestry, without putting heavy machines on the ground. That is the bet. It is not there yet.</p>
 
         <figure class="story-figure">
-            <img src="../../assets/images/gibbon-bot/gibbot-bot-mk1/gibbot-bot-mk1-in-action-1.webp" alt="Gibbon Bot mk.1 climbing in an olive tree canopy" width="768" height="768">
-            <figcaption>Gibbon Bot mk.1 in an olive tree, August 2025.</figcaption>
+            <img src="../../assets/images/gibbon-bot/gibbot-bot-mk1/gibbot-bot-mk1-in-action-1.webp" alt="Gibbon Bot mk.1 experimental prototype in an olive tree, August 2025" width="768" height="768">
+            <figcaption>Gibbon Bot mk.1 in an olive tree, August 2025. Grove tests, not a working climber.</figcaption>
         </figure>
 
         <h2 id="gibbon-bot-mk1">Gibbon Bot mk.1</h2>
-        <p>Designed and conceived in May 2025, prototyped and built in June to August 2025, tested in olive trees in August 2025.</p>
+        <p>Designed and conceived in May 2025, prototyped and built in June to August 2025, taken into olive trees in August 2025. It did not become a working climber.</p>
         <p>This structure has 4 robotic arms of 6–7 axis each, for enhanced mobility. It uses microcontrollers and decentralized reasoning for each arm (and leg) to move and reason independently, and a centralized unit to coordinate and control. Geared DC motors, lithium-ion batteries, ESP32 and nRF microcontrollers that communicate via Bluetooth Low Energy for secure and fast operations. 3D-printed parts in bioplastics and bioinspired fingers for passive gripping. This architecture in mind for efficient long battery operations.</p>
         <p>It was long, precise manual work — many fingers stuck and pinched in between gears many times.</p>
-        <p>The main problem of Gibbon Bot mk.1 is that those motors can’t deliver enough torque for smooth movement on the tree, creating big limits on this architecture’s potential. Problems that we solve with Gibbon Bot mk.2.</p>
+        <p>The main problem of Gibbon Bot mk.1 is that those motors cannot deliver enough torque for smooth movement on the tree. That is what mk.2 is for. Mk.2 is still in the lab.</p>
 
         <div class="story-pair">
             <figure class="story-figure">
-                <img src="../../assets/images/gibbon-bot/gibbot-bot-mk1/gibbot-bot-mk1-in-action-2.webp" alt="Gibbon Bot mk.1 side view navigating olive branches" width="768" height="1020" loading="lazy">
-                <figcaption>Side view in the canopy.</figcaption>
+                <img src="../../assets/images/gibbon-bot/gibbot-bot-mk1/gibbot-bot-mk1-in-action-2.webp" alt="Gibbon Bot mk.1 side view in olive branches, August 2025" width="768" height="1020" loading="lazy">
+                <figcaption>Side view in the canopy, August 2025.</figcaption>
             </figure>
             <figure class="story-figure">
-                <img src="../../assets/images/gibbon-bot/gibbot-bot-mk1/gibbot-bot-mk1-in-action-3.webp" alt="Gibbon Bot mk.1 front view of the tree-climbing robot" width="768" height="768" loading="lazy">
+                <img src="../../assets/images/gibbon-bot/gibbot-bot-mk1/gibbot-bot-mk1-in-action-3.webp" alt="Gibbon Bot mk.1 front view, hooked on a branch, August 2025" width="768" height="768" loading="lazy">
                 <figcaption>Front view, hooked on a branch.</figcaption>
             </figure>
         </div>
 
         <h2 id="gibbon-bot-mk2">Gibbon Bot mk.2</h2>
-        <p>Here, instead of geared DC motors (that can be easily powered from 3–6 volts) we used waterproof, powerful high-torque servo motors.</p>
+        <p>Mk.2 is four high-torque arms — two as arms, two as legs. Instead of geared DC motors (that can be easily powered from 3–6 volts) we used waterproof, powerful high-torque servo motors.</p>
         <p>In a first prototype we tested the potential with off-the-shelf servo motors, powered in a not so safe manner via high-discharge Li-Po battery — the one you’d use for RC cars and planes. Given risks for electricity for humans, and having validated motor types and torque, after long research we found off-the-shelf robotic arms: <a href="https://www.waveshare.com/wiki/RoArm-M3" rel="noopener noreferrer" target="_blank">Waveshare RoArm-M3 Pro</a>. We modified them to be easily powered with 3S Li-Po batteries.</p>
 
         <div class="story-pair">
@@ -149,7 +175,7 @@
             </figure>
         </div>
 
-        <p>This structure is an assembly of 4 robotic arms — 2 used for gibbon arms and 2 for gibbon legs. It still requires a lot of work to be tested in the field, and our funding is running low. Even so, this architecture is terribly promising as a low-cost robotic solution for arboreal locomotion and operations.</p>
+        <p>This structure is an assembly of 4 robotic arms — 2 used for gibbon arms and 2 for gibbon legs. Mk.2 is the architecture we are developing in the lab. It has not been proven in the field. We still think it is the right low-cost layout for arboreal locomotion. It does not work yet.</p>
 
         <figure class="story-figure story-figure--wide">
             <img src="../../assets/images/gibbon-bot/gibbon-bot-mk2/assembled-structure-motors-chassis1.webp" alt="Gibbon Bot mk.2 assembled chassis with motors, top view" width="1446" height="1920" loading="lazy">
@@ -161,11 +187,10 @@
             <figcaption>Assembled mk.2, held for scale.</figcaption>
         </figure>
 
-        <h2 id="what-next">What next</h2>
-        <p>We believe in this vision. After years of rapid prototyping and high-energy / low-income hard technical work, we are unsure of when we will be able to deliver this field-tested prototype to the world.</p>
-        <p>Maybe we will release our work in open source for passionate people around the world to be able to continue — our funding makes it difficult to keep going this work without salary. Maybe we will continue on the side of other jobs, but it will take time.</p>
-        <p>The future of agriculture looks bright. Patience and vision will help communities worldwide to produce food and manage groves, forests, orchards, in a sustainable manner, aligning with the <a href="https://sdgs.un.org/goals" rel="noopener noreferrer" target="_blank">UN’s Sustainable Development Goals</a>.</p>
-        <p>This platform grew out of our <a href="arboreal-robots.html">arboreal robots R&amp;D</a>. <a href="vision.html">Olivabot Vision</a> is the work on giving the same robot cameras and on-board AI.</p>
+        <h2 id="funding">How it is funded</h2>
+        <p>No private investor. We put our own time and personal money into it. Some of the work is helped by government subsidies and grants, including the <a href="vision.html">Olivabot Vision</a> feasibility study with the Province of Noord-Holland.</p>
+        <p>For April to December 2026 the project has a Dutch R&amp;D tax credit (<a href="https://www.rvo.nl/subsidies-financiering/wbso" rel="noopener noreferrer" target="_blank">WBSO</a>).</p>
+        <p>The firmware, vision, CAD, and control software are the same work we do for clients. <a href="vision.html">Olivabot Vision</a> is the study on giving this platform cameras and on-board AI, later, if the machine can move.</p>
         <div class="cta-section">
             <a href="mailto:gibbon@olivabot.com" class="cta-button">Contact Us</a>
         </div>
@@ -173,9 +198,9 @@
         <h2 id="gallery">Gallery</h2>
         <p>Mk.1 in the grove, then mk.2 from first servo tests through assembly.</p>
         <div class="gallery">
-            <div class="gallery-item"><img src="../../assets/images/gibbon-bot/gibbot-bot-mk1/gibbot-bot-mk1-in-action-1.webp" alt="Gibbon Bot mk.1 arboreal robot in a tree canopy" loading="lazy"></div>
-            <div class="gallery-item"><img src="../../assets/images/gibbon-bot/gibbot-bot-mk1/gibbot-bot-mk1-in-action-2.webp" alt="Gibbon Bot mk.1 side view showing tree canopy navigation" loading="lazy"></div>
-            <div class="gallery-item"><img src="../../assets/images/gibbon-bot/gibbot-bot-mk1/gibbot-bot-mk1-in-action-3.webp" alt="Gibbon Bot mk.1 front view of the tree-climbing robot" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/gibbon-bot/gibbot-bot-mk1/gibbot-bot-mk1-in-action-1.webp" alt="Gibbon Bot mk.1 experimental prototype in an olive tree" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/gibbon-bot/gibbot-bot-mk1/gibbot-bot-mk1-in-action-2.webp" alt="Gibbon Bot mk.1 side view in olive branches" loading="lazy"></div>
+            <div class="gallery-item"><img src="../../assets/images/gibbon-bot/gibbot-bot-mk1/gibbot-bot-mk1-in-action-3.webp" alt="Gibbon Bot mk.1 front view, hooked on a branch" loading="lazy"></div>
             <div class="gallery-item"><img src="../../assets/images/gibbon-bot/gibbon-bot-mk2/prototype-motors-test-power-verification1.webp" alt="Gibbon Bot mk.2 prototype motors test and power verification" loading="lazy"></div>
             <div class="gallery-item"><img src="../../assets/images/gibbon-bot/gibbon-bot-mk2/prototype-motors-test-power-verification2.webp" alt="Gibbon Bot mk.2 prototype motors test, second view" loading="lazy"></div>
             <div class="gallery-item"><img src="../../assets/images/gibbon-bot/gibbon-bot-mk2/assembly1.webp" alt="Gibbon Bot mk.2 limb assemblies and batteries laid out for assembly" loading="lazy"></div>
@@ -191,8 +216,8 @@
             <div class="gallery-item"><img src="../../assets/images/gibbon-bot/gibbon-bot-mk2/size-compared-to-human.webp" alt="Gibbon Bot mk.2 assembled robot held for scale next to a person" loading="lazy"></div>
             <div class="gallery-item"><img src="../../assets/images/gibbon-bot/gibbon-bot-mk2/size-compared-to-human-2.webp" alt="Gibbon Bot mk.2 assembled robot held for scale, second view" loading="lazy"></div>
         </div>
-        <p class="gallery-caption">Gibbon Bot mk.1 (August 2025) and Gibbon Bot mk.2 (in assembly, 2026)</p>
-        <p>Not for sale as a product. Related work: <a href="../services/agriculture-robotics.html">which farm robot can help</a>, <a href="../services/firmware.html">firmware</a>, <a href="../services/firmware.html#cad">CAD</a>.</p>
+        <p class="gallery-caption">Gibbon Bot mk.1 (olive grove tests, August 2025) and Gibbon Bot mk.2 (lab assembly, 2026). Neither is a working farm robot.</p>
+        <p>Not for sale as a product yet. Related work: <a href="../services/agriculture-robotics.html">which farm robot can help</a>, <a href="../services/firmware.html">firmware</a>, <a href="../services/edge-ai.html">edge AI</a>, <a href="../services/firmware.html#cad">CAD</a>.</p>
     </main>
 <!-- partial:footer:start (generated by tools/build-partials.py) -->
 <footer>
@@ -213,7 +238,7 @@
         </div>
         <div class="footer-services">
             <a href="../services/firmware.html">Firmware &amp; embedded</a>
-            <a href="../services/fintech.html">Fintech engineering</a>
+            <a href="../services/edge-ai.html">Edge AI</a>
             <a href="../services/software.html">Software for devices &amp; data</a>
             <a href="../services/agriculture-robotics.html">Agricultural consulting</a>
             <a href="../services/hosting.html">EU hosting &amp; maintenance</a>

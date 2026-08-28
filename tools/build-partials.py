@@ -95,7 +95,7 @@ def footer(page: str, asset: str) -> str:
         </div>
         <div class="footer-services">
             <a href="{page}services/firmware.html">Firmware &amp; embedded</a>
-            <a href="{page}services/fintech.html">Fintech engineering</a>
+            <a href="{page}services/edge-ai.html">Edge AI</a>
             <a href="{page}services/software.html">Software for devices &amp; data</a>
             <a href="{page}services/agriculture-robotics.html">Agricultural consulting</a>
             <a href="{page}services/hosting.html">EU hosting &amp; maintenance</a>
