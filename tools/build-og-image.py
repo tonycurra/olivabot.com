@@ -41,13 +41,13 @@ def main() -> int:
 
     headline = ImageFont.truetype(BOLD, 62)
     for i, line in enumerate(
-        ["Firmware, fintech, and", "software engineering", "for hire"]
+        ["We build what", "has to work."]
     ):
         d.text((80, 268 + i * 78), line, font=headline, fill=FG)
 
     d.text(
         (80, 528),
-        "Fixed fees, never day rates  ·  data stays in the EU  ·  Amsterdam",
+        "Fixed fees, never day rates  ·  Amsterdam  ·  olivabot.com",
         font=ImageFont.truetype(REG, 27),
         fill=ACCENT,
     )

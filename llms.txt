@@ -1,8 +1,8 @@
 # Olivabot
 
-> Olivabot B.V. (Amsterdam, Netherlands) is a small engineering consultancy taking short engagements: firmware and embedded, fintech engineering, and software that keeps data in the EU. We also build our own arboreal robots for tree canopies.
+> Olivabot B.V. (Amsterdam, Netherlands) — engineering consultancy. We build what has to work: firmware, software, and fintech at a fixed price. We also build our own arboreal robots.
 
-Olivabot B.V. is a Dutch company in Amsterdam (KVK 94493200, VAT NL866797373B01). We are hired remotely by hardware startups, fintech, agritech, and medtech teams across the European Union, usually for days or weeks rather than months. Small, well-defined jobs are welcome. Prices are fixed before work starts and published below. We also build Gibbon Bot, an arboreal robot field-tested in olive groves, which is where our hardware experience comes from.
+Olivabot B.V. is a Dutch company in Amsterdam (KVK 94493200, VAT NL866797373B01). Fixed-price engineering for teams across the EU. No day rates. Prices are published below.
 
 ## Prices (all excluding VAT)
 
