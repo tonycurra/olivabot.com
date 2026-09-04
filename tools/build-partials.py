@@ -90,6 +90,7 @@ def footer(page: str, asset: str) -> str:
                 <a href="{page}projects.html">Projects</a>
                 <a href="{page}about.html">About</a>
                 <a href="{page}dlab.html">DLAB</a>
+                <a href="{page}starthub.html">StartHub</a>
                 <a href="{page}contact.html">Contact</a>
             </nav>
         </div>
@@ -101,7 +102,7 @@ def footer(page: str, asset: str) -> str:
             <a href="{page}services/hosting.html">EU hosting &amp; maintenance</a>
         </div>
         <p class="footer-entity">
-            <strong>Olivabot B.V.</strong> &mdash; De Boelelaan 1095a, 1081 HV Amsterdam, Netherlands.
+            <strong>Olivabot B.V.</strong> &mdash; VU StartHub, De Boelelaan 1095a, 1081 HV Amsterdam, Netherlands.
             KVK 94493200. VAT NL866797373B01.
             <a href="mailto:services@olivabot.com">services@olivabot.com</a>.
             Remote work across the EU.

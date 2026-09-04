@@ -120,12 +120,16 @@
     </script>
     <style>
         .intro { font-size: 1.125rem; color: var(--fg); max-width: 55ch; }
-        .offer-list { list-style: none; padding: 0; margin: 2rem 0; }
+        .offer-group { margin: 2.25rem 0 0; }
+        .offer-group > h2 { margin: 0; font-size: 1.35rem; }
+        .offer-group .group-note { color: var(--muted); font-size: 0.95rem; margin: 0.35rem 0 0; max-width: 60ch; }
+        .offer-group .offer-list { margin: 0.75rem 0 0; }
+        .offer-list { list-style: none; padding: 0; }
         .offer-list li { padding: 1.15rem 0; border-bottom: 1px solid var(--border); }
         .offer-list li:first-child { border-top: 1px solid var(--border); }
-        .offer-list h2 { margin: 0 0 0.35rem; font-size: 1.125rem; }
-        .offer-list h2 a { color: var(--fg); text-decoration: none; }
-        .offer-list h2 a:hover { color: var(--accent); }
+        .offer-list h3 { margin: 0 0 0.35rem; font-size: 1.125rem; }
+        .offer-list h3 a { color: var(--fg); text-decoration: none; }
+        .offer-list h3 a:hover { color: var(--accent); }
         .offer-list p { color: var(--muted); font-size: 0.95rem; margin: 0; max-width: 60ch; }
         .offer-list .price { margin-top: 0.45rem; font-weight: 700; color: var(--fg); }
         .how { margin: 2.5rem 0; }
@@ -202,35 +206,55 @@
         </nav>
         
         <h1>Services</h1>
-        <p class="intro">Firmware, on-device AI, software that keeps data in Europe, and EU hosting. <strong>Olivabot B.V.</strong>, Amsterdam. Fees exclude VAT. Email the job — we reply within two working days.</p>
+        <p class="intro">Three ways to hire us. Fees exclude VAT. Email the job — we reply within two working days.</p>
 
-        <ul class="offer-list">
-            <li>
-                <h2><a href="services/firmware.html">Firmware &amp; embedded</a></h2>
-                <p>Battery life, BLE and LoRaWAN, sensor drivers, CAD for the enclosure.</p>
-                <p class="price">From €5,000 · assessment €500</p>
-            </li>
-            <li>
-                <h2><a href="services/edge-ai.html">Edge AI</a></h2>
-                <p>Inference on the device, no cloud: image recognition, robots, battery-powered sensors.</p>
-                <p class="price">From €5,000 · feasibility €500</p>
-            </li>
-            <li>
-                <h2><a href="services/software.html">Software for devices &amp; data</a></h2>
-                <p>Web apps, dashboards, and computer vision on a dedicated EU server.</p>
-                <p class="price">€5,000–€10,000 · data review €500</p>
-            </li>
-            <li>
-                <h2><a href="services/agriculture-robotics.html">Agricultural consulting</a></h2>
-                <p>Which farm robot can help your crop now, and which cannot. A call plus a written report.</p>
-                <p class="price">€500</p>
-            </li>
-            <li>
-                <h2><a href="services/hosting.html">EU hosting &amp; maintenance</a></h2>
-                <p>Dedicated EU server, backups, monitoring, security updates. Monthly.</p>
-                <p class="price">From €150 / month</p>
-            </li>
-        </ul>
+        <section class="offer-group">
+            <h2>Build</h2>
+            <p class="group-note">Working firmware or software, in milestones. From €5,000.</p>
+            <ul class="offer-list">
+                <li>
+                    <h3><a href="services/firmware.html">Firmware &amp; embedded</a></h3>
+                    <p>Battery life, BLE and LoRaWAN, sensor drivers, CAD for the enclosure.</p>
+                    <p class="price">From €5,000 · assessment €500</p>
+                </li>
+                <li>
+                    <h3><a href="services/edge-ai.html">Edge AI</a></h3>
+                    <p>Inference on the device, no cloud: image recognition, robots, battery-powered sensors.</p>
+                    <p class="price">From €5,000 · feasibility €500</p>
+                </li>
+                <li>
+                    <h3><a href="services/software.html">Software for devices &amp; data</a></h3>
+                    <p>Web apps, dashboards, and computer vision on a dedicated EU server.</p>
+                    <p class="price">€5,000–€10,000</p>
+                </li>
+            </ul>
+            <p class="group-note">Payments, ledgers, latency: <a href="services/fintech.html">fintech engineering</a>. Deep assessment €2,500.</p>
+        </section>
+
+        <section class="offer-group">
+            <h2>Advice</h2>
+            <p class="group-note">A call and a written report. €500.</p>
+            <ul class="offer-list">
+                <li>
+                    <h3><a href="services/agriculture-robotics.html">Agricultural consulting</a></h3>
+                    <p>Which farm robot can help your crop now, and which cannot.</p>
+                    <p class="price">€500</p>
+                </li>
+            </ul>
+            <p class="group-note">Cameras, sensors, databases: a <a href="services/software.html#gdpr">data and privacy review</a>, also €500. Not legal advice.</p>
+        </section>
+
+        <section class="offer-group">
+            <h2>Keep it running</h2>
+            <p class="group-note">After we build it, or if you already have an app in Europe.</p>
+            <ul class="offer-list">
+                <li>
+                    <h3><a href="services/hosting.html">EU hosting &amp; maintenance</a></h3>
+                    <p>Dedicated EU server, backups, monitoring, security updates. Monthly.</p>
+                    <p class="price">From €150 / month</p>
+                </li>
+            </ul>
+        </section>
 
         <p><a href="mailto:services@olivabot.com?subject=Project%20inquiry" class="cta-button">Email the job</a></p>
 
@@ -278,6 +302,7 @@
                 <a href="projects.html">Projects</a>
                 <a href="about.html">About</a>
                 <a href="dlab.html">DLAB</a>
+                <a href="starthub.html">StartHub</a>
                 <a href="contact.html">Contact</a>
             </nav>
         </div>
@@ -289,7 +314,7 @@
             <a href="services/hosting.html">EU hosting &amp; maintenance</a>
         </div>
         <p class="footer-entity">
-            <strong>Olivabot B.V.</strong> &mdash; De Boelelaan 1095a, 1081 HV Amsterdam, Netherlands.
+            <strong>Olivabot B.V.</strong> &mdash; VU StartHub, De Boelelaan 1095a, 1081 HV Amsterdam, Netherlands.
             KVK 94493200. VAT NL866797373B01.
             <a href="mailto:services@olivabot.com">services@olivabot.com</a>.
             Remote work across the EU.
