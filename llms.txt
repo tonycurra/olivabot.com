@@ -1,6 +1,6 @@
 # Olivabot
 
-> Olivabot B.V. (Amsterdam, Netherlands) — engineering consultancy. We build what has to work: firmware, edge AI, software, and the systems they run on. Consultancy and EU hosting. Our own research on the side.
+> Olivabot B.V. (Amsterdam, Netherlands) — engineering consultancy. Firmware, software, and consulting. Our own research on the side.
 
 Olivabot B.V. is a Dutch company in Amsterdam (KVK 94493200, VAT NL866797373B01). Work for teams across the EU. No day rates. Fees vary; email for a quote.
 
@@ -17,20 +17,13 @@ Fees vary with the job. Email [services@olivabot.com](mailto:services@olivabot.c
 - **Email (call on request)**: hear the problem, say whether we can help.
 - **Project outline**: the steps, in what order, what each one costs, how long, and where it might go wrong.
 - **Milestones**: we work autonomously toward the agreed deliverable. You check it, pay, continue or stop.
-- **Hosting and maintenance**: it stays online, patched, and backed up on an EU server. Monthly. New features are a separate milestone.
+- **Hosting**: it stays online, patched, and backed up on an EU server. Monthly. New features are a separate milestone.
 
 ## Services
 
-- [Firmware and embedded](https://olivabot.com/en/services/firmware.html): C/C++ on ARM, RTOS, BLE/LoRaWAN, battery life, sensor drivers, and CAD for the enclosure.
-- [Edge AI](https://olivabot.com/en/services/edge-ai.html): local inference without a cloud connection — image recognition, local reasoning for robots, battery-powered models that read sensors and act.
-- [Software for devices and data](https://olivabot.com/en/services/software.html): web apps, sensor dashboards, and computer vision on a dedicated EU server. Includes a data and privacy review (not legal advice).
-- [Agricultural consulting](https://olivabot.com/en/services/agriculture-robotics.html): which farm robot can help now. Call plus a written report.
-- [EU hosting and maintenance](https://olivabot.com/en/services/hosting.html): dedicated EU server, tested backups, monitoring, security updates.
-- Also: [fintech engineering](https://olivabot.com/en/services/fintech.html) when a payments or latency job lands.
-
-## What we do not do
-
-No workshop, no production line, no field crew. We deliver calls, code, and design files. We do not sell harvest robots, mowers, farm machinery, or night-vision hardware, and we do not run 3D printers or assemble devices. We are not a high-frequency trading specialist, not a law firm, and not an auditor.
+- [Firmware](https://olivabot.com/en/services/firmware.html): C/C++ on ARM, radios, battery life, sensor drivers, on-device AI, and CAD for the enclosure.
+- [Software](https://olivabot.com/en/services/software.html): web apps, sensor dashboards, computer vision, and EU hosting. Payments, ledgers, and latency when that is the job.
+- [Consulting](https://olivabot.com/en/services/consulting.html): a call and a written report — farm robots, cameras and sensor data, what to build next.
 
 ## Client work
 
@@ -40,17 +33,19 @@ No workshop, no production line, no field crew. We deliver calls, code, and desi
 
 ## Our own research
 
-- [Gibbon Bot](https://olivabot.com/en/projects/gibbon-bot.html): a robot bio-inspired by the gibbon, for trees rather than walking on two legs. It does not work yet. Laboratory development since May 2025. Not a product, not for sale yet. In a few years, if funding allows and the research progresses, we might put it on the market.
+- [Gibbon Bot](https://olivabot.com/en/projects/gibbon-bot.html): a robot bio-inspired by the gibbon, for trees rather than walking on two legs. It does not work yet. Laboratory development since May 2025. In a few years, if funding allows and the research progresses, we might put it on the market.
 - [Olivabot Vision](https://olivabot.com/en/projects/vision.html): MIT feasibility study on canopy computer vision.
-- [Arboreal robots R&D](https://olivabot.com/en/projects/arboreal-robots.html)
-- [Agricultural drone surveys](https://olivabot.com/en/projects/agricultural-drone-surveys.html): we bought a DJI Mavic 3M, flew RGB and near-infrared maps (NDVI), and sold the drone. A camera quadcopter does not harvest or prune. Not a service we sell.
-- [Basil Bot](https://olivabot.com/en/projects/basil-bot.html): Marin Marian’s master’s thesis in AI at Vrije Universiteit Amsterdam, supervised by Tony Currà. A 3D-printed 4-axis arm, hobby servos, and a €20 ESP32 camera. Detect basil stem and leaf, visual servoing to the cut. Not a product we sell.
+- [Arboreal robots R&D](https://olivabot.com/en/projects/arboreal-robots.html): robots for trees. Includes a [first climbing shape](https://olivabot.com/en/projects/arboreal-robots/climbing-poc.html) (May 2024, DLAB), a [PLA tree gripper](https://olivabot.com/en/projects/arboreal-robots/tree-gripper.html) (June 2024), a [bioplastic trunk climber](https://olivabot.com/en/projects/arboreal-robots/trunk-climber.html) (June 2024; cannot switch onto branches), a [printed gear transmission](https://olivabot.com/en/projects/arboreal-robots/printed-gears.html) (July 2024, DC motor), a [tiny climber with squirrel-claw microspines](https://olivabot.com/en/projects/arboreal-robots/microspines.html) (July 2024; good grip, only certain branch sizes, too small for harvest; retired for Gibbon Bot), and [Gibbon Bot](https://olivabot.com/en/projects/gibbon-bot.html).
+- [Agricultural drone surveys](https://olivabot.com/en/projects/agricultural-drone-surveys.html): we bought a DJI Mavic 3M, flew RGB and near-infrared maps (NDVI), and sold the drone.
+- [Basil Bot](https://olivabot.com/en/projects/basil-bot.html): Marin Marian’s master’s thesis in AI at Vrije Universiteit Amsterdam, supervised by Tony Currà. A 3D-printed 4-axis arm, hobby servos, and a €20 ESP32 camera. Detect basil stem and leaf, visual servoing to the cut.
+- [ME VU–UT bachelor assignments 2025](https://olivabot.com/en/projects/me-vu-ut-2025.html): twelve Mechanical Engineering students from the VU Amsterdam and University of Twente joint programme. Assigned and supervised by Tony Currà at Olivabot, work at DLAB. Wind turbine, SMA, compressors, Stirling engines, walking robots, aerostat.
 
 ## Other pages
 
 - [Home](https://olivabot.com/en/index.html)
 - [Services](https://olivabot.com/en/services.html)
 - [About / legal entity](https://olivabot.com/en/about.html)
+- [KVK activities](https://olivabot.com/en/kvk.html): Dutch Chamber of Commerce extract. Main SBI 62100 (designing computer programs), extra 62200 (consultancy and computer facilities) and 72100 (natural-sciences research and experimental development). KVK 94493200. The Dutch wording on that page is the extract; English is explanation.
 - [Contact](https://olivabot.com/en/contact.html): services@olivabot.com for quotes, info@olivabot.com for everything else. Prefer email; call or video on request. Reply within two working days.
 
 Optional file for tools that read `/llms.txt`. Google Search does not use it for ranking. Prefer the HTML pages above.

@@ -110,6 +110,27 @@ p {
     color: var(--fg);
 }
 
+.quote-note {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+}
+
+.quote-note h2 {
+    margin-top: 0;
+}
+
+.quote-note p:last-child {
+    margin-bottom: 0;
+}
+
+.related,
+.stack-list {
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
 .highlight {
     font-weight: 600;
 }

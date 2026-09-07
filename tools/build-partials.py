@@ -95,15 +95,13 @@ def footer(page: str, asset: str) -> str:
             </nav>
         </div>
         <div class="footer-services">
-            <a href="{page}services/firmware.html">Firmware &amp; embedded</a>
-            <a href="{page}services/edge-ai.html">Edge AI</a>
-            <a href="{page}services/software.html">Software for devices &amp; data</a>
-            <a href="{page}services/agriculture-robotics.html">Agricultural consulting</a>
-            <a href="{page}services/hosting.html">EU hosting &amp; maintenance</a>
+            <a href="{page}services/firmware.html">Firmware</a>
+            <a href="{page}services/software.html">Software</a>
+            <a href="{page}services/consulting.html">Consulting</a>
         </div>
         <p class="footer-entity">
             <strong>Olivabot B.V.</strong> &mdash; VU StartHub, De Boelelaan 1095a, 1081 HV Amsterdam, Netherlands.
-            KVK 94493200. VAT NL866797373B01.
+            KVK <a href="{page}kvk.html">94493200</a>. VAT NL866797373B01.
             <a href="mailto:services@olivabot.com">services@olivabot.com</a>.
             Remote work across the EU.
         </p>
@@ -194,8 +192,10 @@ def process(path: Path) -> bool:
     depth = len(rel.parts) - 1
     if depth == 1:  # en/*.html
         page, asset = "", "../"
-    elif depth == 2:  # en/services/*.html etc.
+    elif depth == 2:  # en/services/*.html, en/projects/*.html
         page, asset = "../", "../../"
+    elif depth == 3:  # en/projects/arboreal-robots/*.html
+        page, asset = "../../", "../../../"
     else:
         return False
 
