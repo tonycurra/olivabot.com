@@ -29,7 +29,6 @@ Fees vary with the job. Email [services@olivabot.com](mailto:services@olivabot.c
 
 - [Madglove Sense](https://olivabot.com/en/projects/madglove-sense.html): motion sensing miniaturised to a finger ring, plus a hand-landmark computer-vision tool for physiotherapists, for Madglove Amsterdam BV (Nov 2024 – Jun 2026).
 - [Mycosense](https://olivabot.com/en/projects/mycosense.html): water, soil, and infrared monitoring with LoRaWAN probes and dashboards, for Mycofarming BV, co-funded by the Province of Noord-Holland.
-- [All client work](https://olivabot.com/en/work.html)
 
 ## Our own research
 
@@ -44,6 +43,7 @@ Fees vary with the job. Email [services@olivabot.com](mailto:services@olivabot.c
 
 - [Home](https://olivabot.com/en/index.html)
 - [Services](https://olivabot.com/en/services.html)
+- [Work](https://olivabot.com/en/work.html): paid client work and our own research.
 - [About / legal entity](https://olivabot.com/en/about.html)
 - [Partners](https://olivabot.com/en/partners.html): VU Amsterdam, DLAB, StartHub, University of Twente, Profinancial B.V. (accounts), KC Group (financial advisors), Province of Noord-Holland, RVO (WBSO).
 - [KVK activities](https://olivabot.com/en/kvk.html): Dutch Chamber of Commerce extract. Main SBI 62100 (designing computer programs), extra 62200 (consultancy and computer facilities) and 72100 (natural-sciences research and experimental development). KVK 94493200. The Dutch wording on that page is the extract; English is explanation.

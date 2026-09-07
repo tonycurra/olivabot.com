@@ -859,15 +859,24 @@ footer {
 }
 
 .footer-entity {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
     margin: 0;
-    max-width: 65ch;
-    color: var(--muted);
+    font-style: normal;
     font-size: 0.8rem;
-    line-height: 1.6;
+    line-height: 1.45;
+    color: var(--muted);
+}
+
+.footer-entity strong {
+    color: var(--fg);
+    font-weight: 600;
 }
 
 .footer-entity a {
     color: var(--muted);
+    width: fit-content;
 }
 
 .footer-entity a:hover {
@@ -966,85 +975,6 @@ footer {
 }
 
 /* ─────────────────────────────────────────
-   Cookie Banner
-───────────────────────────────────────── */
-.cookie-banner {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    background: var(--nav-bg);
-    border-top: 1px solid var(--border);
-    padding: 0.75rem 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-    font-size: 0.875rem;
-    animation: slide-up 0.2s ease;
-}
-
-@keyframes slide-up {
-    from {
-        transform: translateY(100%);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-.cookie-banner[hidden] {
-    display: none;
-}
-
-.cookie-banner__text {
-    color: var(--muted);
-}
-
-.cookie-banner__text a {
-    color: var(--accent);
-}
-
-.cookie-banner__actions {
-    display: flex;
-    gap: 0.5rem;
-    flex-shrink: 0;
-}
-
-.cookie-banner__btn {
-    padding: 0.4rem 1rem;
-    border-radius: var(--radius);
-    font-size: 0.875rem;
-    cursor: pointer;
-    border: 1px solid var(--border);
-    background: transparent;
-    color: var(--fg);
-}
-
-.cookie-banner__btn--primary {
-    background: var(--accent);
-    color: var(--accent-fg);
-    border-color: var(--accent);
-}
-
-.cookie-banner__btn--primary:hover {
-    opacity: 0.9;
-}
-
-.cookie-banner__btn--secondary:hover {
-    background: var(--border);
-}
-
-@media (max-width: 600px) {
-    .cookie-banner {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
-
-/* ─────────────────────────────────────────
    Responsive Adjustments
 ───────────────────────────────────────── */
 @media (min-width: 768px) {
@@ -1064,7 +994,6 @@ footer {
     .nav-toggle,
     .nav-links,
     .nav-controls,
-    .cookie-banner,
     .footer-controls {
         display: none;
     }

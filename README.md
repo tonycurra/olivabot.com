@@ -7,7 +7,7 @@ Static site for [olivabot.com](https://olivabot.com). English pages live under `
 | Path | Role |
 |---|---|
 | `index.html` | Redirects to `/en/index.html` |
-| `en/` | Pages (home, about, KVK activities, contact, services, DLAB, StartHub, projects, legal) |
+| `en/` | Pages (home, about, KVK activities, contact, services, work, DLAB, StartHub, legal) |
 | `assets/css/style.css` | Shared styles |
 | `assets/js/` | Navbar and footer injected into each page |
 | `assets/images/` | Media — see [assets/images/README.md](assets/images/README.md) |
@@ -17,11 +17,11 @@ Navbar and footer use absolute paths (`/en/…`, `/assets/…`) on the live site
 
 ## Pages
 
-- Home, About, Contact, [Services](en/services.html), [KVK activities](en/kvk.html), [Partners](en/partners.html), [DLAB](en/dlab.html), [StartHub](en/starthub.html)
-- Projects: [Gibbon Bot](en/projects/gibbon-bot.html), [Basil Bot](en/projects/basil-bot.html), [ME VU–UT 2025](en/projects/me-vu-ut-2025.html), [Olivabot Vision](en/projects/vision.html), [Mycosense](en/projects/mycosense.html), [Madglove Sense](en/projects/madglove-sense.html), [Arboreal robots](en/projects/arboreal-robots.html) ([first climbing shape](en/projects/arboreal-robots/climbing-poc.html), [PLA tree gripper](en/projects/arboreal-robots/tree-gripper.html), [trunk climber](en/projects/arboreal-robots/trunk-climber.html), [printed gears](en/projects/arboreal-robots/printed-gears.html), [microspines](en/projects/arboreal-robots/microspines.html)), [Agricultural drone surveys](en/projects/agricultural-drone-surveys.html)
+- Home, About, Contact, [Services](en/services.html), [Work](en/work.html), [KVK activities](en/kvk.html), [Partners](en/partners.html), [DLAB](en/dlab.html), [StartHub](en/starthub.html)
+- Work: [Madglove Sense](en/projects/madglove-sense.html), [Mycosense](en/projects/mycosense.html), [Gibbon Bot](en/projects/gibbon-bot.html), [Basil Bot](en/projects/basil-bot.html), [ME VU–UT 2025](en/projects/me-vu-ut-2025.html), [Olivabot Vision](en/projects/vision.html), [Arboreal robots](en/projects/arboreal-robots.html) ([first climbing shape](en/projects/arboreal-robots/climbing-poc.html), [PLA tree gripper](en/projects/arboreal-robots/tree-gripper.html), [trunk climber](en/projects/arboreal-robots/trunk-climber.html), [printed gears](en/projects/arboreal-robots/printed-gears.html), [microspines](en/projects/arboreal-robots/microspines.html)), [Agricultural drone surveys](en/projects/agricultural-drone-surveys.html). `en/projects.html` redirects to Work.
 - Legal: privacy, terms, cookies, disclaimer
 
-When you add a public page, add it to `sitemap.xml` and (if it belongs in the menu) `assets/js/navbar.js`. For search engines and chatbots (ChatGPT, Google AI, Claude, Perplexity), see [docs/seo-and-chatbot-discovery.md](docs/seo-and-chatbot-discovery.md).
+When you add a public page, add it to `sitemap.xml` and (if it belongs in the menu) `tools/build-partials.py`. For search engines and chatbots (ChatGPT, Google AI, Claude, Perplexity), see [docs/seo-and-chatbot-discovery.md](docs/seo-and-chatbot-discovery.md).
 
 ## Publish
 
