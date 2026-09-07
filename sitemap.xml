@@ -13,7 +13,7 @@
     
     <url>
         <loc>https://olivabot.com/en/about.html</loc>
-        <lastmod>2026-09-04</lastmod>
+        <lastmod>2026-09-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -113,7 +113,7 @@
     <!-- Our own robots and research -->
     <url>
         <loc>https://olivabot.com/en/projects.html</loc>
-        <lastmod>2026-08-28</lastmod>
+        <lastmod>2026-09-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -135,6 +135,20 @@
     <url>
         <loc>https://olivabot.com/en/projects/arboreal-robots.html</loc>
         <lastmod>2026-08-21</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://olivabot.com/en/projects/agricultural-drone-surveys.html</loc>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://olivabot.com/en/projects/basil-bot.html</loc>
+        <lastmod>2026-09-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>

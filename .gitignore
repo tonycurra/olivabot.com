@@ -1,0 +1,6 @@
+# Local working notes — keep on this machine, never publish
+local/
+
+# Python
+**/__pycache__/
+*.py[cod]

@@ -38,11 +38,13 @@ No workshop, no production line, no field crew. We deliver calls, code, and desi
 - [Mycosense](https://olivabot.com/en/projects/mycosense.html): water, soil, and infrared monitoring with LoRaWAN probes and dashboards, for Mycofarming BV, co-funded by the Province of Noord-Holland.
 - [All client work](https://olivabot.com/en/work.html)
 
-## Our own robots
+## Our own research
 
 - [Gibbon Bot](https://olivabot.com/en/projects/gibbon-bot.html): a robot bio-inspired by the gibbon, for trees rather than walking on two legs. It does not work yet. Laboratory development since May 2025. Not a product, not for sale yet. In a few years, if funding allows and the research progresses, we might put it on the market.
 - [Olivabot Vision](https://olivabot.com/en/projects/vision.html): MIT feasibility study on canopy computer vision.
 - [Arboreal robots R&D](https://olivabot.com/en/projects/arboreal-robots.html)
+- [Agricultural drone surveys](https://olivabot.com/en/projects/agricultural-drone-surveys.html): we bought a DJI Mavic 3M, flew RGB and near-infrared maps (NDVI), and sold the drone. A camera quadcopter does not harvest or prune. Not a service we sell.
+- [Basil Bot](https://olivabot.com/en/projects/basil-bot.html): Marin Marian’s master’s thesis in AI at Vrije Universiteit Amsterdam, supervised by Tony Currà. A 3D-printed 4-axis arm, hobby servos, and a €20 ESP32 camera. Detect basil stem and leaf, visual servoing to the cut. Not a product we sell.
 
 ## Other pages
 
