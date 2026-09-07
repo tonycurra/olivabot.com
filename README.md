@@ -17,7 +17,7 @@ Navbar and footer use absolute paths (`/en/…`, `/assets/…`) on the live site
 
 ## Pages
 
-- Home, About, Contact, [Services](en/services.html), [KVK activities](en/kvk.html), [DLAB](en/dlab.html), [StartHub](en/starthub.html)
+- Home, About, Contact, [Services](en/services.html), [KVK activities](en/kvk.html), [Partners](en/partners.html), [DLAB](en/dlab.html), [StartHub](en/starthub.html)
 - Projects: [Gibbon Bot](en/projects/gibbon-bot.html), [Basil Bot](en/projects/basil-bot.html), [ME VU–UT 2025](en/projects/me-vu-ut-2025.html), [Olivabot Vision](en/projects/vision.html), [Mycosense](en/projects/mycosense.html), [Madglove Sense](en/projects/madglove-sense.html), [Arboreal robots](en/projects/arboreal-robots.html) ([first climbing shape](en/projects/arboreal-robots/climbing-poc.html), [PLA tree gripper](en/projects/arboreal-robots/tree-gripper.html), [trunk climber](en/projects/arboreal-robots/trunk-climber.html), [printed gears](en/projects/arboreal-robots/printed-gears.html), [microspines](en/projects/arboreal-robots/microspines.html)), [Agricultural drone surveys](en/projects/agricultural-drone-surveys.html)
 - Legal: privacy, terms, cookies, disclaimer
 

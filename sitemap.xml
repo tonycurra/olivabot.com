@@ -2,207 +2,192 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-    
-    <!-- Main Pages -->
+
+    <!-- Home -->
     <url>
         <loc>https://olivabot.com/en/index.html</loc>
         <lastmod>2026-09-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
-    
-    <url>
-        <loc>https://olivabot.com/en/about.html</loc>
-        <lastmod>2026-09-07</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
 
-    <url>
-        <loc>https://olivabot.com/en/kvk.html</loc>
-        <lastmod>2026-09-07</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <url>
-        <loc>https://olivabot.com/en/dlab.html</loc>
-        <lastmod>2026-09-04</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <url>
-        <loc>https://olivabot.com/en/starthub.html</loc>
-        <lastmod>2026-09-04</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    
+    <!-- Hire -->
     <url>
         <loc>https://olivabot.com/en/services.html</loc>
         <lastmod>2026-09-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
-
     <url>
         <loc>https://olivabot.com/en/services/firmware.html</loc>
         <lastmod>2026-09-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
-
     <url>
         <loc>https://olivabot.com/en/services/software.html</loc>
         <lastmod>2026-09-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
-
     <url>
         <loc>https://olivabot.com/en/services/consulting.html</loc>
         <lastmod>2026-09-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
-    
-    <url>
-        <loc>https://olivabot.com/en/contact.html</loc>
-        <lastmod>2026-09-04</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
 
     <!-- Client work -->
     <url>
         <loc>https://olivabot.com/en/work.html</loc>
-        <lastmod>2026-08-28</lastmod>
+        <lastmod>2026-09-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
-
-    <url>
-        <loc>https://olivabot.com/en/projects/mycosense.html</loc>
-        <lastmod>2026-08-28</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
     <url>
         <loc>https://olivabot.com/en/projects/madglove-sense.html</loc>
-        <lastmod>2026-09-04</lastmod>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://olivabot.com/en/projects/mycosense.html</loc>
+        <lastmod>2026-09-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Our own robots and research -->
+    <!-- Research -->
     <url>
         <loc>https://olivabot.com/en/projects.html</loc>
         <lastmod>2026-09-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    
     <url>
         <loc>https://olivabot.com/en/projects/gibbon-bot.html</loc>
-        <lastmod>2026-08-21</lastmod>
+        <lastmod>2026-09-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-
     <url>
         <loc>https://olivabot.com/en/projects/vision.html</loc>
-        <lastmod>2026-08-21</lastmod>
+        <lastmod>2026-09-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-    
     <url>
         <loc>https://olivabot.com/en/projects/arboreal-robots.html</loc>
         <lastmod>2026-09-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-
     <url>
         <loc>https://olivabot.com/en/projects/arboreal-robots/climbing-poc.html</loc>
         <lastmod>2026-09-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-
     <url>
         <loc>https://olivabot.com/en/projects/arboreal-robots/tree-gripper.html</loc>
         <lastmod>2026-09-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-
     <url>
         <loc>https://olivabot.com/en/projects/arboreal-robots/trunk-climber.html</loc>
         <lastmod>2026-09-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-
     <url>
         <loc>https://olivabot.com/en/projects/arboreal-robots/printed-gears.html</loc>
         <lastmod>2026-09-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-
     <url>
         <loc>https://olivabot.com/en/projects/arboreal-robots/microspines.html</loc>
         <lastmod>2026-09-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-
     <url>
         <loc>https://olivabot.com/en/projects/agricultural-drone-surveys.html</loc>
         <lastmod>2026-09-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-
     <url>
         <loc>https://olivabot.com/en/projects/basil-bot.html</loc>
         <lastmod>2026-09-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-
     <url>
         <loc>https://olivabot.com/en/projects/me-vu-ut-2025.html</loc>
         <lastmod>2026-09-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-    
-    <!-- Legal Pages -->
+
+    <!-- Company -->
+    <url>
+        <loc>https://olivabot.com/en/about.html</loc>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://olivabot.com/en/partners.html</loc>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://olivabot.com/en/dlab.html</loc>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://olivabot.com/en/starthub.html</loc>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://olivabot.com/en/kvk.html</loc>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://olivabot.com/en/contact.html</loc>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Legal -->
     <url>
         <loc>https://olivabot.com/en/legal/privacy.html</loc>
         <lastmod>2026-06-05</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
     </url>
-    
     <url>
         <loc>https://olivabot.com/en/legal/terms.html</loc>
         <lastmod>2026-06-05</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
     </url>
-    
     <url>
         <loc>https://olivabot.com/en/legal/cookies.html</loc>
         <lastmod>2026-06-05</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
     </url>
-    
     <url>
         <loc>https://olivabot.com/en/legal/disclaimer.html</loc>
         <lastmod>2026-06-05</lastmod>

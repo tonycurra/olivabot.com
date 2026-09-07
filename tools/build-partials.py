@@ -79,25 +79,39 @@ def footer(page: str, asset: str) -> str:
     return f"""{FOOTER_START}
 <footer>
     <div class="footer-inner">
-        <div class="footer-top">
-            <a href="{page}index.html" class="footer-brand">
-                <img src="{asset}assets/images/logo.png" alt="Olivabot" class="footer-brand__logo" width="40" height="40">
-                <span>Olivabot<span class="tm">&reg;</span></span>
-            </a>
-            <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="{page}index.html" class="footer-brand">
+            <img src="{asset}assets/images/logo.png" alt="Olivabot" class="footer-brand__logo" width="40" height="40">
+            <span>Olivabot<span class="tm">&reg;</span></span>
+        </a>
+        <div class="footer-cols">
+            <nav class="footer-col" aria-labelledby="footer-hire">
+                <p class="footer-col__title" id="footer-hire">Hire</p>
                 <a href="{page}services.html">Services</a>
-                <a href="{page}work.html">Work</a>
+                <a href="{page}services/firmware.html">Firmware</a>
+                <a href="{page}services/software.html">Software</a>
+                <a href="{page}services/consulting.html">Consulting</a>
+            </nav>
+            <nav class="footer-col" aria-labelledby="footer-work">
+                <p class="footer-col__title" id="footer-work">Work</p>
+                <a href="{page}work.html">Client work</a>
                 <a href="{page}projects.html">Projects</a>
+            </nav>
+            <nav class="footer-col" aria-labelledby="footer-company">
+                <p class="footer-col__title" id="footer-company">Company</p>
                 <a href="{page}about.html">About</a>
+                <a href="{page}partners.html">Partners</a>
                 <a href="{page}dlab.html">DLAB</a>
                 <a href="{page}starthub.html">StartHub</a>
+                <a href="{page}kvk.html">KVK</a>
                 <a href="{page}contact.html">Contact</a>
             </nav>
-        </div>
-        <div class="footer-services">
-            <a href="{page}services/firmware.html">Firmware</a>
-            <a href="{page}services/software.html">Software</a>
-            <a href="{page}services/consulting.html">Consulting</a>
+            <nav class="footer-col" aria-labelledby="footer-legal">
+                <p class="footer-col__title" id="footer-legal">Legal</p>
+                <a href="{page}legal/privacy.html">Privacy</a>
+                <a href="{page}legal/terms.html">Terms</a>
+                <a href="{page}legal/cookies.html">Cookies</a>
+                <a href="{page}legal/disclaimer.html">Disclaimer</a>
+            </nav>
         </div>
         <p class="footer-entity">
             <strong>Olivabot B.V.</strong> &mdash; VU StartHub, De Boelelaan 1095a, 1081 HV Amsterdam, Netherlands.
@@ -110,18 +124,10 @@ def footer(page: str, asset: str) -> str:
                 <a href="mailto:info@olivabot.com" class="footer-email">info@olivabot.com</a>
                 <span>&copy; 2026 Olivabot<span class="tm">&reg;</span>. All rights reserved.</span>
             </div>
-            <div class="footer-right">
-                <div class="footer-legal">
-                    <a href="{page}legal/privacy.html">Privacy</a>
-                    <a href="{page}legal/terms.html">Terms</a>
-                    <a href="{page}legal/cookies.html">Cookies</a>
-                    <a href="{page}legal/disclaimer.html">Disclaimer</a>
-                </div>
-                <div class="footer-controls">
-                    <button class="theme-btn theme-toggle theme-btn--footer" id="footer-theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
-                        {THEME_ICONS}
-                    </button>
-                </div>
+            <div class="footer-controls">
+                <button class="theme-btn theme-toggle theme-btn--footer" id="footer-theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+                    {THEME_ICONS}
+                </button>
             </div>
         </div>
     </div>

@@ -45,6 +45,7 @@ Fees vary with the job. Email [services@olivabot.com](mailto:services@olivabot.c
 - [Home](https://olivabot.com/en/index.html)
 - [Services](https://olivabot.com/en/services.html)
 - [About / legal entity](https://olivabot.com/en/about.html)
+- [Partners](https://olivabot.com/en/partners.html): VU Amsterdam, DLAB, StartHub, University of Twente, Profinancial B.V. (accounts), KC Group (financial advisors), Province of Noord-Holland, RVO (WBSO).
 - [KVK activities](https://olivabot.com/en/kvk.html): Dutch Chamber of Commerce extract. Main SBI 62100 (designing computer programs), extra 62200 (consultancy and computer facilities) and 72100 (natural-sciences research and experimental development). KVK 94493200. The Dutch wording on that page is the extract; English is explanation.
 - [Contact](https://olivabot.com/en/contact.html): services@olivabot.com for quotes, info@olivabot.com for everything else. Prefer email; call or video on request. Reply within two working days.
 
