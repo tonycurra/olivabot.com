@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Basil Bot | A 4-axis arm that sees basil and aims to cut it</title>
-    <meta name="description" content="Marin Marian’s master’s thesis in AI at Vrije Universiteit Amsterdam, supervised by Tony Currà. Basil Bot: a 3D-printed 4-axis arm, hobby servos, and a €20 camera that finds a leaf and cuts it. Olivabot, Amsterdam.">
+    <meta name="description" content="Marin Marian’s master’s thesis in AI at Vrije Universiteit Amsterdam, supervised by Tony Currà. Basil Bot: a 3D-printed 4-axis arm, hobby servos, and a small camera that finds a leaf and cuts it. Olivabot, Amsterdam.">
     <meta property="og:title" content="Basil Bot | A 4-axis arm that sees basil and aims to cut it">
     <meta property="og:description" content="Marin Marian’s master’s thesis in AI at VU Amsterdam, supervised by Tony Currà. A printed 4-axis arm, a cheap RGB camera, visual servoing to the cut.">
     <meta property="og:type" content="article">
@@ -67,7 +67,7 @@
         "@type": "BreadcrumbList",
         "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://olivabot.com/en/index.html"},
-            {"@type": "ListItem", "position": 2, "name": "Work", "item": "https://olivabot.com/en/work.html"},
+            {"@type": "ListItem", "position": 2, "name": "Projects", "item": "https://olivabot.com/en/projects.html"},
             {"@type": "ListItem", "position": 3, "name": "Basil Bot", "item": "https://olivabot.com/en/projects/basil-bot.html"}
         ]
     }
@@ -84,7 +84,7 @@
         </a>
         <ul class="nav-links" id="nav-links">
             <li><a href="../services.html">Services</a></li>
-            <li><a href="../work.html">Work</a></li>
+            <li><a href="../projects.html">Projects</a></li>
             <li><a href="../about.html">About</a></li>
             <li><a href="../contact.html">Contact</a></li>
         </ul>
@@ -119,7 +119,7 @@
     <main>
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="../index.html">Home</a>
-            <a href="../work.html">Work</a>
+            <a href="../projects.html">Projects</a>
             <span>Basil Bot</span>
         </nav>
         <h1>Basil Bot</h1>
@@ -155,10 +155,10 @@
         <p>Four axes — that is the main constraint. The scissors only close in a vertical cut. A leaf at an awkward angle, or a stem the tool cannot approach from above, is out of reach. A six-axis arm would shrug and rotate the wrist. This one cannot. So the interesting work was not buying another motor. It was which leaf to pick, how to approach, and how to aim a tool that only cuts straight down.</p>
         <p>Hobby servo motors, chosen because they are cheap and they run on low power — the whole machine is USB-powered, camera included. No industrial drives, no 48&nbsp;V bus. That keeps it on a desk. It also means backlash, slack, and not much torque. The firmware has to live with that.</p>
         <p>Every structural part is printed. The transmission is printed gears, in the open, where you can see them mesh. The cutter is printed too — a small scissor at the wrist. That is the point of this machine as a prototype: you can watch how motion gets from a servo horn to a joint, instead of hiding it in a black gearbox.</p>
-        <p>The eye is a <a href="https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/" rel="noopener noreferrer" target="_blank">Seeed Studio XIAO ESP32S3 Sense</a> — an ESP32 board with a small 2D RGB camera, about €20. Power and data go over the same USB cable. No stereo pair, no depth sensor, no global shutter. One noisy colour image, looking along the arm toward the plant.</p>
+        <p>The eye is a <a href="https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/" rel="noopener noreferrer" target="_blank">Seeed Studio XIAO ESP32S3 Sense</a> — an ESP32 board with a small 2D RGB camera. Power and data go over the same USB cable. No stereo pair, no depth sensor, no global shutter. One noisy colour image, looking along the arm toward the plant.</p>
 
         <h2 id="seeing-and-reaching">Seeing and reaching</h2>
-        <p>The camera is the hard part. A €20 module is grainy, it rolls, and it has no sense of distance. Stem and leaf are both green. Marin’s job was to make those two classes separable enough that the arm knows what it is aiming at — and what it must not cut.</p>
+        <p>The camera is the hard part. The module is grainy, it rolls, and it has no sense of distance. Stem and leaf are both green. Marin’s job was to make those two classes separable enough that the arm knows what it is aiming at — and what it must not cut.</p>
         <p>The target is not “the leaf.” It is the stem at the base of the leaf, where you actually snip — and it has to sit so the scissors can come down vertically. The live feed from the XIAO Sense puts a mark on that point and a crosshair where the cutter sits in the image. The motors iterate: move a bit, look again, keep the mark on the crosshair. When it holds, the scissors close. That is visual servoing on four axes. Easy to write on a whiteboard. Messy when the camera is cheap, the gears are printed, and the basil moves when you touch it.</p>
         <p>The interesting failure modes are the obvious ones: the model confuses stem for leaf, the servo overshoots, the plant is no longer where the last frame said it was. That is the experiment.</p>
 
@@ -205,14 +205,15 @@
             <nav class="footer-col" aria-labelledby="footer-hire">
                 <p class="footer-col__title" id="footer-hire">Hire</p>
                 <a href="../services.html">Services</a>
-                <a href="../services/firmware.html">Firmware</a>
-                <a href="../services/software.html">Software</a>
+                <a href="../services/feasibility.html">Feasibility</a>
+                <a href="../services/prototype.html">Prototypes</a>
                 <a href="../services/consulting.html">Consulting</a>
             </nav>
             <nav class="footer-col" aria-labelledby="footer-work">
-                <p class="footer-col__title" id="footer-work">Work</p>
-                <a href="../work.html#clients">Clients</a>
-                <a href="../work.html#research">Research</a>
+                <p class="footer-col__title" id="footer-work">Projects</p>
+                <a href="../projects.html">Projects</a>
+                <a href="../projects.html#collaborations">Collaborations</a>
+                <a href="../projects.html#research">Research</a>
             </nav>
             <nav class="footer-col" aria-labelledby="footer-company">
                 <p class="footer-col__title" id="footer-company">Company</p>

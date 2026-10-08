@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Software | Olivabot, Amsterdam</title>
-    <meta name="description" content="Web apps, dashboards, computer vision, and EU hosting. Payments and latency when that is the job. Email for a quote. Olivabot, Amsterdam.">
+    <title>Software, LLMs, and robot chatbots | Olivabot</title>
+    <meta name="description" content="Web apps, dashboards, computer vision, EU hosting, and LLMs or chatbots that send commands to a robot. Remote, laptop only. Email services@olivabot.com.">
     <link rel="canonical" href="https://olivabot.com/en/services/software.html" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta property="og:title" content="Software | Olivabot, Amsterdam" />
-    <meta property="og:description" content="Web apps, dashboards, vision, and EU hosting. Amsterdam." />
+    <meta property="og:title" content="Software, LLMs, and robot chatbots | Olivabot" />
+    <meta property="og:description" content="Web apps, vision, EU hosting, and chatbots that talk to robots." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://olivabot.com/en/services/software.html" />
     <meta property="og:site_name" content="Olivabot" />
@@ -17,19 +17,19 @@
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Olivabot, Amsterdam — firmware, software, and consulting" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Software | Olivabot" />
-    <meta name="twitter:description" content="Web apps, dashboards, vision, and EU hosting. Amsterdam." />
+    <meta name="twitter:title" content="Software, LLMs, and robot chatbots | Olivabot" />
+    <meta name="twitter:description" content="Web apps, vision, EU hosting, and chatbots that talk to robots." />
     <meta name="twitter:image" content="https://olivabot.com/assets/images/og-card.png" />
     <link rel="icon" href="../../assets/images/favicon.ico" />
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20260907" />
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260910" />
     <link rel="sitemap" type="application/xml" title="Sitemap" href="../../sitemap.xml" />
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Software for devices and data",
-        "serviceType": "Software development and EU hosting",
-        "description": "Olivabot B.V. in Amsterdam builds web apps, sensor dashboards, and computer vision on a dedicated EU server, and keeps them running. Payments, ledgers, and latency when that is the job. Email for a quote.",
+        "name": "Software, LLMs, and robot chatbots",
+        "serviceType": "Software development, EU hosting, and LLM robot control",
+        "description": "Web apps, sensor dashboards, computer vision on a dedicated EU server, and language models or chatbots that send commands to a robot or log what it did. Remote, laptop only.",
         "url": "https://olivabot.com/en/services/software.html",
         "provider": {
             "@type": "Organization",
@@ -70,7 +70,7 @@
         </a>
         <ul class="nav-links" id="nav-links">
             <li><a href="../services.html">Services</a></li>
-            <li><a href="../work.html">Work</a></li>
+            <li><a href="../projects.html">Projects</a></li>
             <li><a href="../about.html">About</a></li>
             <li><a href="../contact.html">Contact</a></li>
         </ul>
@@ -109,13 +109,14 @@
             <span>Software</span>
         </nav>
 
-        <h1>Software for devices and data</h1>
-        <p class="intro">A web app people can log into. A dashboard for sensors you already own. A model that turns photos into labels. All of it on a <strong>dedicated server in the EU</strong>, which we can also run. <strong>Olivabot B.V.</strong>, Amsterdam. Email <a href="mailto:services@olivabot.com">services@olivabot.com</a>.</p>
+        <h1>Software, LLMs, and robot chatbots</h1>
+        <p class="intro">Talk to the robot: language in, the backend connected to AI, allowed actions out. Also web apps, dashboards, and vision — on a <strong>dedicated server in the EU</strong> we can run. Work is <strong>remote only from a laptop</strong>. <a href="../contact.html">Contact</a>.</p>
 
         <ul class="features">
             <li><strong>A web app.</strong> Login, real data, a link you can send. After you pay, the software is yours.</li>
             <li><strong>A dashboard for hardware you already have.</strong> Probes, meters, cameras — numbers and charts. This is the software half of what we built for <a href="../projects/mycosense.html">Mycofarming</a>.</li>
-            <li><strong>Computer vision.</strong> Photos or camera frames in, labels and a log out. Fruit and plants (<a href="../projects/vision.html">Olivabot Vision</a>), basil stem and leaf on a €20 camera that then moves an arm (<a href="../projects/basil-bot.html">Basil Bot</a>), hand and finger landmarks (<a href="../projects/madglove-sense.html">Madglove</a>), infrared (<a href="../projects/mycosense.html">Mycosense</a>), NDVI maps from a <a href="../projects/agricultural-drone-surveys.html">Mavic 3M</a> processed with WebODM on a machine we ran.</li>
+            <li><strong>Computer vision.</strong> Photos or camera frames in, labels and a log out. Fruit and plants (<a href="../projects/vision.html">Olivabot Vision</a>), basil stem and leaf on a small camera that then moves an arm (<a href="../projects/basil-bot.html">Basil Bot</a>), hand and finger landmarks (<a href="../projects/madglove-sense.html">Madglove</a>), infrared (<a href="../projects/mycosense.html">Mycosense</a>), NDVI maps from a <a href="../projects/agricultural-drone-surveys.html">Mavic 3M</a> processed with WebODM on a machine we ran.</li>
+            <li><strong>Talk to the robot.</strong> Language in, allowed actions out, AI in the backend. Details <a href="#llm">below</a>.</li>
         </ul>
         <p>A vision model is as good as your labelled photos. We ship confidence scores and an explicit “unclear”. Models that must run on the chip, with no cloud, are <a href="firmware.html#edge-ai">on-device AI</a> — same people, on the firmware page.</p>
 
@@ -123,17 +124,21 @@
         <p>A dedicated server in the European Union. HTTPS, nightly backups that have been restored, monitoring, security updates, email support on working days. We can sign a processing agreement when we hold data for you.</p>
         <p>New features are a separate milestone, quoted before we touch them. You own the application. If you leave, we move it to a server in your name and hand over the keys.</p>
 
+        <h2 id="llm">Talk to the robot</h2>
+        <p>Talk-to-action: someone says or types what they want, the backend is connected to AI, the robot does something it is allowed to do. Chat over a serial port, BLE, or HTTP to an arm, a rover, or a fleet of ESP32 nodes. Tool calling with a tight allow-list: move joint, read sensor, stop. Not a chatbot that invents G-code.</p>
+        <p>The model can live on a machine you control in the EU, or on-device when the radio is down — same people as <a href="firmware.html#edge-ai">on-device AI</a>. We do not paste customer data into a US API unless you ask for that in writing.</p>
+
         <h2 id="fintech">Payments, ledgers, latency</h2>
         <p>The same code when the job is a ledger or a hot path: something is too slow, something has to be exactly right, or customer data is somewhere it should not be. C++ and Rust in the path that counts. Local models on a machine you control in the EU when a US API is shipping text off the continent.</p>
 
         <div class="quote-note">
-            <h2>How we work</h2>
-            <p>Email what it is for, who uses it, and whether there are photos, sensors, or a camera. Two or three sentences is enough. Reply within <strong>two working days</strong>. Then a written outline, then milestones. Each step is quoted before it starts. Remote. A call if you ask. Email for a quote.</p>
+            <h2>Contact</h2>
+            <p>Email <a href="mailto:services@olivabot.com">services@olivabot.com</a>.</p>
         </div>
 
-        <p><a href="mailto:services@olivabot.com?subject=Software" class="cta-button">Email us</a></p>
+        <p><a href="mailto:services@olivabot.com" class="cta-button">Write to us</a></p>
         <p>To <a href="mailto:services@olivabot.com">services@olivabot.com</a>. NDA first if you prefer.</p>
-        <p class="related">Also: <a href="firmware.html">firmware</a> · <a href="consulting.html">consulting</a> · <a href="../work.html">client work</a></p>
+        <p class="related">Also: <a href="firmware.html">firmware</a> · <a href="hardware.html">hardware</a> · <a href="#llm">LLMs</a> · <a href="consulting.html">consulting</a> · <a href="../projects.html">projects</a></p>
     </main>
 <!-- partial:footer:start (generated by tools/build-partials.py) -->
 <footer>
@@ -146,14 +151,15 @@
             <nav class="footer-col" aria-labelledby="footer-hire">
                 <p class="footer-col__title" id="footer-hire">Hire</p>
                 <a href="../services.html">Services</a>
-                <a href="../services/firmware.html">Firmware</a>
-                <a href="../services/software.html">Software</a>
+                <a href="../services/feasibility.html">Feasibility</a>
+                <a href="../services/prototype.html">Prototypes</a>
                 <a href="../services/consulting.html">Consulting</a>
             </nav>
             <nav class="footer-col" aria-labelledby="footer-work">
-                <p class="footer-col__title" id="footer-work">Work</p>
-                <a href="../work.html#clients">Clients</a>
-                <a href="../work.html#research">Research</a>
+                <p class="footer-col__title" id="footer-work">Projects</p>
+                <a href="../projects.html">Projects</a>
+                <a href="../projects.html#collaborations">Collaborations</a>
+                <a href="../projects.html#research">Research</a>
             </nav>
             <nav class="footer-col" aria-labelledby="footer-company">
                 <p class="footer-col__title" id="footer-company">Company</p>
@@ -204,6 +210,6 @@
     </div>
 </footer>
 <!-- partial:footer:end -->
-    <script src="../../assets/js/ui.js?v=20260907"></script>
+    <script src="../../assets/js/ui.js?v=20260910"></script>
 </body>
 </html>

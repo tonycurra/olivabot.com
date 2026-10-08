@@ -1,15 +1,264 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Moved | Olivabot</title>
-    <link rel="canonical" href="https://olivabot.com/en/work.html" />
-    <meta name="robots" content="noindex, follow" />
-    <meta http-equiv="refresh" content="0; url=work.html#research">
-    <script>window.location.replace("work.html#research");</script>
+    <title>Projects | Olivabot</title>
+    <meta name="description" content="Olivabot projects: our research, then collaborations with Madglove and Mycofarming.">
+    <link rel="canonical" href="https://olivabot.com/en/projects.html" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta property="og:title" content="Projects | Olivabot" />
+    <meta property="og:description" content="Research, then collaborations with Madglove and Mycofarming." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://olivabot.com/en/projects.html" />
+    <meta property="og:site_name" content="Olivabot" />
+    <meta property="og:image" content="https://olivabot.com/assets/images/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Projects | Olivabot" />
+    <meta name="twitter:description" content="Research, then collaborations with Madglove and Mycofarming." />
+    <link rel="icon" href="../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260910" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="../sitemap.xml" />
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Olivabot projects",
+        "description": "Research and collaborations by Olivabot B.V.",
+        "url": "https://olivabot.com/en/projects.html",
+        "publisher": {"@id": "https://olivabot.com/#organization"},
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "url": "https://olivabot.com/en/projects/madglove-sense.html", "name": "Madglove Sense"},
+                {"@type": "ListItem", "position": 2, "url": "https://olivabot.com/en/projects/mycosense.html", "name": "Mycosense"},
+                {"@type": "ListItem", "position": 3, "url": "https://olivabot.com/en/projects/gibbon-bot.html", "name": "Gibbon Bot"},
+                {"@type": "ListItem", "position": 4, "url": "https://olivabot.com/en/projects/basil-bot.html", "name": "Basil Bot"},
+                {"@type": "ListItem", "position": 5, "url": "https://olivabot.com/en/projects/me-vu-ut-2025.html", "name": "Bachelor projects with universities, 2025"},
+                {"@type": "ListItem", "position": 6, "url": "https://olivabot.com/en/projects/vision.html", "name": "Olivabot Vision"},
+                {"@type": "ListItem", "position": 7, "url": "https://olivabot.com/en/projects/arboreal-robots.html", "name": "Arboreal robots R&D"},
+                {"@type": "ListItem", "position": 8, "url": "https://olivabot.com/en/projects/agricultural-drone-surveys.html", "name": "Agricultural drone surveys"}
+            ]
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://olivabot.com/en/index.html"},
+            {"@type": "ListItem", "position": 2, "name": "Projects", "item": "https://olivabot.com/en/projects.html"}
+        ]
+    }
+    </script>
+    <style>
+        .intro { font-size: 1.125rem; }
+        .page-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; margin: 1.25rem 0 2rem; }
+        .page-card { border: 1px solid var(--border); border-radius: var(--radius); padding: 1.15rem 1.2rem; display: flex; flex-direction: column; }
+        .page-card h3 { margin: 0.35rem 0 0.45rem; }
+        .page-card h3 a { color: var(--fg); text-decoration: none; font-size: 1.1rem; }
+        .page-card h3 a:hover { color: var(--accent); }
+        .page-card p { color: var(--muted); font-size: 0.95rem; margin: 0; flex: 1; }
+        .page-card .card-tag { display: inline-block; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, transparent); padding: 0.2rem 0.5rem; border-radius: 4px; }
+        .page-card .card-thumb { width: 100%; height: 140px; object-fit: cover; border-radius: 6px; margin: 0 0 0.75rem; background: var(--footer-bg); }
+        .sub-links { margin: 0.75rem 0 0; padding: 0; list-style: none; font-size: 0.88rem; }
+        .sub-links li { margin: 0.2rem 0; }
+        .sub-links a { color: var(--muted); }
+        .sub-links a:hover { color: var(--accent); }
+        .case { border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; margin: 0 0 1.25rem; }
+        .case h2 { margin-top: 0; }
+        .case-meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem; }
+        .case-facts { list-style: none; padding-left: 0; margin: 1rem 0; }
+        .case-facts li { padding: 0.35rem 0; border-bottom: 1px solid var(--border); display: grid; grid-template-columns: 8.5rem 1fr; gap: 1rem; font-size: 0.95rem; }
+        @media (max-width: 560px) { .case-facts li { grid-template-columns: 1fr; gap: 0.1rem; } }
+        .case-facts .label { color: var(--muted); font-weight: 600; }
+        .case-hire { margin-top: 1.25rem; font-size: 0.95rem; }
+    </style>
 </head>
 <body>
-    <p>This page has moved to <a href="work.html#research">Work (research)</a>.</p>
+<header>
+    <nav aria-label="Main navigation">
+        <a href="index.html" class="nav-brand">
+            <img src="../assets/images/logo.png" alt="Olivabot" class="nav-brand__logo" width="32" height="32">
+            <span>Olivabot<span class="tm">&reg;</span></span>
+        </a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-controls">
+            <button class="theme-btn theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none">
+                    <circle cx="12" cy="12" r="5"/>
+                    <line x1="12" y1="1" x2="12" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="23"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                    <line x1="1" y1="12" x2="3" y2="12"/>
+                    <line x1="21" y1="12" x2="23" y2="12"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+            </button>
+        </div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="3" y1="6" x2="19" y2="6"/>
+                <line x1="3" y1="11" x2="19" y2="11"/>
+                <line x1="3" y1="16" x2="19" y2="16"/>
+            </svg>
+        </button>
+    </nav>
+</header>
+    <main>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span>Projects</span>
+        </nav>
+
+        <h1>Projects</h1>
+        <p class="intro">Our research, then collaborations.</p>
+
+        <h2 id="research">Research</h2>
+        <div class="page-grid">
+            <div class="page-card">
+                <img class="card-thumb" src="../assets/images/gibbon-bot/gibbot-bot-mk1/gibbot-bot-mk1-in-action-1.webp" alt="Gibbon Bot mk.1 experimental prototype in an olive tree" width="768" height="768">
+                <span class="card-tag">Robotics</span>
+                <h3><a href="projects/gibbon-bot.html">Gibbon Bot</a></h3>
+                <p>Gibbon-inspired arboreal robot. Does not work yet. Lab development since May 2025.</p>
+            </div>
+            <div class="page-card">
+                <img class="card-thumb" src="../assets/images/basil-bot/basil-bot-autonomous-cut-thumb.webp" alt="Basil Bot printed arm reaching into a basil plant" width="600" height="400">
+                <span class="card-tag">Robotics</span>
+                <h3><a href="projects/basil-bot.html">Basil Bot</a></h3>
+                <p>Printed 4-axis arm, a small camera, visual servoing. Marin Marian’s master’s thesis, Tony Currà supervising.</p>
+            </div>
+            <div class="page-card">
+                <span class="card-tag">Education</span>
+                <h3><a href="projects/me-vu-ut-2025.html">Bachelor projects with universities, 2025</a></h3>
+                <p>Twelve mechanical engineering students from Vrije Universiteit Amsterdam and the University of Twente. Their papers, their names.</p>
+            </div>
+            <div class="page-card">
+                <span class="card-tag">AI &amp; Vision</span>
+                <h3><a href="projects/vision.html">Olivabot Vision</a></h3>
+                <p>MIT feasibility study on adding computer vision to Gibbon Bot for canopy monitoring.</p>
+            </div>
+            <div class="page-card">
+                <span class="card-tag">Robotics</span>
+                <h3><a href="projects/arboreal-robots.html">Arboreal robots R&amp;D</a></h3>
+                <p>Earlier tree prototypes, then Gibbon Bot. None is a working canopy climber yet.</p>
+                <ul class="sub-links">
+                    <li><a href="projects/arboreal-robots/climbing-poc.html">Climbing proof of concept</a></li>
+                    <li><a href="projects/arboreal-robots/tree-gripper.html">Tree gripper</a></li>
+                    <li><a href="projects/arboreal-robots/trunk-climber.html">Trunk climber</a></li>
+                    <li><a href="projects/arboreal-robots/printed-gears.html">Printed gears</a></li>
+                    <li><a href="projects/arboreal-robots/microspines.html">Microspines</a></li>
+                </ul>
+            </div>
+            <div class="page-card">
+                <span class="card-tag">Agriculture</span>
+                <h3><a href="projects/agricultural-drone-surveys.html">Agricultural drone surveys</a></h3>
+                <p>We bought a DJI Mavic 3M, flew NDVI maps, and sold it.</p>
+            </div>
+        </div>
+
+        <h2 id="collaborations">Collaborations</h2>
+
+        <article class="case">
+            <h2><a href="projects/madglove-sense.html">Madglove Sense</a></h2>
+            <p class="case-meta">With <a href="https://madglove.com/" rel="noopener noreferrer" target="_blank">Madglove Amsterdam BV</a> · November 2024 – June 2026 · medical device</p>
+            <p>Madglove builds a functional orthosis that gives people with reduced hand mobility their grip back at home. They needed to measure whether it was working — motion data, from a glove whose mechanics could not be disturbed, on a battery small enough that nobody notices it.</p>
+            <ul class="case-facts">
+                <li><span class="label">The constraint</span><span>Sensors that do not interfere with the glove’s mechanics, powered by a battery, small enough to wear all day.</span></li>
+                <li><span class="label">What we built</span><span>A series of prototypes ending in an interconnected sensor device with on-device movement classification — battery, microcontroller, and sensor small enough to sit on a finger ring, in a 3D-printed case we designed.</span></li>
+                <li><span class="label">Plus</span><span>A computer-vision tool that tracks hand and finger joint landmarks, so physiotherapists can measure a patient’s range of motion instead of estimating it.</span></li>
+                <li><span class="label">Also</span><span>We sat in the design-for-manufacturing conversations with suppliers on behalf of a non-technical team.</span></li>
+            </ul>
+            <p class="case-hire"><a href="projects/madglove-sense.html">The Madglove project</a>.</p>
+        </article>
+
+        <article class="case">
+            <h2><a href="projects/mycosense.html">Mycosense</a></h2>
+            <p class="case-meta">With <a href="https://www.mycofarming.nl/" rel="noopener noreferrer" target="_blank">Mycofarming BV</a> · two years · cleantech, co-funded by the Province of Noord-Holland</p>
+            <p>Mycofarming uses mycelium to filter pollutants out of water. They were building the biology; nobody was measuring it. We built the sensing, indoors and outdoors, and the dashboards that turned it into something you can look at.</p>
+            <ul class="case-facts">
+                <li><span class="label">Indoors</span><span>Raspberry Pi nodes in MycoLab growth chambers over secure Wi-Fi, with BLE between them: total dissolved solids in the water, plus CO<sub>2</sub>, temperature, and humidity in the air.</span></li>
+                <li><span class="label">Cameras</span><span>Raspberry Pi Camera Module 3 with the infrared filter removed, in a 3D-printed enclosure we designed with active cooling — so mycelium growth and water colour are visible beyond what the eye sees.</span></li>
+                <li><span class="label">Outdoors</span><span>LoRaWAN probes for soil moisture, conductivity, and temperature on mushroom blocks sitting in open water streams. LoRaWAN because it covers effectively all of the Netherlands and the probes have to stay on.</span></li>
+                <li><span class="label">Hardware</span><span>Miniaturised MycoTowers — 3D-printed filtration columns with automated pumps for continuous recirculation — to test at bench scale what runs in an industrial plant.</span></li>
+            </ul>
+            <p class="case-hire"><a href="projects/mycosense.html">The Mycofarming project</a>.</p>
+        </article>
+
+        <h2>Contact</h2>
+        <p>Email <a href="mailto:services@olivabot.com">services@olivabot.com</a>.</p>
+        <p><a href="mailto:services@olivabot.com" class="cta-button">Write to us</a></p>
+    </main>
+<footer>
+    <div class="footer-inner">
+        <a href="index.html" class="footer-brand">
+            <img src="../assets/images/logo.png" alt="Olivabot" class="footer-brand__logo" width="40" height="40">
+            <span>Olivabot<span class="tm">&reg;</span></span>
+        </a>
+        <div class="footer-cols">
+            <nav class="footer-col" aria-labelledby="footer-hire">
+                <p class="footer-col__title" id="footer-hire">Hire</p>
+                <a href="faq.html">Hire FAQ</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <nav class="footer-col" aria-labelledby="footer-work">
+                <p class="footer-col__title" id="footer-work">Projects</p>
+                <a href="projects.html">All projects</a>
+                <a href="projects.html#research">Research</a>
+                <a href="projects.html#collaborations">Collaborations</a>
+            </nav>
+            <nav class="footer-col" aria-labelledby="footer-company">
+                <p class="footer-col__title" id="footer-company">Company</p>
+                <a href="about.html">About</a>
+                <a href="kvk.html">KVK</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <address class="footer-entity">
+            <strong>Olivabot B.V.</strong>
+            <span>VU StartHub, De Boelelaan 1095a</span>
+            <span>1081 HV Amsterdam, Netherlands</span>
+            <span>KVK <a href="kvk.html">94493200</a> · VAT NL866797373B01</span>
+            <a href="mailto:services@olivabot.com">services@olivabot.com</a>
+        </address>
+        <div class="footer-bottom">
+            <div class="footer-meta">
+                <a href="mailto:info@olivabot.com" class="footer-email">info@olivabot.com</a>
+                <span>&copy; 2026 Olivabot<span class="tm">&reg;</span>. All rights reserved.</span>
+            </div>
+            <div class="footer-controls">
+                <button class="theme-btn theme-toggle theme-btn--footer" id="footer-theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none">
+                    <circle cx="12" cy="12" r="5"/>
+                    <line x1="12" y1="1" x2="12" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="23"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                    <line x1="1" y1="12" x2="3" y2="12"/>
+                    <line x1="21" y1="12" x2="23" y2="12"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="../assets/js/ui.js?v=20260910"></script>
 </body>
 </html>

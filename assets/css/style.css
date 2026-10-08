@@ -381,6 +381,10 @@ main .partners a:hover {
     margin-top: 0.5rem;
 }
 
+.story-figure figcaption a {
+    color: var(--link);
+}
+
 .story-pair {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -456,6 +460,25 @@ main .partners a:hover {
     font-weight: bold;
     position: absolute;
     left: 0;
+}
+
+.faq {
+    margin: 2rem 0 1rem;
+    max-width: 62ch;
+}
+
+.faq h2 {
+    margin-bottom: 0.75rem;
+}
+
+.faq h3 {
+    font-size: 1.05rem;
+    margin: 1.35rem 0 0.35rem;
+}
+
+.faq p {
+    color: var(--muted);
+    margin: 0;
 }
 
 /* ─────────────────────────────────────────
@@ -1011,5 +1034,123 @@ footer {
         content: " (" attr(href) ")";
         font-size: 0.8em;
         color: #666;
+    }
+}
+
+/* ─────────────────────────────────────────
+   Homepage draft (olive groves)
+───────────────────────────────────────── */
+.home-lead p {
+    font-size: 1.15rem;
+    color: var(--fg);
+    max-width: 42rem;
+}
+
+.home-block {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    gap: 1.5rem 2rem;
+    align-items: center;
+    margin: 2.75rem 0 0;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+}
+
+.home-block--stack {
+    grid-template-columns: 1fr;
+}
+
+.home-block h2 {
+    margin: 0.15rem 0 0.7rem;
+}
+
+.home-block p,
+.home-card p {
+    max-width: none;
+}
+
+.home-kicker {
+    margin: 0;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.home-more {
+    font-weight: 600;
+    color: var(--link);
+}
+
+.home-media {
+    display: grid;
+    gap: 0.6rem;
+}
+
+.home-media--pair {
+    grid-template-columns: 1fr 1fr;
+}
+
+.home-media img,
+.home-media video {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: var(--radius);
+    background: var(--footer-bg);
+}
+
+.home-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin-top: 0.25rem;
+}
+
+.home-card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.home-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    background: var(--footer-bg);
+}
+
+.home-card img.logo-fit {
+    object-fit: contain;
+    padding: 1.75rem;
+}
+
+.home-card div {
+    padding: 1rem 1.1rem 1.15rem;
+}
+
+.home-card h3 {
+    margin: 0 0 0.35rem;
+}
+
+.home-card h3 a {
+    color: var(--fg);
+}
+
+.home-card h3 a:hover {
+    color: var(--accent);
+}
+
+.home-card p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 720px) {
+    .home-block,
+    .home-cards,
+    .home-media--pair {
+        grid-template-columns: 1fr;
     }
 }

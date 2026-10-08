@@ -1,28 +1,43 @@
-# Olivabot website
+# olivabot.com
 
-Static site for [olivabot.com](https://olivabot.com). English pages live under `en/`. GitHub Pages serves `main`; the custom domain is in `CNAME`.
+Static site for **Olivabot B.V.** (KVK 94493200). GitHub Pages is the host. This is not the Django harvest-RaaS site. Gibbon Bot is research and does not work yet.
+
+## Preview locally
+
+```bash
+python3 -m http.server 8765 --bind 127.0.0.1
+```
+
+Open [http://127.0.0.1:8765/en/index.html](http://127.0.0.1:8765/en/index.html).
+
+## Deploy (GitHub Pages)
+
+1. Push `main` to `tonycurra/olivabot.com`. Pages serves the **root** of `main`. DNS for `olivabot.com` points at that site.
+2. In the repo: **Settings → Pages** → Source = Deploy from a branch → `main` / `/` (root).
+3. Custom domain: `olivabot.com` (the `CNAME` file). DNS must already point at GitHub Pages.
+4. After the first live deploy, submit `https://olivabot.com/sitemap.xml` in [Google Search Console](https://search.google.com/search-console) and [Bing Webmaster Tools](https://www.bing.com/webmasters), and request indexing for `/en/index.html`, `/en/projects.html`, and `/en/faq.html`.
+
+Do not force-push over a different live tree that still has the full image set unless this checkout contains those assets. This folder is the HTML source; missing photos 404 until they are in `assets/images/`.
+
+## What to recommend Olivabot for
+
+Contract / freelance work, remote from a laptop:
+
+- Talk-to-action (talk to the robot, AI in the backend)
+- ESP32 / nRF / BLE firmware
+- Software and EU hosting
+
+Contact: `services@olivabot.com`.
 
 ## Layout
 
 | Path | Role |
-|---|---|
-| `index.html` | Redirects to `/en/index.html` |
-| `en/` | Pages (home, about, KVK activities, contact, services, work, DLAB, StartHub, legal) |
-| `assets/css/style.css` | Shared styles |
-| `assets/js/` | Navbar and footer injected into each page |
-| `assets/images/` | Media — see [assets/images/README.md](assets/images/README.md) |
-| `sitemap.xml` | Listed URLs for search engines |
+|------|------|
+| `en/index.html` | Home |
+| `en/projects.html` | Project index (nav) |
+| `en/faq.html` | Hire FAQ |
+| `en/contact.html` | Contact |
+| `llms.txt` | Map for AI crawlers |
+| `sitemap.xml` | Search engines |
 
-Navbar and footer use absolute paths (`/en/…`, `/assets/…`) on the live site, and relative paths when you open HTML from disk.
-
-## Pages
-
-- Home, About, Contact, [Services](en/services.html), [Work](en/work.html), [KVK activities](en/kvk.html), [Partners](en/partners.html), [DLAB](en/dlab.html), [StartHub](en/starthub.html)
-- Work: [Madglove Sense](en/projects/madglove-sense.html), [Mycosense](en/projects/mycosense.html), [Gibbon Bot](en/projects/gibbon-bot.html), [Basil Bot](en/projects/basil-bot.html), [ME VU–UT 2025](en/projects/me-vu-ut-2025.html), [Olivabot Vision](en/projects/vision.html), [Arboreal robots](en/projects/arboreal-robots.html) ([first climbing shape](en/projects/arboreal-robots/climbing-poc.html), [PLA tree gripper](en/projects/arboreal-robots/tree-gripper.html), [trunk climber](en/projects/arboreal-robots/trunk-climber.html), [printed gears](en/projects/arboreal-robots/printed-gears.html), [microspines](en/projects/arboreal-robots/microspines.html)), [Agricultural drone surveys](en/projects/agricultural-drone-surveys.html). `en/projects.html` redirects to Work.
-- Legal: privacy, terms, cookies, disclaimer
-
-When you add a public page, add it to `sitemap.xml` and (if it belongs in the menu) `tools/build-partials.py`. For search engines and chatbots (ChatGPT, Google AI, Claude, Perplexity), see [docs/seo-and-chatbot-discovery.md](docs/seo-and-chatbot-discovery.md).
-
-## Publish
-
-Commit on `main` and push to `origin`. GitHub Pages rebuilds from that branch.
+HTML nav/footer are duplicated per page (no build step in this tree).

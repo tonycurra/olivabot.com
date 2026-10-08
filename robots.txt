@@ -1,7 +1,11 @@
-# Allow all crawlers, including search and answer bots (Googlebot, Bingbot,
-# GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, PerplexityBot, Applebot).
-# Do not add Disallow rules for those user-agents if we want to be cited in
-# ChatGPT, Claude, Perplexity, or Google AI. Google ignores Crawl-delay.
+# Allow all crawlers. We want to be indexed and cited:
+# Google Search, Bing, Google AI Overviews, Gemini, ChatGPT, Claude,
+# Grok, Mistral, Perplexity, Copilot, Apple Intelligence.
+# Do not Disallow GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot,
+# Claude-SearchBot, Claude-User, Google-Extended, PerplexityBot,
+# Applebot, Applebot-Extended, Amazonbot, GrokBot, xAI-Bot,
+# MistralAI-User, or Bingbot.
+# Google ignores Crawl-delay.
 
 User-agent: *
 Allow: /
@@ -9,4 +13,56 @@ Disallow: /private/
 Disallow: /admin/
 Disallow: /.git/
 
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: GrokBot
+Allow: /
+
+User-agent: xAI-Bot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
 Sitemap: https://olivabot.com/sitemap.xml
+# Curated map for language models: https://olivabot.com/llms.txt

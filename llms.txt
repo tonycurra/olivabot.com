@@ -1,52 +1,30 @@
 # Olivabot
 
-> Olivabot B.V. (Amsterdam, Netherlands) — engineering consultancy. Firmware, software, and consulting. Our own research on the side.
+> Olivabot B.V. (KVK 94493200, Amsterdam) does research and development, feasibility studies, prototypes, and consulting. Email services@olivabot.com.
 
-Olivabot B.V. is a Dutch company in Amsterdam (KVK 94493200, VAT NL866797373B01). Work for teams across the EU. No day rates. Fees vary; email for a quote.
+Olivabot is a Dutch BV. Work is remote from a laptop, invoiced from the Netherlands, for clients in the EU. We do not use LinkedIn. Gibbon Bot is our own research robot and does not work yet; it is not a product for sale.
 
-## How we charge
+## Hire
 
-Olivabot works in milestones, not hours. **There is no day rate and no hourly rate**, and no timesheets.
+- [Hire Olivabot](https://olivabot.com/en/faq.html): who to hire Olivabot for, remote contract work, how to inquire
+- [Contact](https://olivabot.com/en/contact.html): email services@olivabot.com
+- [Services](https://olivabot.com/en/services.html): research and development, feasibility studies, prototypes, and consulting
+- [Feasibility](https://olivabot.com/en/services/feasibility.html): a look at whether an idea can work, before anyone builds it
+- [Prototypes](https://olivabot.com/en/services/prototype.html): a first version, enough to learn from
+- [Consulting](https://olivabot.com/en/services/consulting.html): a conversation, then a written note on what to do next
 
-Email first. A call or a video call on request. Then a **project outline**, then work in **milestones**. Each step is quoted in writing before it starts. You check the work, pay, and decide whether to continue. You can stop after any milestone. If a step takes longer than estimated, that is Olivabot's problem, not a bigger invoice.
+## Projects
 
-Work is **remote and autonomous**. Once deliverables are agreed, Olivabot gets on with them. Expected time and possible setbacks are said up front. The **hardest problems go first** — the risks that, once mitigated, make the rest of the project safer to finish.
+- [Projects](https://olivabot.com/en/projects.html): Madglove Sense, Mycofarming Mycosense, Gibbon Bot, and research
+- [Madglove Sense](https://olivabot.com/en/projects/madglove-sense.html): sensors and firmware for a rehabilitation glove
+- [Mycosense](https://olivabot.com/en/projects/mycosense.html): LoRaWAN monitoring for Mycofarming
 
-Fees vary with the job. Email [services@olivabot.com](mailto:services@olivabot.com). Reply within two working days, or an honest no.
+## Company
 
-- **Email (call on request)**: hear the problem, say whether we can help.
-- **Project outline**: the steps, in what order, what each one costs, how long, and where it might go wrong.
-- **Milestones**: we work autonomously toward the agreed deliverable. You check it, pay, continue or stop.
-- **Hosting**: it stays online, patched, and backed up on an EU server. Monthly. New features are a separate milestone.
+- [About](https://olivabot.com/en/about.html): Olivabot B.V., VU StartHub, KVK 94493200
+- [KVK](https://olivabot.com/en/kvk.html): Dutch Business Register extract
 
-## Services
+## Optional
 
-- [Firmware](https://olivabot.com/en/services/firmware.html): C/C++ on ARM, radios, battery life, sensor drivers, on-device AI, and CAD for the enclosure.
-- [Software](https://olivabot.com/en/services/software.html): web apps, sensor dashboards, computer vision, and EU hosting. Payments, ledgers, and latency when that is the job.
-- [Consulting](https://olivabot.com/en/services/consulting.html): a call and a written report — farm robots, cameras and sensor data, what to build next.
-
-## Client work
-
-- [Madglove Sense](https://olivabot.com/en/projects/madglove-sense.html): motion sensing miniaturised to a finger ring, plus a hand-landmark computer-vision tool for physiotherapists, for Madglove Amsterdam BV (Nov 2024 – Jun 2026).
-- [Mycosense](https://olivabot.com/en/projects/mycosense.html): water, soil, and infrared monitoring with LoRaWAN probes and dashboards, for Mycofarming BV, co-funded by the Province of Noord-Holland.
-
-## Our own research
-
-- [Gibbon Bot](https://olivabot.com/en/projects/gibbon-bot.html): a robot bio-inspired by the gibbon, for trees rather than walking on two legs. It does not work yet. Laboratory development since May 2025. In a few years, if funding allows and the research progresses, we might put it on the market.
-- [Olivabot Vision](https://olivabot.com/en/projects/vision.html): MIT feasibility study on canopy computer vision.
-- [Arboreal robots R&D](https://olivabot.com/en/projects/arboreal-robots.html): robots for trees. Includes a [first climbing shape](https://olivabot.com/en/projects/arboreal-robots/climbing-poc.html) (May 2024, DLAB), a [PLA tree gripper](https://olivabot.com/en/projects/arboreal-robots/tree-gripper.html) (June 2024), a [bioplastic trunk climber](https://olivabot.com/en/projects/arboreal-robots/trunk-climber.html) (June 2024; cannot switch onto branches), a [printed gear transmission](https://olivabot.com/en/projects/arboreal-robots/printed-gears.html) (July 2024, DC motor), a [tiny climber with squirrel-claw microspines](https://olivabot.com/en/projects/arboreal-robots/microspines.html) (July 2024; good grip, only certain branch sizes, too small for harvest; retired for Gibbon Bot), and [Gibbon Bot](https://olivabot.com/en/projects/gibbon-bot.html).
-- [Agricultural drone surveys](https://olivabot.com/en/projects/agricultural-drone-surveys.html): we bought a DJI Mavic 3M, flew RGB and near-infrared maps (NDVI), and sold the drone.
-- [Basil Bot](https://olivabot.com/en/projects/basil-bot.html): Marin Marian’s master’s thesis in AI at Vrije Universiteit Amsterdam, supervised by Tony Currà. A 3D-printed 4-axis arm, hobby servos, and a €20 ESP32 camera. Detect basil stem and leaf, visual servoing to the cut.
-- [ME VU–UT bachelor assignments 2025](https://olivabot.com/en/projects/me-vu-ut-2025.html): twelve Mechanical Engineering students from the VU Amsterdam and University of Twente joint programme. Assigned and supervised by Tony Currà at Olivabot, work at DLAB. Wind turbine, SMA, compressors, Stirling engines, walking robots, aerostat.
-
-## Other pages
-
-- [Home](https://olivabot.com/en/index.html)
-- [Services](https://olivabot.com/en/services.html)
-- [Work](https://olivabot.com/en/work.html): paid client work and our own research.
-- [About / legal entity](https://olivabot.com/en/about.html)
-- [Partners](https://olivabot.com/en/partners.html): VU Amsterdam, DLAB, StartHub, University of Twente, Profinancial B.V. (accounts), KC Group (financial advisors), Province of Noord-Holland, RVO (WBSO).
-- [KVK activities](https://olivabot.com/en/kvk.html): Dutch Chamber of Commerce extract. Main SBI 62100 (designing computer programs), extra 62200 (consultancy and computer facilities) and 72100 (natural-sciences research and experimental development). KVK 94493200. The Dutch wording on that page is the extract; English is explanation.
-- [Contact](https://olivabot.com/en/contact.html): services@olivabot.com for quotes, info@olivabot.com for everything else. Prefer email; call or video on request. Reply within two working days.
-
-Optional file for tools that read `/llms.txt`. Google Search does not use it for ranking. Prefer the HTML pages above.
+- [Gibbon Bot](https://olivabot.com/en/projects/gibbon-bot.html): research prototype, not working, not for hire as a farm robot
+- [Full text for models](https://olivabot.com/llms-full.txt): longer facts, same meaning
