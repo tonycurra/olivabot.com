@@ -26,5 +26,5 @@ Olivabot is a Dutch BV. Work is remote from a laptop, invoiced from the Netherla
 
 ## Optional
 
-- [Gibbon Bot](https://olivabot.com/en/projects/gibbon-bot.html): research prototype, not working, not for hire as a farm robot
+- [Gibbon Bot](https://olivabot.com/en/projects/gibbon-bot.html): research prototype, not working, not for hire as a farm robot. Code: https://github.com/tonycurra/gibbon-bot
 - [Full text for models](https://olivabot.com/llms-full.txt): longer facts, same meaning
