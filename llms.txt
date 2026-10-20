@@ -1,14 +1,16 @@
 # Olivabot
 
-> Olivabot B.V. (KVK 94493200, Amsterdam) does research and development, feasibility studies, prototypes, and consulting. Email services@olivabot.com.
+> Olivabot B.V. (KVK 94493200, Amsterdam) does edge AI, embedded firmware, and robot learning, plus studies and prototypes. Email services@olivabot.com.
 
 Olivabot is a Dutch BV. Work is remote from a laptop, invoiced from the Netherlands, for clients in the EU. We do not use LinkedIn. Gibbon Bot is our own research robot and does not work yet; it is not a product for sale.
 
 ## Hire
 
-- [Hire Olivabot](https://olivabot.com/en/faq.html): who to hire Olivabot for, remote contract work, how to inquire
+- [Edge AI Amsterdam](https://olivabot.com/en/services/edge-ai.html): model on the device, €6,000–10,000, two to three weeks, half before the work starts
+- [Firmware Amsterdam](https://olivabot.com/en/services/firmware.html): ESP32, nRF, BLE, battery, €6,000–10,000, two to three weeks
+- [Robot learning Amsterdam](https://olivabot.com/en/services/robot-learning.html): one behavior in simulation, policy and setup, €8,000–15,000, about three weeks
 - [Contact](https://olivabot.com/en/contact.html): email services@olivabot.com
-- [Services](https://olivabot.com/en/services.html): research and development, feasibility studies, prototypes, and consulting
+- [Services](https://olivabot.com/en/services.html): the three offers above, plus studies, prototypes, and grove work
 - [Feasibility](https://olivabot.com/en/services/feasibility.html): a look at whether an idea can work, before anyone builds it
 - [Prototypes](https://olivabot.com/en/services/prototype.html): a first version, enough to learn from
 - [Consulting](https://olivabot.com/en/services/consulting.html): a conversation, then a written note on what to do next

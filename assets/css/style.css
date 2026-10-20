@@ -528,13 +528,13 @@ header {
 }
 
 header > nav {
-    max-width: var(--max-w);
+    max-width: 1120px;
     margin: 0 auto;
     padding: 0 1.5rem;
     height: 56px;
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .nav-brand {
@@ -565,8 +565,13 @@ header > nav {
 
 .nav-links {
     display: flex;
-    gap: 1.25rem;
+    gap: 0.9rem;
     align-items: center;
+}
+
+.nav-links a[aria-current="page"] {
+    color: var(--fg);
+    font-weight: 600;
 }
 
 .nav-links a {
@@ -741,7 +746,7 @@ header > nav {
     border-radius: 4px;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 860px) {
     .nav-toggle {
         display: flex;
     }
@@ -1076,6 +1081,48 @@ footer {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--accent);
+}
+
+.offer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+
+.offer-card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.1rem 1.15rem;
+    background: var(--bg);
+}
+
+.offer-card h2,
+.offer-card h3 {
+    font-size: 1.1rem;
+    margin: 0.2rem 0 0.45rem;
+}
+
+.offer-card h2 a,
+.offer-card h3 a {
+    color: var(--fg);
+    text-decoration: none;
+}
+
+.offer-card h2 a:hover,
+.offer-card h3 a:hover {
+    color: var(--accent);
+}
+
+.offer-card p {
+    color: var(--muted);
+    margin: 0 0 0.55rem;
+}
+
+.offer-card .price {
+    color: var(--fg);
+    font-weight: 600;
+    margin: 0;
 }
 
 .home-more {
