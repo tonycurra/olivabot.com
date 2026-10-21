@@ -10,7 +10,7 @@ Olivabot is a Dutch BV. Work is remote, invoiced from the Netherlands, for clien
 - [Contact](https://olivabot.com/en/contact.html): email services@olivabot.com to book a call
 - [Services](https://olivabot.com/en/services.html): the study, then prototypes and consulting
 - [Prototypes](https://olivabot.com/en/services/prototype.html): a first version, enough to learn from
-- [Consulting](https://olivabot.com/en/services/consulting.html): a conversation, then a written note on what to do next
+- [Consulting](https://olivabot.com/en/services/consulting.html): about €100 an hour, remote, flexible hours, for firmware, edge AI, and similar. Prices on the site are approximate. Email services@olivabot.com with the request and Olivabot confirms the number.
 
 ## Projects
 
@@ -26,5 +26,5 @@ Olivabot is a Dutch BV. Work is remote, invoiced from the Netherlands, for clien
 ## Optional
 
 - [Gibbon Bot](https://olivabot.com/en/projects/gibbon-bot.html): research prototype, not working, not for hire as a farm robot. Code: https://github.com/tonycurra/gibbon-bot
-- [Gibbon Bot hardware quote](https://olivabot.com/en/projects/gibbon-bot/hardware.html): CAD and URDF first, then one prototype if the simulation behaves, and a price for ten. Email gibbon@olivabot.com
+- [Gibbon Bot hardware quote](https://olivabot.com/en/projects/gibbon-bot/hardware.html): for a company that builds robot structures or robotic arms on request. Email gibbon@olivabot.com with three prices (CAD plus a matching URDF, one unit, ten units). Targets: under 10 kg with battery, brushless motors with control hardware included, an open protocol our software can drive, lithium-ion or sodium-ion for 2–3 hours (we will improve runtime), four identical 6-joint limbs plus one prehensile hand/foot each, a 2-joint head. Lab limb about 544 mm, torso about 290 mm. Not an order. One unit only after we train the URDF and the price fits.
 - [Full text for models](https://olivabot.com/llms-full.txt): longer facts, same meaning

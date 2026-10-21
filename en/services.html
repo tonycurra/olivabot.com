@@ -21,7 +21,7 @@
     <meta name="twitter:description" content="A feasibility study, €1,500, delivered in one week. Email to book a call." />
     <meta name="twitter:image" content="https://olivabot.com/assets/images/og-card.png" />
     <link rel="icon" href="../assets/images/favicon.ico" />
-    <link rel="stylesheet" href="../assets/css/style.css?v=20261022" />
+    <link rel="stylesheet" href="../assets/css/style.css?v=20261023" />
     <link rel="sitemap" type="application/xml" title="Sitemap" href="../sitemap.xml" />
     <script type="application/ld+json">
     {
@@ -41,7 +41,7 @@
                     "name": "Studies",
                     "itemListElement": [
                         {"@type": "Offer", "name": "Feasibility study", "description": "New technology, or an add-on to an existing product. €1,500, delivered in one week.", "url": "https://olivabot.com/en/services/feasibility.html"},
-                        {"@type": "Offer", "name": "Consulting", "description": "A call, then a written note on what to do next.", "url": "https://olivabot.com/en/services/consulting.html"}
+                        {"@type": "Offer", "name": "Consulting", "price": "100", "priceCurrency": "EUR", "description": "About €100 an hour, remote, flexible hours. Firmware, edge AI, and similar. Email to confirm the request.", "url": "https://olivabot.com/en/services/consulting.html"}
                     ]
                 },
                 {
@@ -153,7 +153,7 @@
         </nav>
         
         <h1>Services</h1>
-        <p class="intro">Start with a feasibility study. €1,500, delivered in one week, for new technology or an add-on to a product you already have. <a href="mailto:services@olivabot.com?subject=Feasibility%20study">Email to book a call</a>.</p>
+        <p class="intro">The numbers below are approximate. Email <a href="mailto:services@olivabot.com">services@olivabot.com</a> with the request, and we confirm the number before any work.</p>
 
         <section class="svc-group">
             <h2>Feasibility study</h2>
@@ -171,6 +171,21 @@
             </div>
         </section>
 
+        <section class="svc-group" id="rates">
+            <h2>Approximate prices</h2>
+            <table class="spec">
+                <caption class="visually-hidden">Approximate prices</caption>
+                <tbody>
+                    <tr><th>Freelance, remote, flexible hours</th><td>€100 an hour. Consulting, firmware, edge AI, and similar.</td></tr>
+                    <tr><th>Feasibility study</th><td>€1,500, one week.</td></tr>
+                    <tr><th>Firmware or edge AI, a defined job</th><td>about €6,000–10,000, two to three weeks.</td></tr>
+                    <tr><th>A written look first</th><td>about €2,500–4,000, three to five days.</td></tr>
+                    <tr><th>Robot learning, one behavior</th><td>about €8,000–15,000, about three weeks.</td></tr>
+                </tbody>
+            </table>
+            <p class="note">In 2026, senior embedded listings in the Netherlands run about €100–€130 an hour (<a href="https://freelancer.nl/freelancers/s/embedded" rel="noopener noreferrer">Freelancer.nl</a>). In Germany the published average for embedded systems is about €91 an hour (<a href="https://fratch.io/en/technology/embedded-systems/germany/rate-benchmark" rel="noopener noreferrer">FRATCH</a>, October 2026). €100 sits in that band. A specific job can land outside it. Write to us and we say which number fits.</p>
+        </section>
+
         <section class="svc-group" id="possible">
             <h2>Possible services</h2>
             <p>The study is how a job starts. These are the kinds of work it can look at, or that can follow.</p>
@@ -184,7 +199,8 @@
                 </div>
                 <div class="page-card">
                     <h3><a href="services/consulting.html">Consulting</a></h3>
-                    <p>A call, then a written note on what to do next.</p>
+                    <p>Firmware, edge AI, and similar. Remote, flexible hours.</p>
+                    <p class="price">about €100/hour</p>
                 </div>
                 <div class="page-card">
                     <h3><a href="projects.html">Research</a></h3>
@@ -197,26 +213,32 @@
                 <div class="page-card">
                     <h3><a href="services/prototype.html">Prototypes</a></h3>
                     <p>A first version, enough to learn from.</p>
+                    <p class="price">about €100/hour</p>
                 </div>
                 <div class="page-card">
                     <h3><a href="services/hardware.html">Hardware</a></h3>
                     <p>Small-batch devices with sensors, for a test or a demo.</p>
+                    <p class="price">about €100/hour</p>
                 </div>
                 <div class="page-card">
                     <h3><a href="services/mvp.html">MVP</a></h3>
                     <p>The smallest version someone can actually try.</p>
+                    <p class="price">about €100/hour</p>
                 </div>
                 <div class="page-card">
                     <h3><a href="services/firmware.html">Firmware</a></h3>
                     <p>ESP32, nRF, BLE, drivers, and battery life.</p>
+                    <p class="price">about €6,000–10,000</p>
                 </div>
                 <div class="page-card">
                     <h3><a href="services/edge-ai.html">Edge AI</a></h3>
                     <p>A model that already works, running on the device.</p>
+                    <p class="price">about €6,000–10,000</p>
                 </div>
                 <div class="page-card">
                     <h3><a href="services/software.html">Software</a></h3>
                     <p>Talk to a robot, or a web app and a dashboard.</p>
+                    <p class="price">about €100/hour</p>
                 </div>
             </div>
 
@@ -225,29 +247,34 @@
                 <div class="page-card">
                     <h3><a href="services/olive-groves.html">Olive groves</a></h3>
                     <p>See the land, rebuild it, and train a robot there.</p>
+                    <p class="price">about €100/hour</p>
                 </div>
                 <div class="page-card">
                     <h3><a href="services/farmers.html">Consulting for farmers</a></h3>
                     <p>A look at a grove, and what a robot could do there.</p>
+                    <p class="price">about €100/hour</p>
                 </div>
                 <div class="page-card">
                     <h3><a href="services/digital-twin.html">Digital twin</a></h3>
                     <p>Photos of the trees, rebuilt as a place a robot can practice.</p>
+                    <p class="price">about €100/hour</p>
                 </div>
                 <div class="page-card">
                     <h3><a href="services/robot-training.html">Robot training</a></h3>
                     <p>An open robot, one job, practiced in a virtual grove.</p>
+                    <p class="price">about €100/hour</p>
                 </div>
                 <div class="page-card">
                     <h3><a href="services/robot-learning.html">Robot learning</a></h3>
                     <p>One behavior in simulation. You get the policy and the setup.</p>
+                    <p class="price">about €8,000–15,000</p>
                 </div>
             </div>
         </section>
 
         <section class="how">
             <h2>Email to book a call</h2>
-            <p>Email <a href="mailto:services@olivabot.com?subject=Feasibility%20study">services@olivabot.com</a>. We reply with a time for a call.</p>
+            <p>Email <a href="mailto:services@olivabot.com">services@olivabot.com</a> with the request. The prices on this page are approximate. We reply with the number for that job, and a time for a call.</p>
             <p>Examples of past work are on <a href="projects.html">Projects</a>, including <a href="projects/madglove-sense.html">Madglove</a> and <a href="projects/mycosense.html">Mycofarming</a>.</p>
         </section>
 

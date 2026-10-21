@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Consulting | Olivabot, Amsterdam</title>
-    <meta name="description" content="A call and a written report: farm robots, cameras and sensor data, which machine can help now. Email services@olivabot.com. Olivabot, Amsterdam.">
+    <title>Consulting, about €100 an hour | Olivabot</title>
+    <meta name="description" content="Remote freelance consulting at about €100 an hour, flexible hours. Firmware, edge AI, and similar. Email services@olivabot.com with the request and we confirm the number.">
     <link rel="canonical" href="https://olivabot.com/en/services/consulting.html" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta property="og:title" content="Consulting | Olivabot, Amsterdam" />
-    <meta property="og:description" content="A call and a written report. Farm robots, cameras, sensor data. Amsterdam." />
+    <meta property="og:title" content="Consulting, about €100 an hour | Olivabot" />
+    <meta property="og:description" content="Remote, flexible hours. Firmware, edge AI, and similar. Email to confirm the number." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://olivabot.com/en/services/consulting.html" />
     <meta property="og:site_name" content="Olivabot" />
@@ -17,8 +17,8 @@
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Olivabot, Amsterdam — firmware, software, and consulting" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Consulting | Olivabot" />
-    <meta name="twitter:description" content="A call and a written report. Amsterdam." />
+    <meta name="twitter:title" content="Consulting, about €100 an hour | Olivabot" />
+    <meta name="twitter:description" content="Remote freelance. Firmware, edge AI, and similar. Email to confirm." />
     <meta name="twitter:image" content="https://olivabot.com/assets/images/og-card.png" />
     <link rel="icon" href="../../assets/images/favicon.ico" />
     <link rel="stylesheet" href="../../assets/css/style.css?v=20261022" />
@@ -29,7 +29,20 @@
         "@type": "Service",
         "name": "Consulting",
         "serviceType": "Technical consulting",
-        "description": "Olivabot B.V. in Amsterdam: a call and a written report. Which farm robot can help a crop now, where camera and sensor data goes, what to build next. Email services@olivabot.com.",
+        "description": "Olivabot B.V. in Amsterdam. Remote freelance at about €100 an hour, flexible hours: firmware, edge AI, and similar. Email services@olivabot.com with the request. We confirm the number.",
+        "offers": {
+            "@type": "Offer",
+            "price": "100",
+            "priceCurrency": "EUR",
+            "description": "Approximate hourly rate. Email to confirm the number for a specific request.",
+            "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "100",
+                "priceCurrency": "EUR",
+                "unitText": "hour",
+                "description": "Approximate. Confirmed by email for the specific request."
+            }
+        },
         "url": "https://olivabot.com/en/services/consulting.html",
         "provider": {
             "@type": "Organization",
@@ -118,25 +131,22 @@
         </nav>
 
         <h1>Consulting</h1>
-        <p class="intro">A call and a written report. You describe the crop, the device, or the data. We write what can help <strong>now</strong>, what to build later, and why. <strong>Olivabot B.V.</strong>, Amsterdam. Email <a href="mailto:services@olivabot.com">services@olivabot.com</a>.</p>
+        <p class="intro">About <strong>€100 an hour</strong>. Remote, flexible hours. Firmware, edge AI, and the software that sits on a device. <strong>Olivabot B.V.</strong>, Amsterdam.</p>
+        <p>The rate is approximate. Email <a href="mailto:services@olivabot.com?subject=Consulting">services@olivabot.com</a> with the request. We reply with the hours we expect, or with a fixed price if that fits better, and nothing starts until that number is agreed.</p>
+        <p><a href="mailto:services@olivabot.com?subject=Consulting" class="cta-button">Email the request</a></p>
 
-        <h2 id="agriculture">Farm robots</h2>
-        <p>Harvest, prune, spray, weed, monitor — matched to groves, orchards, and farms.</p>
-        <p>Years on robots, hardware, AI, and batteries, including experimental work on <a href="../projects/gibbon-bot.html">Gibbon Bot</a> — a gibbon-inspired arboreal prototype that does not work yet — and <a href="../projects/basil-bot.html">Basil Bot</a>, a printed arm that tries to see and cut basil leaves. We also flew a <a href="../projects/agricultural-drone-surveys.html">DJI Mavic 3M</a>: maps of groves and orchards. If a tractor, a drone, or waiting is the better move, that is what the report says.</p>
-        <p>If the answer turns into a build — sensors, vision, a dashboard — that is a separate outline and then milestones. The report is useful on its own.</p>
+        <h2 id="rate">The rate</h2>
+        <p>In 2026, senior embedded listings in the Netherlands run about €100–€130 an hour (<a href="https://freelancer.nl/freelancers/s/embedded" rel="noopener noreferrer">Freelancer.nl</a>). In Germany the published average for embedded systems is about €91 an hour (<a href="https://fratch.io/en/technology/embedded-systems/germany/rate-benchmark" rel="noopener noreferrer">FRATCH</a>, October 2026). €100 sits in that band. A short question can be a few hours. A defined firmware or edge-AI job is often closer to <a href="firmware.html">€6,000–10,000</a>.</p>
 
-        <h2 id="gdpr">Cameras, sensors, customer data</h2>
-        <p>Where customer, camera, and sensor data actually goes, what can leak, and the practical fixes. Cameras that catch people and GPS, sensor logs that are personal data, databases with no access control, photos kept forever, text pasted into a chatbot.</p>
-        <p>This is technical: it cuts obvious risk. A lawyer covers policies and DPAs. Everything we <em>build</em> defaults to a <a href="software.html#hosting">dedicated EU server</a>.</p>
+        <h2 id="work">What the hours cover</h2>
+        <ul>
+            <li><a href="firmware.html">Firmware</a>: battery life, radios, drivers, someone else’s codebase.</li>
+            <li><a href="edge-ai.html">Edge AI</a>: a model that already works, running on the device.</li>
+            <li>A first look at a sensor, a board, or a protocol, before a longer build.</li>
+        </ul>
+        <p>A written study of a new idea, with a set price, is the <a href="feasibility.html">feasibility study</a>: €1,500, one week. A grove, rather than a device, is <a href="farmers.html">consulting for farmers</a>.</p>
 
-        <div class="quote-note">
-            <h2>Contact</h2>
-            <p>Email <a href="mailto:services@olivabot.com">services@olivabot.com</a>.</p>
-        </div>
-
-        <p><a href="mailto:services@olivabot.com" class="cta-button">Write to us</a></p>
-        <p>To <a href="mailto:services@olivabot.com">services@olivabot.com</a>.</p>
-        <p class="related">Also: <a href="firmware.html">firmware</a> · <a href="hardware.html">hardware</a> · <a href="software.html">software</a> · <a href="../projects.html">projects</a></p>
+        <p class="related">Also: <a href="firmware.html">firmware</a> · <a href="edge-ai.html">edge AI</a> · <a href="software.html">software</a> · <a href="../projects.html">projects</a></p>
     
         <section class="svc-catalog" aria-labelledby="possible-services">
             <h2 id="possible-services">Possible services</h2>

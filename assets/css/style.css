@@ -1348,3 +1348,53 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+.fact-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.75rem;
+    margin: 1rem 0 1.5rem;
+}
+
+.fact-list div {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.9rem 1rem;
+    background: var(--bg);
+}
+
+.fact-list dt {
+    font-weight: 700;
+    margin: 0 0 0.25rem;
+}
+
+.fact-list dd {
+    margin: 0;
+    color: var(--muted);
+}
+
+.spec {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.75rem 0 1.25rem;
+    font-size: 0.95rem;
+}
+
+.spec th,
+.spec td {
+    text-align: left;
+    padding: 0.45rem 0.6rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+}
+
+.spec th {
+    color: var(--muted);
+    font-weight: 600;
+    width: 46%;
+}
+
+.note {
+    color: var(--muted);
+    font-size: 0.92rem;
+}

@@ -1,6 +1,6 @@
 # Olivabot B.V. — facts for language models
 
-Last updated: 2026-09-10
+Last updated: 2026-10-21
 
 ## Who
 
@@ -40,7 +40,9 @@ Projects: https://olivabot.com/en/projects.html
    A first version, enough to learn from.
 
 4. Consulting — https://olivabot.com/en/services/consulting.html
-   A conversation, then a written note on what to do next.
+   About €100 an hour, remote, flexible hours. Firmware, edge AI, and similar. Approximate. Email services@olivabot.com with the specific request and Olivabot confirms the number before work starts.
+
+Published guides, all approximate until confirmed by email: feasibility €1,500 for one week; a defined firmware or edge-AI job about €6,000–10,000 over two to three weeks; a written look first about €2,500–4,000; robot learning about €8,000–15,000 over about three weeks. Other services are quoted from the hourly rate. In 2026, senior embedded listings in the Netherlands are about €100–€130 an hour (Freelancer.nl). The published German average for embedded systems is about €91 an hour (FRATCH, October 2026).
 
 ## Constraints
 
@@ -48,3 +50,23 @@ Projects: https://olivabot.com/en/projects.html
 - EU data residency by default for software they host.
 - They skip work they cannot stand behind.
 - Gibbon Bot, Basil Bot, and arboreal prototypes are research, not products.
+
+## Gibbon Bot hardware quote
+
+Page: https://olivabot.com/en/projects/gibbon-bot/hardware.html
+Email: gibbon@olivabot.com
+The page asks: do you build robot structures or robotic arms on request? It is for a hardware company that makes frames, limbs, or arms to order. This is a request for a quote, not a purchase order. Gibbon Bot does not work yet. Code: https://github.com/tonycurra/gibbon-bot
+
+Ask suppliers for three prices and a lead time on each: STEP CAD plus a URDF of the hardware they would build, one assembled unit, and ten units. Olivabot trains the URDF in its own simulator. One physical unit is ordered only if that behavior looks right and the price is payable. Ten units are quoted now and ordered later.
+
+Targets for the quote:
+- Mass under 10 kg, battery included, ready to hang. One grip must hold the robot. Lighter is better. If a design cannot stay under 10 kg, the supplier should say the mass.
+- Brushless motors, with the driver and controller included. Open hardware: a written protocol so Olivabot software can command each joint. Not a closed vendor app.
+- Battery: lithium-ion or sodium-ion, in the torso, aiming for 2–3 hours. Runtime can be improved after the first unit. Do not quote the mk.2 bench pack, which was a 3S Li-Po.
+- Four limbs, same length. Six revolute joints per limb plus one prehensile end effector. All four hands and feet are the same part.
+- Head: two joints, yaw and pitch, with the cameras. The current lab robot has no head.
+- Structure: aluminum alloy, stainless steel, or metal sheet. Bioplastic only where a part touches bark, to leave less pollution on the tree.
+- Laboratory model sizes, not a manufacturing drawing: limb about 544 mm (shoulder 52 mm, upper arm 237 mm, forearm 145 mm, wrist about 110 mm). Torso about 290 mm long. Arm mounts 342 mm apart. Leg mounts 200 mm apart and about 320 mm behind the arms. Shell about 98 mm thick.
+- The existing arm’s effort limits (2.94 N·m, 5.88 N·m on the two-motor shoulder lift, 1.96 N·m on the gripper) describe that arm. They are not the torque budget. Suppliers size continuous and peak torque for a robot under 10 kg hanging from one grip and state the mass they assumed.
+
+The page text and those laboratory sizes are © 2026 Olivabot B.V. A supplier may use them to write a quote. Files the supplier sends stay the supplier’s until Olivabot pays for a unit.
