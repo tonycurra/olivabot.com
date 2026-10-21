@@ -1,17 +1,14 @@
 # Olivabot
 
-> Olivabot B.V. (KVK 94493200, Amsterdam) does edge AI, embedded firmware, and robot learning, plus studies and prototypes. Email services@olivabot.com.
+> Olivabot B.V. (KVK 94493200, Amsterdam) writes a feasibility study in one week: new technology, or an add-on to a product you already have. €1,500. Email services@olivabot.com to book a call.
 
-Olivabot is a Dutch BV. Work is remote from a laptop, invoiced from the Netherlands, for clients in the EU. We do not use LinkedIn. Gibbon Bot is our own research robot and does not work yet; it is not a product for sale.
+Olivabot is a Dutch BV. Work is remote, invoiced from the Netherlands, for clients in the EU. We do not use LinkedIn. The first step is a feasibility study, not a build.
 
 ## Hire
 
-- [Edge AI Amsterdam](https://olivabot.com/en/services/edge-ai.html): model on the device, €6,000–10,000, two to three weeks, half before the work starts
-- [Firmware Amsterdam](https://olivabot.com/en/services/firmware.html): ESP32, nRF, BLE, battery, €6,000–10,000, two to three weeks
-- [Robot learning Amsterdam](https://olivabot.com/en/services/robot-learning.html): one behavior in simulation, policy and setup, €8,000–15,000, about three weeks
-- [Contact](https://olivabot.com/en/contact.html): email services@olivabot.com
-- [Services](https://olivabot.com/en/services.html): the three offers above, plus studies, prototypes, and grove work
-- [Feasibility](https://olivabot.com/en/services/feasibility.html): a look at whether an idea can work, before anyone builds it
+- [Feasibility study](https://olivabot.com/en/services/feasibility.html): new technology, or an add-on to an existing product, €1,500, delivered in one week
+- [Contact](https://olivabot.com/en/contact.html): email services@olivabot.com to book a call
+- [Services](https://olivabot.com/en/services.html): the study, then prototypes and consulting
 - [Prototypes](https://olivabot.com/en/services/prototype.html): a first version, enough to learn from
 - [Consulting](https://olivabot.com/en/services/consulting.html): a conversation, then a written note on what to do next
 
@@ -29,4 +26,5 @@ Olivabot is a Dutch BV. Work is remote from a laptop, invoiced from the Netherla
 ## Optional
 
 - [Gibbon Bot](https://olivabot.com/en/projects/gibbon-bot.html): research prototype, not working, not for hire as a farm robot. Code: https://github.com/tonycurra/gibbon-bot
+- [Gibbon Bot hardware quote](https://olivabot.com/en/projects/gibbon-bot/hardware.html): CAD and URDF first, then one prototype if the simulation behaves, and a price for ten. Email gibbon@olivabot.com
 - [Full text for models](https://olivabot.com/llms-full.txt): longer facts, same meaning

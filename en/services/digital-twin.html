@@ -17,7 +17,7 @@
     <meta name="twitter:title" content="Digital twin of a grove | Olivabot" />
     <meta name="twitter:description" content="Photos of the trees, rebuilt as a place a robot can practice. Write if this is interesting." />
     <link rel="icon" href="../../assets/images/favicon.ico" />
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20261020" />
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20261022" />
     <link rel="sitemap" type="application/xml" title="Sitemap" href="../../sitemap.xml" />
     <script type="application/ld+json">
     {
@@ -39,12 +39,18 @@
             <span>Olivabot<span class="tm">&reg;</span></span>
         </a>
         <ul class="nav-links" id="nav-links">
-            <li><a href="/en/services/edge-ai.html">Edge AI</a></li>
-            <li><a href="/en/services/firmware.html">Firmware</a></li>
-            <li><a href="/en/services/robot-learning.html">Robot learning</a></li>
             <li><a href="/en/services.html">Services</a></li>
-            <li><a href="/en/projects.html">Work</a></li>
+            <li><a href="/en/projects.html">Projects</a></li>
             <li><a href="/en/contact.html">Contact</a></li>
+            <li class="nav-search">
+                <form class="site-search" action="/en/search.html" method="get" role="search">
+                    <label>
+                        <span class="visually-hidden">Search the site</span>
+                        <input type="search" name="q" placeholder="Search" autocomplete="off" enterkeyhint="search">
+                    </label>
+                    <button type="submit">Search</button>
+                </form>
+            </li>
         </ul>
         <div class="nav-controls">
             <button class="theme-btn theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
@@ -73,6 +79,40 @@
         </div>
         <p><a href="mailto:services@olivabot.com" class="cta-button">Write to us</a></p>
         <p class="related">Also: <a href="robot-training.html">robot training</a> · <a href="olive-groves.html">olive groves</a> · <a href="farmers.html">farmers</a></p>
+    
+        <section class="svc-catalog" aria-labelledby="possible-services">
+            <h2 id="possible-services">Possible services</h2>
+            <div class="svc-catalog__groups">
+                <div>
+                    <h3>Studies</h3>
+                    <ul>
+                        <li><a href="/en/services/feasibility.html">Feasibility study</a></li>
+                        <li><a href="/en/services/consulting.html">Consulting</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Devices and software</h3>
+                    <ul>
+                        <li><a href="/en/services/prototype.html">Prototypes</a></li>
+                        <li><a href="/en/services/hardware.html">Hardware</a></li>
+                        <li><a href="/en/services/mvp.html">MVP</a></li>
+                        <li><a href="/en/services/firmware.html">Firmware</a></li>
+                        <li><a href="/en/services/edge-ai.html">Edge AI</a></li>
+                        <li><a href="/en/services/software.html">Software</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Groves and robots</h3>
+                    <ul>
+                        <li><a href="/en/services/olive-groves.html">Olive groves</a></li>
+                        <li><a href="/en/services/farmers.html">Consulting for farmers</a></li>
+                        <li><a href="/en/services/digital-twin.html" aria-current="page">Digital twin</a></li>
+                        <li><a href="/en/services/robot-training.html">Robot training</a></li>
+                        <li><a href="/en/services/robot-learning.html">Robot learning</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
 <footer>
     <div class="footer-inner">
@@ -80,12 +120,16 @@
             <img src="../../assets/images/logo.png" alt="Olivabot" class="footer-brand__logo" width="40" height="40">
             <span>Olivabot<span class="tm">&reg;</span></span>
         </a>
+        <form class="site-search site-search--footer" action="/en/search.html" method="get" role="search">
+            <label>
+                <span class="visually-hidden">Search the site</span>
+                <input type="search" name="q" placeholder="Search the site" autocomplete="off" enterkeyhint="search">
+            </label>
+            <button type="submit">Search</button>
+        </form>
         <div class="footer-cols">
             <nav class="footer-col" aria-labelledby="footer-hire">
                 <p class="footer-col__title" id="footer-hire">Hire</p>
-                <a href="/en/services/edge-ai.html">Edge AI</a>
-                <a href="/en/services/firmware.html">Firmware</a>
-                <a href="/en/services/robot-learning.html">Robot learning</a>
                 <a href="../services.html">Services</a>
                 <a href="feasibility.html">Feasibility</a>
                 <a href="prototype.html">Prototype</a>

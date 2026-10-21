@@ -17,7 +17,7 @@
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Olivabot, Amsterdam — computer programs, consultancy, and experimental R&amp;D">
     <link rel="icon" href="../assets/images/favicon.ico" />
-    <link rel="stylesheet" href="../assets/css/style.css?v=20261020" />
+    <link rel="stylesheet" href="../assets/css/style.css?v=20261022" />
     <style>
         .status { border: 1px solid var(--border); border-radius: var(--radius); padding: 1.15rem 1.25rem; margin: 1.5rem 0 2rem; background: var(--footer-bg); }
         .status p { margin: 0; color: var(--fg); max-width: none; }
@@ -78,12 +78,18 @@
             <span>Olivabot<span class="tm">&reg;</span></span>
         </a>
         <ul class="nav-links" id="nav-links">
-            <li><a href="/en/services/edge-ai.html">Edge AI</a></li>
-            <li><a href="/en/services/firmware.html">Firmware</a></li>
-            <li><a href="/en/services/robot-learning.html">Robot learning</a></li>
             <li><a href="/en/services.html">Services</a></li>
-            <li><a href="/en/projects.html">Work</a></li>
+            <li><a href="/en/projects.html">Projects</a></li>
             <li><a href="/en/contact.html">Contact</a></li>
+            <li class="nav-search">
+                <form class="site-search" action="/en/search.html" method="get" role="search">
+                    <label>
+                        <span class="visually-hidden">Search the site</span>
+                        <input type="search" name="q" placeholder="Search" autocomplete="off" enterkeyhint="search">
+                    </label>
+                    <button type="submit">Search</button>
+                </form>
+            </li>
         </ul>
         <div class="nav-controls">
             <button class="theme-btn theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
@@ -189,12 +195,16 @@
             <img src="../assets/images/logo.png" alt="Olivabot" class="footer-brand__logo" width="40" height="40">
             <span>Olivabot<span class="tm">&reg;</span></span>
         </a>
+        <form class="site-search site-search--footer" action="/en/search.html" method="get" role="search">
+            <label>
+                <span class="visually-hidden">Search the site</span>
+                <input type="search" name="q" placeholder="Search the site" autocomplete="off" enterkeyhint="search">
+            </label>
+            <button type="submit">Search</button>
+        </form>
         <div class="footer-cols">
             <nav class="footer-col" aria-labelledby="footer-hire">
                 <p class="footer-col__title" id="footer-hire">Hire</p>
-                <a href="/en/services/edge-ai.html">Edge AI</a>
-                <a href="/en/services/firmware.html">Firmware</a>
-                <a href="/en/services/robot-learning.html">Robot learning</a>
                 <a href="services.html">Services</a>
                 <a href="services/feasibility.html">Feasibility</a>
                 <a href="services/prototype.html">Prototypes</a>

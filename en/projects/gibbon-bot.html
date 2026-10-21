@@ -13,7 +13,7 @@
     <meta property="og:image" content="https://olivabot.com/assets/images/gibbon-bot/gibbot-bot-mk1/gibbot-bot-mk1-in-action-1.webp">
     <link rel="canonical" href="https://olivabot.com/en/projects/gibbon-bot.html" />
     <link rel="icon" href="../../assets/images/favicon.ico" />
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20261020" />
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20261022" />
     <style>
         .status { border: 1px solid var(--border); border-radius: var(--radius); padding: 1.15rem 1.25rem; margin: 1.5rem 0 2rem; background: var(--footer-bg); }
         .status p { margin: 0; color: var(--fg); max-width: none; }
@@ -64,12 +64,18 @@
             <span>Olivabot<span class="tm">&reg;</span></span>
         </a>
         <ul class="nav-links" id="nav-links">
-            <li><a href="/en/services/edge-ai.html">Edge AI</a></li>
-            <li><a href="/en/services/firmware.html">Firmware</a></li>
-            <li><a href="/en/services/robot-learning.html">Robot learning</a></li>
             <li><a href="/en/services.html">Services</a></li>
-            <li><a href="/en/projects.html" aria-current="page">Work</a></li>
+            <li><a href="/en/projects.html" aria-current="page">Projects</a></li>
             <li><a href="/en/contact.html">Contact</a></li>
+            <li class="nav-search">
+                <form class="site-search" action="/en/search.html" method="get" role="search">
+                    <label>
+                        <span class="visually-hidden">Search the site</span>
+                        <input type="search" name="q" placeholder="Search" autocomplete="off" enterkeyhint="search">
+                    </label>
+                    <button type="submit">Search</button>
+                </form>
+            </li>
         </ul>
         <div class="nav-controls">
             <button class="theme-btn theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
@@ -120,6 +126,7 @@
                 <li><a href="#intended-jobs">The goal</a></li>
                 <li><a href="#gibbon-bot-mk1">Gibbon Bot mk.1</a></li>
                 <li><a href="#gibbon-bot-mk2">Gibbon Bot mk.2</a></li>
+                <li><a href="#hardware">Hardware quote</a></li>
                 <li><a href="#gallery">Gallery</a></li>
             </ol>
         </aside>
@@ -187,6 +194,9 @@
 
         <p>This structure is an assembly of 4 robotic arms — 2 used for gibbon arms and 2 for gibbon legs. Mk.2 is the architecture we are developing in the lab. It has not been proven in the field. We still think it is the right low-cost layout for arboreal locomotion. It does not work yet.</p>
 
+        <h2 id="hardware">Hardware quote</h2>
+        <p>We are asking hardware companies for a quote on the next machine: CAD and a URDF first, then one unit if the simulation behaves, and a price for ten. Lengths, motors, materials, and what to send are on <a href="gibbon-bot/hardware.html">Gibbon Bot hardware</a>. Write to <a href="mailto:gibbon@olivabot.com?subject=Gibbon%20Bot%20hardware%20quote">gibbon@olivabot.com</a>.</p>
+
         <figure class="story-figure story-figure--wide story-figure--cinema">
             <video controls playsinline preload="metadata" poster="../../assets/images/gibbon-bot/gibbon-bot-mk2-sim-and-assembly-2026-poster.webp" width="1920" height="1080">
                 <source src="../../assets/images/gibbon-bot/gibbon-bot-mk2-sim-and-assembly-2026.mp4" type="video/mp4">
@@ -241,12 +251,16 @@
             <img src="../../assets/images/logo.png" alt="Olivabot" class="footer-brand__logo" width="40" height="40">
             <span>Olivabot<span class="tm">&reg;</span></span>
         </a>
+        <form class="site-search site-search--footer" action="/en/search.html" method="get" role="search">
+            <label>
+                <span class="visually-hidden">Search the site</span>
+                <input type="search" name="q" placeholder="Search the site" autocomplete="off" enterkeyhint="search">
+            </label>
+            <button type="submit">Search</button>
+        </form>
         <div class="footer-cols">
             <nav class="footer-col" aria-labelledby="footer-hire">
                 <p class="footer-col__title" id="footer-hire">Hire</p>
-                <a href="/en/services/edge-ai.html">Edge AI</a>
-                <a href="/en/services/firmware.html">Firmware</a>
-                <a href="/en/services/robot-learning.html">Robot learning</a>
                 <a href="../services.html">Services</a>
                 <a href="../services/feasibility.html">Feasibility</a>
                 <a href="../services/prototype.html">Prototypes</a>
