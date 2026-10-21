@@ -1058,12 +1058,23 @@ footer {
     color: var(--accent);
 }
 
+.footer-note {
+    margin: 0.25rem 0 0;
+    max-width: 62ch;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.footer-note a {
+    color: var(--link);
+}
+
 .footer-bottom {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     gap: 1.5rem;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     border-top: 1px solid var(--border);
 }
 

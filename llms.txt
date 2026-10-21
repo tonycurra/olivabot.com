@@ -4,6 +4,8 @@
 
 Olivabot is a Dutch BV. Work is remote, invoiced from the Netherlands, for clients in the EU. We do not use LinkedIn. The first step is a discovery or a feasibility study, not a build.
 
+The website was made with AI agents and tools and can contain mistakes. For reliable information, email info@olivabot.com.
+
 ## Hire
 
 - [Discovery](https://olivabot.com/en/services/discovery.html): possible solutions and a timeline, €1,500, one week
